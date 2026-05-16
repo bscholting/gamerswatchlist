@@ -1,0 +1,239 @@
+/* ============================================
+   GAMERS WATCHLIST — Article Styles
+   ============================================ */
+
+.article-main {
+  padding: 60px 0 80px;
+}
+
+.article-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Header */
+.article-header { margin-bottom: 36px; }
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.article-tag {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background: rgba(232,255,71,0.12);
+  color: var(--accent);
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.article-date {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-dim);
+}
+
+.article-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 6vw, 3.5rem);
+  letter-spacing: 0.02em;
+  line-height: 0.95;
+  color: var(--text);
+  margin-bottom: 16px;
+}
+
+.article-deck {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.6;
+  margin-bottom: 28px;
+}
+
+/* Score bar */
+.article-score-bar {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+.score-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.score-num {
+  font-family: var(--font-display);
+  font-size: 3.5rem;
+  color: var(--accent);
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.score-label {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  color: var(--text-dim);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.score-breakdown {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.score-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.score-row > span:first-child {
+  width: 90px;
+  flex-shrink: 0;
+}
+
+.score-track {
+  flex: 1;
+  height: 4px;
+  background: var(--surface2);
+  border-radius: 99px;
+  overflow: hidden;
+}
+
+.score-fill {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 99px;
+  transition: width 1s ease;
+}
+
+.score-val {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text);
+  width: 24px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+/* Verdict box */
+.verdict-box {
+  background: linear-gradient(135deg, #1a1a10 0%, #111109 100%);
+  border: 1px solid rgba(232,255,71,0.25);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 36px;
+}
+
+.verdict-label {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 12px;
+}
+
+.verdict-box p {
+  font-size: 15px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+.verdict-box p strong { color: var(--text); }
+
+.verdict-cta {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* Article body */
+.article-body h2 {
+  font-family: var(--font-display);
+  font-size: 1.9rem;
+  letter-spacing: 0.04em;
+  color: var(--text);
+  margin: 2.5rem 0 1rem;
+}
+
+.article-body p {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+.article-body ul {
+  margin: 0 0 1.2rem 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.article-body ul li {
+  font-size: 16px;
+  color: var(--text-muted);
+  line-height: 1.7;
+  padding: 4px 0 4px 20px;
+  position: relative;
+}
+
+.article-body ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-size: 13px;
+}
+
+.article-body strong { color: var(--text); font-weight: 600; }
+
+/* Callouts */
+.callout {
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin: 1.5rem 0;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.callout-info {
+  background: rgba(79,163,255,0.08);
+  border: 1px solid rgba(79,163,255,0.2);
+  color: var(--blue);
+}
+
+.callout-tip {
+  background: rgba(232,255,71,0.06);
+  border: 1px solid rgba(232,255,71,0.2);
+  color: var(--text-muted);
+}
+
+.callout strong { color: var(--text); }
+
+/* Responsive */
+@media (max-width: 600px) {
+  .article-score-bar { flex-direction: column; align-items: flex-start; }
+  .score-block { flex-direction: row; align-items: baseline; gap: 10px; }
+  .score-num { font-size: 2.5rem; }
+}
