@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Nintendo Switch 2 Games for Kids (2026) — Gamers Watchlist</title>
+  <meta name="description" content="Best Nintendo Switch 2 games for kids in 2026 — age-appropriate picks, co-op games the whole family can play, and what parents need to know before buying." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .game-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .game-card.top { border-color: rgba(232,255,71,0.4); }
+    .game-header {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .game-emoji { font-size: 2rem; flex-shrink: 0; }
+    .game-header-body { flex: 1; }
+    .game-name { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .game-meta { font-size: 12px; color: var(--text-muted); margin: 0; font-family: var(--font-mono); }
+    .game-badge {
+      display: inline-block; font-size: 10px; padding: 3px 9px;
+      border-radius: 6px; font-family: var(--font-mono);
+      letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0;
+    }
+    .badge-gold   { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-silver { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .badge-green  { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-orange { background: rgba(255,165,2,0.12);  color: #ffa502; }
+    .badge-purple { background: rgba(175,82,222,0.12); color: #af52de; }
+    .badge-red    { background: rgba(255,71,87,0.12);  color: var(--red); }
+    .game-body { padding: 16px 20px; }
+    .game-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .game-tag {
+      font-size: 11px; font-family: var(--font-mono);
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 99px; padding: 3px 10px; color: var(--text-muted);
+    }
+    .game-why { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 0 0 12px; }
+    .game-why strong { color: var(--text); }
+    .parent-note {
+      background: rgba(79,163,255,0.08); border: 1px solid rgba(79,163,255,0.2);
+      border-radius: var(--radius); padding: 10px 14px; margin-bottom: 12px;
+      font-size: 12px; color: var(--blue); line-height: 1.6;
+    }
+    .parent-note strong { color: var(--text); }
+    .game-cta {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--dark); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 10px 14px; text-decoration: none; transition: border-color 0.2s;
+      margin-bottom: 8px;
+    }
+    .game-cta:last-child { margin-bottom: 0; }
+    .game-cta:hover { border-color: var(--accent); }
+    .game-cta-left { flex: 1; }
+    .game-cta-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 1px; }
+    .game-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .game-cta-arrow { font-size: 13px; color: var(--accent); flex-shrink: 0; }
+    .age-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px; margin: 1.5rem 0;
+    }
+    .age-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px; text-align: center;
+    }
+    .age-range {
+      font-family: var(--font-display); font-size: 1.6rem;
+      color: var(--accent); letter-spacing: 0.04em; line-height: 1;
+      margin: 0 0 6px;
+    }
+    .age-label { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0 0 6px; }
+    .age-games { font-size: 12px; color: var(--text-muted); line-height: 1.5; margin: 0; }
+    .section-divider {
+      display: flex; align-items: center; gap: 14px; margin: 2rem 0 1.25rem;
+    }
+    .section-divider-title {
+      font-family: var(--font-display); font-size: 1.5rem;
+      letter-spacing: 0.04em; color: var(--text-muted); white-space: nowrap;
+    }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+    .parental-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px; margin: 1.5rem 0;
+    }
+    .parental-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 16px;
+    }
+    .parental-icon { font-size: 1.5rem; margin-bottom: 8px; display: block; }
+    .parental-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 5px; }
+    .parental-desc { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.55; }
+    @media (max-width: 560px) {
+      .game-header { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Games</span>
+          <span class="article-date">May 2026 · 9 min read</span>
+        </div>
+        <h1 class="article-title">Best Nintendo Switch 2 Games for Kids (2026)</h1>
+        <p class="article-deck">Nintendo makes the most kid-friendly gaming hardware on the planet — and the Switch 2 library has games genuinely appropriate for ages 3 through 12. Here are the best picks, organized by age and play style, with everything parents need to know.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Top picks by age</div>
+        <p>
+          <strong>Ages 3–5:</strong> Kirby and the Forgotten Land, Yoshi's Crafted World<br/>
+          <strong>Ages 5–8:</strong> Mario Kart World, Super Mario Bros. Wonder, Pikmin 4<br/>
+          <strong>Ages 8–12:</strong> The Legend of Zelda: Echoes of Wisdom, Pokémon Scarlet/Violet, Super Mario Odyssey<br/>
+          <strong>Best family co-op:</strong> Nintendo Switch Sports, Mario Party Jamboree, Overcooked 2<br/>
+          <strong>Best educational:</strong> Big Brain Academy, Endless Ocean Luminous
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Why Switch 2 is the best gaming system for kids</h2>
+        <p>Nintendo has spent 40 years building a reputation for family-appropriate gaming, and the Switch 2 is the best expression of that philosophy yet. The library skews overwhelmingly toward colorful, non-violent adventures that are genuinely fun for adults too. The hybrid design means kids can play in handheld mode independently or plug into the TV for family sessions. And Nintendo's robust parental controls let parents set screen time limits, age-appropriate content filters, and restrict online play without complicated menus.</p>
+        <p>The Switch 2 is also durable — more so than previous models — with the magnetic Joy-Con connection less prone to accidental damage than the slide-rail system on Switch 1. For parents worried about a device surviving contact with an enthusiastic 6-year-old, it's the most resilient Nintendo handheld in years.</p>
+
+        <h2>Games by age group — quick reference</h2>
+
+        <div class="age-grid">
+          <div class="age-card">
+            <p class="age-range">3–5</p>
+            <p class="age-label">Toddler / preschool</p>
+            <p class="age-games">Kirby, Yoshi, simple platformers with assisted play</p>
+          </div>
+          <div class="age-card">
+            <p class="age-range">5–8</p>
+            <p class="age-label">Early childhood</p>
+            <p class="age-games">Mario Kart, Mario Wonder, Pikmin — learning to play independently</p>
+          </div>
+          <div class="age-card">
+            <p class="age-range">8–12</p>
+            <p class="age-label">Middle childhood</p>
+            <p class="age-games">Zelda, Pokémon, more complex adventures and strategy</p>
+          </div>
+          <div class="age-card">
+            <p class="age-range">All ages</p>
+            <p class="age-label">Family co-op</p>
+            <p class="age-games">Nintendo Switch Sports, Mario Party, Overcooked</p>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Ages 3–5</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- KIRBY -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🌸</div>
+            <div class="game-header-body">
+              <p class="game-name">Kirby and the Forgotten Land</p>
+              <p class="game-meta">Nintendo · Rated E · 3D platformer · 1–2 players</p>
+            </div>
+            <span class="game-badge badge-gold">Best for Young Kids</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 3+</span>
+              <span class="game-tag">Co-op available</span>
+              <span class="game-tag">Adjustable difficulty</span>
+              <span class="game-tag">Bright and colorful</span>
+              <span class="game-tag">No reading required</span>
+            </div>
+            <p class="game-why">
+              Kirby is the perfect gateway game for very young players. <strong>The difficulty is exceptionally forgiving</strong> — Kirby floats when he falls off edges, enemies move slowly, and the "Waddle Dee Assist" mode lets a helper character automatically guide struggling players through tricky sections. A child who has never held a controller before can make meaningful progress within minutes of starting.
+            </p>
+            <p class="game-why">
+              The 3D adventure is colorful, cheerful, and entirely violence-free in any meaningful sense — Kirby inhales enemies and copies their abilities, which young children find endlessly delightful. A second player can join as Bandana Waddle Dee at any point, making it a parent-child co-op experience that genuinely works even when skill levels are wildly mismatched.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> No online multiplayer, no in-app purchases, no dark or frightening themes. Content is entirely appropriate for toddlers. The assist mode means you won't need to take over the controller when your 4-year-old gets stuck — the game handles it gracefully.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Kirby and the Forgotten Land</p>
+                <p class="game-cta-note">Physical copy on Amazon · also available on eShop</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- YOSHI -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🦕</div>
+            <div class="game-header-body">
+              <p class="game-name">Yoshi's Crafted World</p>
+              <p class="game-meta">Nintendo · Rated E · Platformer · 1–2 players</p>
+            </div>
+            <span class="game-badge badge-silver">Ages 3+</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 3+</span>
+              <span class="game-tag">Co-op available</span>
+              <span class="game-tag">Mellow difficulty</span>
+              <span class="game-tag">Creative art style</span>
+              <span class="game-tag">Exploration focus</span>
+            </div>
+            <p class="game-why">
+              Yoshi's Crafted World takes place in a world made of cardboard, yarn, and everyday objects — an art style that young children respond to immediately and enthusiastically. The platforming is gentle and exploratory rather than challenging, with hidden collectibles that reward curious players who look around levels rather than rushing through.
+            </p>
+            <p class="game-why">
+              <strong>The co-op mode lets two players share the experience</strong> with one riding on Yoshi's back — perfect for a parent and very young child playing together where the parent handles the hard parts naturally by being in control. Mellow difficulty means no frustration and no scary moments.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> One of the least stressful games available for young kids. No timers, no fail states that feel punishing, and a visual style that feels like an animated arts and crafts project. Excellent for ages 3–6.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Yoshi's Crafted World</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 backward compatible</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Ages 5–8</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- MARIO KART WORLD -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🏎️</div>
+            <div class="game-header-body">
+              <p class="game-name">Mario Kart World</p>
+              <p class="game-meta">Nintendo · Rated E · Racing · 1–4 players local · online multiplayer</p>
+            </div>
+            <span class="game-badge badge-gold">Best Family Game</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 5+</span>
+              <span class="game-tag">4-player local</span>
+              <span class="game-tag">Multiple difficulty modes</span>
+              <span class="game-tag">Switch 2 exclusive</span>
+              <span class="game-tag">Online play</span>
+            </div>
+            <p class="game-why">
+              Mario Kart is the single best multiplayer game for mixed-age family sessions and Mario Kart World, the Switch 2 launch title, is the best version yet. <strong>Four players can race simultaneously on one TV</strong>, the item system means a last-place player can still get a lucky blue shell win, and the 150cc/200cc difficulty modes let adults and kids play at their own speed simultaneously.
+            </p>
+            <p class="game-why">
+              The open-world driving mode is new to this entry — between races, players can freely drive through a massive connected world, finding hidden items and shortcuts. For kids who just want to drive around without racing pressure, it's a low-stakes sandbox that younger children find genuinely absorbing for extended periods.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> Online multiplayer exists but can be disabled entirely through parental controls. Local play only is a completely viable experience with the game's enormous offline content. No in-game purchases. Rated E for Everyone.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Mario Kart World</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 exclusive</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MARIO WONDER -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🌺</div>
+            <div class="game-header-body">
+              <p class="game-name">Super Mario Bros. Wonder</p>
+              <p class="game-meta">Nintendo · Rated E · 2D Platformer · 1–4 players</p>
+            </div>
+            <span class="game-badge badge-silver">Ages 5+</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 5+</span>
+              <span class="game-tag">Up to 4-player co-op</span>
+              <span class="game-tag">Creative level design</span>
+              <span class="game-tag">Multiple characters</span>
+              <span class="game-tag">Adjustable difficulty</span>
+            </div>
+            <p class="game-why">
+              Super Mario Bros. Wonder is the most inventive 2D Mario game in a generation — each level contains a Wonder Flower that transforms the rules of that level entirely, creating constantly surprising moments that delight kids and adults alike. <strong>Up to four players can play simultaneously</strong>, with a Nabbit character who cannot be hurt by enemies — perfect for younger or less experienced players who want to participate without the frustration of dying repeatedly.
+            </p>
+            <p class="game-why">
+              The level variety is extraordinary — no two levels feel alike, and the Wonder sequences create genuinely memorable "did that really just happen" moments that kids will talk about for days. One of the best pure platformers Nintendo has ever made, fully backward compatible with Switch 2 and enhanced for higher resolution.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> The Nabbit/Yoshi characters who can't take damage are specifically designed for younger players. Four-player co-op means the whole family can play together. No online multiplayer, no purchases, nothing concerning for parents.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Super Mario Bros. Wonder</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 backward compatible</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PIKMIN 4 -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🌱</div>
+            <div class="game-header-body">
+              <p class="game-name">Pikmin 4</p>
+              <p class="game-meta">Nintendo · Rated E · Strategy/Adventure · 1 player</p>
+            </div>
+            <span class="game-badge badge-green">Educational Pick</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 6+</span>
+              <span class="game-tag">Problem-solving focus</span>
+              <span class="game-tag">Nature themes</span>
+              <span class="game-tag">Low-stress gameplay</span>
+              <span class="game-tag">Creative thinking</span>
+            </div>
+            <p class="game-why">
+              Pikmin 4 is a gentle strategy game where players command small plant-animal creatures to solve puzzles, explore environments, and rescue survivors. It's one of the few games that develops <strong>genuine problem-solving and resource management thinking</strong> in an age-appropriate package — kids learn to think ahead, manage groups, and prioritize tasks, all through a lens of colorful characters and nature exploration.
+            </p>
+            <p class="game-why">
+              The Dandori challenge levels introduce time-management concepts in a low-stakes format. The night missions are slightly more tense but never scary. The overall tone is warm and curious — Pikmin 4 feels like a nature documentary you can play. For kids who enjoy thoughtful play over action, it's exceptional.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> Pikmin do "die" in the game — small plant creatures can be lost to enemies. Most children handle this without distress, but very sensitive kids around age 5–6 may find it upsetting. Age 7+ is a safer entry point for sensitive players.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Pikmin 4</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 backward compatible</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Ages 8–12</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- ZELDA ECHOES -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🗡️</div>
+            <div class="game-header-body">
+              <p class="game-name">The Legend of Zelda: Echoes of Wisdom</p>
+              <p class="game-meta">Nintendo · Rated E10+ · Action Adventure · 1 player</p>
+            </div>
+            <span class="game-badge badge-gold">Best Ages 8–12</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 8+</span>
+              <span class="game-tag">Play as Zelda</span>
+              <span class="game-tag">Puzzle-adventure</span>
+              <span class="game-tag">Creative problem solving</span>
+              <span class="game-tag">E10+ rating</span>
+            </div>
+            <p class="game-why">
+              Echoes of Wisdom lets players control Princess Zelda for the first time in the series' history — a meaningful change that many kids respond to enthusiastically. The gameplay centers on copying and placing objects and creatures to solve puzzles creatively, meaning <strong>there's rarely one correct solution and kids are rewarded for imaginative thinking</strong>. The adventure spans a large world with dungeons, secrets, and a genuinely engaging story.
+            </p>
+            <p class="game-why">
+              The E10+ rating reflects mild fantasy combat and slightly more complex narrative themes than the E-rated games above — appropriate for confident readers and players who've outgrown simpler titles. For kids aged 8–10 who want something with real depth and challenge, this is the best Nintendo has to offer.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> E10+ for Fantasy Violence and Mild Suggestive Themes — the violence is strictly cartoon sword-fighting with no blood or disturbing content. The game features a female protagonist, which many parents note their daughters respond to positively. Requires basic reading ability.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">The Legend of Zelda: Echoes of Wisdom</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 enhanced</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- POKEMON -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">⚡</div>
+            <div class="game-header-body">
+              <p class="game-name">Pokémon Scarlet / Pokémon Violet</p>
+              <p class="game-meta">Nintendo/Game Freak · Rated E · RPG · 1 player + online</p>
+            </div>
+            <span class="game-badge badge-purple">Ages 8+</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Ages 7+</span>
+              <span class="game-tag">Open world</span>
+              <span class="game-tag">Collection focus</span>
+              <span class="game-tag">Optional online trading</span>
+              <span class="game-tag">Reading required</span>
+            </div>
+            <p class="game-why">
+              Pokémon needs no introduction — it's the best-selling media franchise in history and for good reason. Scarlet and Violet are the most open and accessible Pokémon games yet: <strong>an open world where children can explore freely, catch Pokémon, and progress at their own pace</strong> without being forced through a linear story. The appeal to kids aged 7–12 is essentially universal and enduring — Pokémon games hold attention for hundreds of hours.
+            </p>
+            <p class="game-why">
+              Both versions run on Switch 2 with improved performance over their original Switch release — faster load times and more stable frame rates. The games are otherwise identical in content; the version difference determines which version-exclusive Pokémon are available. For most kids, either version is equally enjoyable.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> Online trading and battling exists but is entirely optional. No microtransactions in the base game. The Pokémon HOME service (separate subscription) allows trading with other players globally — decide whether you want to enable this before giving the game to your child. Performance on original Switch was poor; Switch 2 runs it considerably better.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Pokémon Scarlet</p>
+                <p class="game-cta-note">Physical copy on Amazon</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Pokémon Violet</p>
+                <p class="game-cta-note">Physical copy on Amazon · same game, different exclusives</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Best family co-op picks</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- SWITCH SPORTS -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🎾</div>
+            <div class="game-header-body">
+              <p class="game-name">Nintendo Switch Sports</p>
+              <p class="game-meta">Nintendo · Rated E · Sports · 1–4 players local · online</p>
+            </div>
+            <span class="game-badge badge-orange">Best All-Ages Co-op</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">All ages</span>
+              <span class="game-tag">Motion controls</span>
+              <span class="game-tag">4-player local</span>
+              <span class="game-tag">Physical activity</span>
+              <span class="game-tag">No reading required</span>
+            </div>
+            <p class="game-why">
+              Nintendo Switch Sports is the spiritual successor to Wii Sports — the game that made millions of non-gamers pick up a controller. The motion-controlled sports (tennis, bowling, badminton, soccer, volleyball, and more) are immediately understandable to any age and physical ability. <strong>A 5-year-old and a grandparent can genuinely compete at bowling</strong> because the skill gap is smaller than any other genre.
+            </p>
+            <p class="game-why">
+              It also gets kids off the couch — Switch Sports requires physical movement, making it easier to justify as family entertainment rather than pure screen time. The Switch 2 Enhanced Edition adds improved motion controls that make the experience noticeably more accurate.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> Requires space to move — clear a living room area before playing. The leg strap accessory for soccer is included in the box. Online mode exists but is not necessary for family play. One of the few games that works as active family entertainment rather than passive screen time.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Nintendo Switch Sports</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 enhanced</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- MARIO PARTY -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🎲</div>
+            <div class="game-header-body">
+              <p class="game-name">Super Mario Party Jamboree</p>
+              <p class="game-meta">Nintendo · Rated E · Party · 1–4 players local</p>
+            </div>
+            <span class="game-badge badge-green">Best Party Game</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">All ages</span>
+              <span class="game-tag">4-player local</span>
+              <span class="game-tag">100+ mini-games</span>
+              <span class="game-tag">No reading required</span>
+              <span class="game-tag">Luck-based fairness</span>
+            </div>
+            <p class="game-why">
+              Mario Party Jamboree is the definitive family board-game-meets-video-game experience — <strong>100+ mini-games, multiple boards, and a luck element that keeps younger players competitive against older ones</strong>. A 6-year-old can beat an adult in Mario Party, which is exactly the right dynamic for multigenerational family play. Sessions last 30–60 minutes, making it easy to fit into family evenings.
+            </p>
+            <p class="game-why">
+              The Jamboree edition has the largest game count in the series' history. Online play exists for up to 20 players in certain modes, which kids find genuinely exciting for playing with cousins or grandparents remotely.
+            </p>
+            <div class="parent-note">
+              <strong>👨‍👩‍👧 Parent note:</strong> The luck-based structure can cause frustration for very competitive players of any age when the dice don't cooperate. Teach kids upfront that luck is part of the game and losing gracefully is the skill being practiced. One of the best games for family evenings.
+            </div>
+            <a href="#" class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Super Mario Party Jamboree</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 enhanced</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <h2>What parents should know before buying</h2>
+
+        <div class="parental-grid">
+          <div class="parental-card">
+            <span class="parental-icon">🔒</span>
+            <p class="parental-title">Parental controls are excellent</p>
+            <p class="parental-desc">The Nintendo Switch 2's parental controls app lets you set screen time limits, restrict content by age rating, disable online play, and monitor activity — all from your phone. Set these up before handing the console to your child.</p>
+          </div>
+          <div class="parental-card">
+            <span class="parental-icon">🛒</span>
+            <p class="parental-title">Disable eShop purchases</p>
+            <p class="parental-desc">Add a PIN to the eShop in parental controls before your child plays. Without this, accidental purchases of digital games are possible. Takes 30 seconds to set up and prevents unexpected charges.</p>
+          </div>
+          <div class="parental-card">
+            <span class="parental-icon">🌐</span>
+            <p class="parental-title">Online play is optional in all these games</p>
+            <p class="parental-desc">Every game on this list is fully enjoyable without online connectivity. Online features can be disabled entirely through parental controls or by simply not setting up Nintendo Switch Online.</p>
+          </div>
+          <div class="parental-card">
+            <span class="parental-icon">💰</span>
+            <p class="parental-title">Physical games hold resale value</p>
+            <p class="parental-desc">Nintendo physical games retain value unusually well. A $60 physical game your child stops playing can often be resold for $35–$45. Digital purchases cannot be resold. For kids who move through games quickly, physical is worth the premium.</p>
+          </div>
+          <div class="parental-card">
+            <span class="parental-icon">👨‍👩‍👧</span>
+            <p class="parental-title">Co-op is better with the right controller</p>
+            <p class="parental-desc">For family co-op, each player needs a controller. The Joy-Cons can be used sideways as individual controllers for 2-player sessions. For 3–4 players, additional Joy-Con sets or a pro controller are needed.</p>
+          </div>
+          <div class="parental-card">
+            <span class="parental-icon">📱</span>
+            <p class="parental-title">Nintendo Switch Online for online play</p>
+            <p class="parental-desc">Online multiplayer in any game requires a Nintendo Switch Online subscription ($20/year individual, $35/year family plan covering up to 8 accounts). The family plan is worth it if multiple family members will use the console.</p>
+          </div>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>What age is the Nintendo Switch 2 appropriate for?</strong><br/>
+        Nintendo recommends the Switch 2 for ages 6 and up for general use. With appropriate game selection (Kirby, Yoshi) and parental supervision, children as young as 3–4 can enjoy it meaningfully. The hardware is durable but not indestructible — a carrying case is recommended if young children will handle it frequently.</p>
+
+        <p><strong>Are there educational games on Switch 2?</strong><br/>
+        Yes — Pikmin 4 develops problem-solving and resource management. Big Brain Academy: Brain vs. Brain targets memory, math, and pattern recognition. Endless Ocean Luminous teaches marine biology through exploration. Nintendo Labo (Switch 1, backward compatible) teaches basic engineering and coding concepts.</p>
+
+        <p><strong>Can kids play Switch 2 games they already own on Switch 1?</strong><br/>
+        Yes — Switch 2 is fully backward compatible with Switch 1 games. Every game your child owns on Switch 1 works on Switch 2. Save data can be transferred so they continue exactly where they left off. See our <a href="transfer-data-switch-to-switch-2.html" style="color:var(--accent);">data transfer guide →</a></p>
+
+        <p><strong>What's the best starter game for a child who has never played a video game?</strong><br/>
+        Kirby and the Forgotten Land. The assist mode, forgiving difficulty, and immediately joyful gameplay make it the most accessible entry point for a complete beginner of any age. After Kirby, Super Mario Bros. Wonder is the natural next step.</p>
+
+        <p><strong>Is Minecraft on Switch 2?</strong><br/>
+        Yes — Minecraft is available on Switch 2 and runs with improved performance compared to Switch 1. It's one of the most popular games for kids aged 7–12 and is sold separately from the games listed above. Purchase through the eShop or as a physical cartridge.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">🎮 Quick links — all games on Amazon</div>
+          <p>Physical copies hold resale value. Buy digital if your child plays through games slowly or if you prefer no cartridges to lose.</p>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Kirby and the Forgotten Land — best for ages 3+</p>
+              <p class="game-cta-note">Co-op · assist mode · no scary content</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Mario Kart World — best family game</p>
+              <p class="game-cta-note">4-player · Switch 2 exclusive · all ages</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Super Mario Bros. Wonder — ages 5+</p>
+              <p class="game-cta-note">4-player co-op · beginner-friendly characters</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Zelda: Echoes of Wisdom — ages 8+</p>
+              <p class="game-cta-note">Play as Zelda · creative puzzle-adventure</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Nintendo Switch Sports — all ages co-op</p>
+              <p class="game-cta-note">Motion controls · physical activity · family evenings</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta" style="margin-bottom:14px;">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Super Mario Party Jamboree — party nights</p>
+              <p class="game-cta-note">4-player · 100+ mini-games · all ages fair</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
