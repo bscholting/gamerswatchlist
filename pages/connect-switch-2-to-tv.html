@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>How to Connect Nintendo Switch 2 to TV — Official Dock, 4K Setup & Troubleshooting — Gamers Watchlist</title>
+  <meta name="description" content="Step-by-step guide to connecting Nintendo Switch 2 to your TV — official dock setup, third-party dock recommendations, enabling 4K output, and fixing common connection problems." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .step-block {
+      display: flex;
+      gap: 16px;
+      padding: 18px 0;
+      border-bottom: 1px solid var(--border);
+      align-items: flex-start;
+    }
+    .step-block:last-child { border-bottom: none; }
+    .step-num {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: var(--black);
+      font-family: var(--font-display);
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+      letter-spacing: 0.04em;
+    }
+    .step-content { flex: 1; }
+    .step-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 5px;
+    }
+    .step-desc {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.65;
+    }
+    .step-note {
+      display: inline-block;
+      font-size: 12px;
+      color: var(--text-dim);
+      font-family: var(--font-mono);
+      background: var(--surface2);
+      border-radius: 6px;
+      padding: 5px 10px;
+      margin-top: 7px;
+    }
+    .steps-wrap {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 4px 20px;
+      margin: 1.5rem 0;
+    }
+    .product-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .product-card:hover { border-color: var(--accent); }
+    .product-card.top-pick { border-color: rgba(232,255,71,0.35); }
+    .product-badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.04em;
+      margin-bottom: 4px;
+    }
+    .badge-pick { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-budget { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-portable { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .product-icon { font-size: 1.8rem; flex-shrink: 0; margin-top: 2px; }
+    .product-body { flex: 1; }
+    .product-name { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 2px; }
+    .product-specs { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0 0 5px; }
+    .product-why { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+    .product-cta { font-size: 12px; color: var(--accent); white-space: nowrap; flex-shrink: 0; margin-top: 3px; }
+    .fix-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 10px;
+    }
+    .fix-problem {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--red);
+      margin: 0 0 6px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .fix-solution {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.6;
+    }
+    .fix-solution strong { color: var(--text); }
+    .output-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .output-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: center;
+    }
+    .output-card.best { border-color: rgba(232,255,71,0.4); }
+    .output-res {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: 0.04em;
+      margin: 0 0 4px;
+    }
+    .output-card.best .output-res { color: var(--accent); }
+    .output-fps { font-size: 11px; font-family: var(--font-mono); color: var(--text-muted); margin: 0 0 6px; }
+    .output-req { font-size: 11px; color: var(--text-dim); line-height: 1.4; margin: 0; }
+    @media (max-width: 560px) {
+      .step-num { width: 28px; height: 28px; font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">How-To</span>
+          <span class="article-date">May 2026 · 7 min read</span>
+        </div>
+        <h1 class="article-title">How to Connect Nintendo Switch 2 to Your TV</h1>
+        <p class="article-deck">Connecting Switch 2 to a TV takes about two minutes with the right setup. Here's the complete guide — official dock, third-party options, enabling 4K output, and fixing every common problem.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Quick answer</div>
+        <p>Place the Switch 2 into its dock → connect the dock to your TV via HDMI → plug in power → switch your TV to the correct HDMI input. The Switch 2 switches to TV mode automatically. For 4K output, your TV needs HDMI 2.0 or higher and you need to enable it in System Settings.</p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>What you'll need</h2>
+        <p>Before you start, make sure you have:</p>
+        <ul>
+          <li>Your <strong>Nintendo Switch 2 dock</strong> (included in the box) or a compatible third-party dock</li>
+          <li>An <strong>HDMI cable</strong> — included with the Switch 2. For 4K output, you'll need HDMI 2.0 or higher</li>
+          <li>A <strong>TV with an HDMI input</strong> — virtually all TVs sold in the last decade qualify</li>
+          <li>The <strong>Switch 2 AC adapter</strong> to power the dock</li>
+        </ul>
+
+        <div class="callout callout-info">
+          <strong>🔌 HDMI cable note:</strong> The included HDMI cable supports up to 4K@60fps. If you're using an older HDMI cable you already own, check that it's rated for HDMI 2.0 — older HDMI 1.4 cables cap at 1080p and will prevent 4K output even on a capable TV.
+        </div>
+
+        <h2>Method 1: Using the official Nintendo dock (recommended)</h2>
+        <p>The Nintendo Switch 2 dock that ships in the box is the simplest and most reliable option. Setup takes under two minutes.</p>
+
+        <div class="steps-wrap">
+          <div class="step-block">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <p class="step-title">Position the dock near your TV</p>
+              <p class="step-desc">Place the dock on a flat surface near your TV with the front panel facing you. Make sure there's ventilation around it — the dock has vents on the sides and bottom that need airflow. Don't put it inside a closed cabinet.</p>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <p class="step-title">Connect the HDMI cable</p>
+              <p class="step-desc">Open the back panel of the dock by pressing the tab on the top and pulling it open. Plug one end of the HDMI cable into the <strong>HDMI OUT</strong> port inside the dock's back panel. Plug the other end into an available HDMI port on your TV. Note which HDMI port number you're using on the TV.</p>
+              <span class="step-note">HDMI OUT is labeled on the inside of the dock back panel</span>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <p class="step-title">Connect the AC adapter</p>
+              <p class="step-desc">Plug the Switch 2 AC adapter into the <strong>AC ADAPTER</strong> port inside the dock's back panel (the top port). Run the cable out through the slot in the back panel and plug it into a wall outlet or surge protector.</p>
+              <span class="step-note">Always use a surge protector — electronics on a direct wall outlet are vulnerable to power spikes</span>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <p class="step-title">Slide the Switch 2 into the dock</p>
+              <p class="step-desc">With the screen facing the front of the dock, slide the Switch 2 straight down into the dock until it clicks into the USB-C connector at the bottom. The screen will turn off and the TV signal will activate — this takes 3–5 seconds.</p>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <p class="step-title">Switch your TV to the correct HDMI input</p>
+              <p class="step-desc">Using your TV remote, press the <strong>Input</strong> or <strong>Source</strong> button and select the HDMI port you plugged into (e.g., HDMI 2). The Nintendo Switch 2 home screen will appear on your TV.</p>
+              <span class="step-note">TV remote button is usually labeled Input, Source, or has an arrow icon</span>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">6</div>
+            <div class="step-content">
+              <p class="step-title">Detach the Joy-Cons and start playing</p>
+              <p class="step-desc">Slide the Joy-Cons off the Switch 2 rails by pressing the release button on the back of each one and sliding up. Use them as individual controllers or attach them to the Joy-Con grip (included in the box) for a traditional controller feel.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>Enabling 4K output — the step most people miss</h2>
+        <p>The Switch 2 docked outputs 4K@60fps on supported games, but it doesn't enable 4K by default. You need to turn it on manually in System Settings.</p>
+
+        <div class="steps-wrap">
+          <div class="step-block">
+            <div class="step-num">1</div>
+            <div class="step-content">
+              <p class="step-title">Confirm your TV supports 4K and HDMI 2.0</p>
+              <p class="step-desc">4K output requires a TV with 4K resolution and HDMI 2.0 ports (also called HDMI 2.0a or 2.0b). Check your TV's spec sheet or look for "4K UHD" in the TV's name. Most 4K TVs sold after 2016 support HDMI 2.0.</p>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">2</div>
+            <div class="step-content">
+              <p class="step-title">With the Switch 2 docked, open System Settings</p>
+              <p class="step-desc">From the HOME menu on your TV, navigate to <strong>System Settings</strong> (the gear icon).</p>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">3</div>
+            <div class="step-content">
+              <p class="step-title">Go to TV Output settings</p>
+              <p class="step-desc">Scroll down to <strong>TV Output</strong> in the left sidebar. Select <strong>TV Resolution</strong>.</p>
+              <span class="step-note">System Settings → TV Output → TV Resolution</span>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">4</div>
+            <div class="step-content">
+              <p class="step-title">Select 2160p (4K)</p>
+              <p class="step-desc">Choose <strong>2160p</strong> from the resolution options. If 2160p is greyed out, your TV or HDMI cable doesn't support 4K — try a different HDMI port on your TV (some TVs only have 4K-capable ports on specific HDMI inputs) or replace the cable.</p>
+            </div>
+          </div>
+          <div class="step-block">
+            <div class="step-num">5</div>
+            <div class="step-content">
+              <p class="step-title">Enable HDR if your TV supports it</p>
+              <p class="step-desc">While in TV Output settings, also check <strong>RGB Range</strong> and <strong>HDR Settings</strong>. If your TV supports HDR10, enable it here for better contrast and color in supported games.</p>
+              <span class="step-note">Not all Switch 2 games support HDR — check each game's display settings</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Available output resolutions</h2>
+
+        <div class="output-grid">
+          <div class="output-card best">
+            <p class="output-res">4K</p>
+            <p class="output-fps">Up to 60fps</p>
+            <p class="output-req">Requires 4K TV + HDMI 2.0 cable + official or compatible dock</p>
+          </div>
+          <div class="output-card">
+            <p class="output-res" style="color:var(--text);">1080p</p>
+            <p class="output-fps">Up to 60fps</p>
+            <p class="output-req">Works on any HDMI TV — the default output mode</p>
+          </div>
+          <div class="output-card">
+            <p class="output-res" style="color:var(--text-muted);">720p</p>
+            <p class="output-fps">Up to 60fps</p>
+            <p class="output-req">Older TVs — automatic fallback if higher resolutions aren't supported</p>
+          </div>
+        </div>
+
+        <div class="callout callout-tip">
+          <strong>💡 Not all Switch 2 games output 4K.</strong> Nintendo decides the maximum resolution and frame rate per game. Some games run at native 4K, others use upscaling. The resolution setting in System Settings is the ceiling — games may run below it. Check each game's display options for per-title control.
+        </div>
+
+        <h2>Method 2: Third-party docks</h2>
+        <p>The official Nintendo dock works perfectly, but it's bulky, expensive on its own, and not very portable. Third-party docks offer more flexibility — especially for travel — at a lower price. Here's what to look for and our recommended picks.</p>
+
+        <div class="callout callout-info">
+          <strong>⚠ Compatibility warning:</strong> Not all third-party docks support Switch 2's 4K output. Many older docks designed for Switch 1 max out at 1080p. Check that any dock you buy explicitly states Switch 2 and 4K compatibility before purchasing.
+        </div>
+
+        <div style="margin: 1.5rem 0;">
+
+          <a href="#" class="product-card top-pick">
+            <span class="product-icon">🏆</span>
+            <div class="product-body">
+              <span class="product-badge badge-pick">Best overall</span>
+              <p class="product-name">Insignia NS-HDSS2 Switch 2 Dock</p>
+              <p class="product-specs">4K@60fps · USB-C PD · 2× USB-A · HDMI 2.0 · Switch 2 certified</p>
+              <p class="product-why">Best third-party dock that explicitly supports Switch 2's 4K output. Same footprint as the official dock, half the price. Solid build quality with no reported overheating issues. USB-A ports let you connect a wired controller or USB drive simultaneously.</p>
+            </div>
+            <span class="product-cta">View on Amazon →</span>
+          </a>
+
+          <a href="#" class="product-card">
+            <span class="product-icon">✈️</span>
+            <div class="product-body">
+              <span class="product-badge badge-portable">Best for travel</span>
+              <p class="product-name">Genki Covert Dock Mini (Switch 2 Edition)</p>
+              <p class="product-specs">1080p output · USB-C · compact · no fan · Switch 2 compatible</p>
+              <p class="product-why">The size of a USB wall charger. Plugs directly into a hotel TV's HDMI port and charges via USB-C — no brick, no cables. Caps at 1080p (not 4K), but for travel that's a perfectly fine tradeoff. The most packable Switch dock available.</p>
+            </div>
+            <span class="product-cta">View on Amazon →</span>
+          </a>
+
+          <a href="#" class="product-card">
+            <span class="product-icon">💰</span>
+            <div class="product-body">
+              <span class="product-badge badge-budget">Best budget</span>
+              <p class="product-name">JSAUX HB0603 Docking Station (Switch 2 Compatible)</p>
+              <p class="product-specs">4K@60fps · USB-C PD · 3× USB-A · HDMI 2.0 · Ethernet port</p>
+              <p class="product-why">Best price-per-feature ratio of any Switch 2 compatible dock. Includes an ethernet port — useful for competitive online play where wired connection beats Wi-Fi. More ports than the official dock at a significantly lower price.</p>
+            </div>
+            <span class="product-cta">View on Amazon →</span>
+          </a>
+
+        </div>
+
+        <p style="font-size:12px;color:var(--text-dim);font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+
+        <h2>Troubleshooting — fixing common TV connection problems</h2>
+        <p>If your Switch 2 isn't showing up on the TV, work through these fixes in order. Most problems resolve at step 2 or 3.</p>
+
+        <div class="fix-card">
+          <p class="fix-problem">✗ No signal on TV — black screen</p>
+          <p class="fix-solution"><strong>Fix 1:</strong> Confirm your TV is on the correct HDMI input. Press Input or Source on the TV remote and cycle through inputs until you find the Switch 2. <strong>Fix 2:</strong> Remove the Switch 2 from the dock, wait 10 seconds, reinsert it. <strong>Fix 3:</strong> Unplug the dock's AC adapter, wait 30 seconds, plug back in. The dock has a small internal processor that occasionally needs a reset.</p>
+        </div>
+
+        <div class="fix-card">
+          <p class="fix-problem">✗ TV shows 1080p but you want 4K</p>
+          <p class="fix-solution"><strong>Fix 1:</strong> Confirm 4K is enabled in System Settings → TV Output → TV Resolution → 2160p. <strong>Fix 2:</strong> Try a different HDMI port on your TV — on many TVs, only HDMI 1 or HDMI 2 support 4K; ports labeled ARC or eARC may not. <strong>Fix 3:</strong> Replace the HDMI cable with one rated for HDMI 2.0 — older cables physically cannot carry 4K signal.</p>
+        </div>
+
+        <div class="fix-card">
+          <p class="fix-problem">✗ Switch 2 not charging in the dock</p>
+          <p class="fix-solution"><strong>Fix 1:</strong> Check that the AC adapter is firmly plugged into both the dock and the wall. <strong>Fix 2:</strong> Clean the USB-C port on the Switch 2 with a dry toothpick — lint and debris block the connection. <strong>Fix 3:</strong> Try a different wall outlet. <strong>Fix 4:</strong> If using a third-party dock, confirm it outputs at least 45W via USB-C — lower wattage docks may not charge fast enough to keep up with active gameplay.</p>
+        </div>
+
+        <div class="fix-card">
+          <p class="fix-problem">✗ Flickering or unstable picture</p>
+          <p class="fix-solution"><strong>Fix 1:</strong> Reseat the HDMI cable at both ends — push firmly until it clicks. <strong>Fix 2:</strong> Try a different HDMI cable. <strong>Fix 3:</strong> Try a different HDMI port on your TV. <strong>Fix 4:</strong> In System Settings → TV Output, try lowering the resolution to 1080p to rule out a 4K handshake issue with your TV.</p>
+        </div>
+
+        <div class="fix-card">
+          <p class="fix-problem">✗ Audio plays on TV but no picture (or vice versa)</p>
+          <p class="fix-solution"><strong>Fix 1:</strong> Go to System Settings → TV Output → TV Sound and confirm it's set to <strong>Stereo</strong> or <strong>Surround</strong> (not headphones). <strong>Fix 2:</strong> If using a soundbar, check that the HDMI ARC connection is on a port that supports it — the Switch 2 dock doesn't use ARC, so route through your TV's speakers first to isolate the issue.</p>
+        </div>
+
+        <div class="fix-card">
+          <p class="fix-problem">✗ Switch 1 dock not working with Switch 2</p>
+          <p class="fix-solution">Switch 1 docks are <strong>compatible with Switch 2 at 1080p only</strong> — they don't support 4K output. This is expected behavior, not a fault. If you want 4K from the dock you already own, you'll need to upgrade to the Switch 2 dock or a compatible third-party option.</p>
+        </div>
+
+        <h2>Tips for the best docked experience</h2>
+        <ul>
+          <li><strong>Use a wired controller for competitive play.</strong> The Pro Controller connects wirelessly but you can also use a wired USB-C controller via the dock's USB-A ports for zero-latency input. Matters most in fighting games and online shooters.</li>
+          <li><strong>Enable Game Mode on your TV.</strong> Most modern TVs have a Game Mode or Low Latency Mode in their picture settings. Enable it — it reduces input lag from 60–100ms to under 15ms, which makes gameplay feel significantly more responsive.</li>
+          <li><strong>Use a surge protector.</strong> The dock's AC adapter is sensitive to power fluctuations. A surge protector costs $15–$25 and prevents damage from power spikes. Worth it.</li>
+          <li><strong>Keep the dock ventilated.</strong> Don't put it in a closed cabinet or cover the side vents. The Switch 2 runs warmer when docked — it's pulling full GPU power for 4K output. Restricted airflow causes throttling and potential long-term damage.</li>
+        </ul>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Can I use Switch 2 without the dock on a TV?</strong><br/>
+        Not directly — the Switch 2 needs the dock to output a video signal to a TV. There's no direct HDMI port on the console itself. The dock converts the USB-C signal to HDMI. Some third-party USB-C to HDMI adapters work, but they may not support 4K output and aren't officially supported by Nintendo.</p>
+
+        <p><strong>Does the Switch 1 dock work with Switch 2?</strong><br/>
+        Yes, at 1080p. The Switch 2 fits into the Switch 1 dock and outputs up to 1080p through it. 4K output requires the Switch 2 dock or a compatible third-party dock.</p>
+
+        <p><strong>What HDMI version does Switch 2 need for 4K?</strong><br/>
+        HDMI 2.0 or higher. The Switch 2's included HDMI cable is HDMI 2.0. If you're using an older cable, check for an "HDMI 2.0" label or replace it to be safe.</p>
+
+        <p><strong>Can I connect Switch 2 to a monitor instead of a TV?</strong><br/>
+        Yes — any monitor with an HDMI input works. If your monitor has DisplayPort but no HDMI, use an active HDMI-to-DisplayPort adapter. Passive adapters often don't work reliably with Switch.</p>
+
+        <p><strong>Why does my Switch 2 get hot in the dock?</strong><br/>
+        Normal — the Switch 2 runs at full GPU power when docked for 4K output, which generates more heat than handheld mode. As long as the dock has proper ventilation, this is expected and safe. If the console shuts down due to heat, check that vents aren't blocked.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">📺 Upgrade your docked setup</div>
+          <p>The right dock makes a real difference. Our top picks for every budget:</p>
+          <a href="#" class="product-card" style="margin-bottom:8px;">
+            <span class="product-icon">🏆</span>
+            <div class="product-body">
+              <p class="product-name">Insignia NS-HDSS2 — best third-party dock (4K)</p>
+              <p class="product-specs">4K@60fps · Switch 2 certified · best value for home use</p>
+            </div>
+            <span class="product-cta">Amazon →</span>
+          </a>
+          <a href="#" class="product-card" style="margin-bottom:8px;">
+            <span class="product-icon">✈️</span>
+            <div class="product-body">
+              <p class="product-name">Genki Covert Dock Mini — best travel dock</p>
+              <p class="product-specs">Pocket-sized · plug directly into hotel TV · 1080p</p>
+            </div>
+            <span class="product-cta">Amazon →</span>
+          </a>
+          <a href="#" class="product-card" style="margin-bottom:14px;">
+            <span class="product-icon">💰</span>
+            <div class="product-body">
+              <p class="product-name">JSAUX HB0603 — best budget dock (4K + Ethernet)</p>
+              <p class="product-specs">4K@60fps · Ethernet port · 3× USB-A · lowest price for 4K</p>
+            </div>
+            <span class="product-cta">Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
