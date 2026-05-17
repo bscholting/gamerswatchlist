@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Gamers Watchlist</title>
+  <meta name="description" content="Gamers Watchlist is a Nintendo Switch 2 review and deals site run by a genuine Switch owner. Honest recommendations, real hands-on experience, no corporate agenda." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .about-hero {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 36px 40px;
+      margin-bottom: 2rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 28px;
+    }
+    .about-avatar {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--surface2), var(--dark));
+      border: 2px solid var(--border2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2.5rem;
+      flex-shrink: 0;
+    }
+    .about-hero-body { flex: 1; }
+    .about-name {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      letter-spacing: 0.04em;
+      color: var(--text);
+      margin: 0 0 4px;
+    }
+    .about-title {
+      font-family: var(--font-mono);
+      font-size: 12px;
+      color: var(--accent);
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin: 0 0 12px;
+    }
+    .about-intro {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .principle-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .principle-card:last-child { border-bottom: none; }
+    .principle-icon {
+      font-size: 1.5rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+      width: 36px;
+      text-align: center;
+    }
+    .principle-body { flex: 1; }
+    .principle-title {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 4px;
+    }
+    .principle-desc {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0;
+      line-height: 1.65;
+    }
+    .covers-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .covers-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: center;
+    }
+    .covers-icon { font-size: 1.6rem; margin-bottom: 6px; display: block; }
+    .covers-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .covers-desc { font-size: 11px; color: var(--text-muted); margin: 0; line-height: 1.4; }
+    .contact-card {
+      background: linear-gradient(135deg, #1a1a10, #111109);
+      border: 1px solid rgba(232,255,71,0.2);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .contact-title {
+      font-family: var(--font-display);
+      font-size: 1.6rem;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+    .contact-body {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0 0 14px;
+      line-height: 1.6;
+    }
+    .contact-email {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(232,255,71,0.3);
+      padding: 8px 18px;
+      border-radius: var(--radius);
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .contact-email:hover { background: rgba(232,255,71,0.08); }
+    @media (max-width: 560px) {
+      .about-hero { flex-direction: column; padding: 24px; }
+      .about-avatar { width: 60px; height: 60px; font-size: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">About</span>
+        </div>
+        <h1 class="article-title">About Gamers Watchlist</h1>
+        <p class="article-deck">A Nintendo Switch review and deals site written by someone who actually plays the games, owns the hardware, and has strong opinions about which microSD cards are worth buying.</p>
+      </div>
+
+      <div class="article-body">
+
+        <div class="about-hero">
+          <div class="about-avatar">🎮</div>
+          <div class="about-hero-body">
+            <p class="about-name">Hi — I run this site.</p>
+            <p class="about-title">Nintendo Switch owner since launch day</p>
+            <p class="about-intro">I've owned every version of the Nintendo Switch — the original, the Lite, the OLED, and now the Switch 2. I started Gamers Watchlist because the Nintendo coverage I could find was either written by large publications covering every gaming platform superficially, or anonymous content farms that clearly hadn't touched the hardware they were reviewing. I wanted something more honest.</p>
+          </div>
+        </div>
+
+        <h2>What this site is</h2>
+        <p>Gamers Watchlist covers Nintendo Switch 2 — the hardware, the games, the accessories, and the deals. That's it. No PlayStation coverage, no Xbox roundups, no "best gaming chairs" articles shoehorned in for traffic. One platform, covered thoroughly, by someone who actually uses it.</p>
+        <p>The site exists to answer three types of questions:</p>
+        <ul>
+          <li><strong>Is this worth buying?</strong> — Honest reviews and comparisons, including the things that aren't great.</li>
+          <li><strong>What should I get?</strong> — Recommendation articles that give a clear answer rather than hedging endlessly.</li>
+          <li><strong>What's on sale right now?</strong> — Weekly deals tracking and a newsletter that goes out every Thursday before the weekend eShop sale refreshes.</li>
+        </ul>
+
+        <h2>What this site covers</h2>
+
+        <div class="covers-grid">
+          <div class="covers-card">
+            <span class="covers-icon">🖥️</span>
+            <p class="covers-title">Hardware reviews</p>
+            <p class="covers-desc">Switch 2, OLED, accessories — hands-on, from real ownership</p>
+          </div>
+          <div class="covers-card">
+            <span class="covers-icon">🎮</span>
+            <p class="covers-title">Game recommendations</p>
+            <p class="covers-desc">By audience, genre, and occasion — written from actual play time</p>
+          </div>
+          <div class="covers-card">
+            <span class="covers-icon">🔖</span>
+            <p class="covers-title">Accessory roundups</p>
+            <p class="covers-desc">Cases, controllers, microSD cards, docks — spec-verified picks</p>
+          </div>
+          <div class="covers-card">
+            <span class="covers-icon">🔥</span>
+            <p class="covers-title">Weekly deals</p>
+            <p class="covers-desc">eShop sales, Amazon price drops, Black Friday tracking</p>
+          </div>
+          <div class="covers-card">
+            <span class="covers-icon">📖</span>
+            <p class="covers-title">How-to guides</p>
+            <p class="covers-desc">Setup, transfers, troubleshooting — step by step</p>
+          </div>
+          <div class="covers-card">
+            <span class="covers-icon">🎁</span>
+            <p class="covers-title">Gift guides</p>
+            <p class="covers-desc">By age, budget, and recipient — for parents and partners</p>
+          </div>
+        </div>
+
+        <h2>Why trust the recommendations here</h2>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:4px 20px;margin:1.5rem 0;">
+          <div class="principle-card">
+            <div class="principle-icon">✋</div>
+            <div class="principle-body">
+              <p class="principle-title">I own the hardware I write about</p>
+              <p class="principle-desc">Every Switch 2 review, accessory test, and game recommendation on this site comes from real ownership and play time. I bought the Switch 2 at launch, have tested the accessories I recommend on my own console, and play the games I write about. When something doesn't work well, I say so — because I've actually experienced it.</p>
+            </div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">🎯</div>
+            <div class="principle-body">
+              <p class="principle-title">Clear verdicts, not endless hedging</p>
+              <p class="principle-desc">Big gaming publications hedge everything to avoid upsetting advertisers or manufacturers. This site doesn't have advertisers — revenue comes from affiliate commissions when you buy something I've recommended. That means I have no reason to recommend something I don't believe in, and a strong reason to be accurate because my credibility is the only thing that makes this site worth visiting.</p>
+            </div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">🔬</div>
+            <div class="principle-body">
+              <p class="principle-title">Specs are verified before they're published</p>
+              <p class="principle-desc">Accessory and hardware articles cross-reference manufacturer specs, Amazon product pages, and real-world testing. I've been caught out by wrong specs in drafts and corrected them before publishing — and when something slips through, I fix it. Accuracy matters more than being first.</p>
+            </div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">💬</div>
+            <div class="principle-body">
+              <p class="principle-title">Honest about limitations and downsides</p>
+              <p class="principle-desc">Every product recommendation on this site includes what it doesn't do well. The Lexar microSD card is the budget pick but its write speed is slower — I say that. The Switch 2 battery life in demanding games is genuinely disappointing — I say that too. If a recommendation is right for most people but wrong for some, I explain who should look elsewhere.</p>
+            </div>
+          </div>
+          <div class="principle-card">
+            <div class="principle-icon">📅</div>
+            <div class="principle-body">
+              <p class="principle-title">Content is updated when things change</p>
+              <p class="principle-desc">Nintendo's product lineup changes, prices change, and new accessories enter the market. Articles on this site are reviewed and updated when the information they contain is no longer accurate. The "last updated" date on every article is real — not decorative.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2>How this site makes money</h2>
+        <p>Gamers Watchlist earns revenue through affiliate commissions — when you click a link to Amazon, Best Buy, or another retailer and make a purchase, I receive a small percentage of the sale. This comes at no extra cost to you.</p>
+        <p>A few things worth knowing about how that affects (and doesn't affect) recommendations here:</p>
+        <ul>
+          <li>I recommend products I genuinely believe in, not products with the highest commission rates. The affiliate commission on a $10 screen protector and a $100 controller are both small — there's no financial incentive to push expensive products over good ones.</li>
+          <li>I include "avoid" sections in accessory roundups specifically because misleading readers into bad purchases would destroy the credibility that makes this site worth visiting. The long-term value of a trusted recommendation is worth more than a single commission.</li>
+          <li>Some articles include links to products I don't earn commission on — like the Nintendo eShop and Waterfield Designs — because they're genuinely the right answer for certain buyers.</li>
+        </ul>
+        <p>For the full legal disclosure, see the <a href="affiliate-disclosure.html" style="color:var(--accent);">Affiliate Disclosure page</a>.</p>
+
+        <h2>The newsletter</h2>
+        <p>Every Thursday morning, Gamers Watchlist sends a short email covering the best current eShop sales, any significant Amazon price drops on accessories, and upcoming deals worth watching. It's the fastest way to know when something on your wishlist goes on sale before the weekend.</p>
+        <p>No spam, no daily emails, no third-party promotions. Just the deals I'd actually tell a friend about. You can unsubscribe anytime with one click.</p>
+
+        <div class="contact-card">
+          <p class="contact-title">Get in touch</p>
+          <p class="contact-body">Found a spec error? Have a game recommendation I should consider? Just want to say hello? I read every email and respond when I can.</p>
+          <a href="mailto:hello@gamerswatchlist.com" class="contact-email">hello@gamerswatchlist.com</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
