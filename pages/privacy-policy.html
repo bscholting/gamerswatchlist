@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy — Gamers Watchlist</title>
+  <meta name="description" content="Privacy policy for Gamers Watchlist — what data we collect, how we use it, cookies, Google Analytics, and your rights as a reader." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .policy-box {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px 24px;
+      margin-bottom: 1.5rem;
+    }
+    .policy-box.accent {
+      background: linear-gradient(135deg, #1a1a10, #111109);
+      border-color: rgba(232,255,71,0.2);
+    }
+    .policy-box-title {
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .policy-box.accent .policy-box-title { color: var(--accent); }
+    .policy-box-body {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.7;
+      margin: 0;
+    }
+    .policy-box-body strong { color: var(--text); }
+    .data-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 12px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .data-row:last-child { border-bottom: none; }
+    .data-icon {
+      font-size: 1.2rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+      width: 28px;
+      text-align: center;
+    }
+    .data-body { flex: 1; }
+    .data-what { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .data-why { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+    .rights-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .right-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .right-icon { font-size: 1.3rem; margin-bottom: 6px; display: block; }
+    .right-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 4px; }
+    .right-desc { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      margin-bottom: 2rem;
+    }
+    .toc-title {
+      font-family: var(--font-mono);
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--text-dim);
+      margin: 0 0 10px;
+    }
+    .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .toc-list li a {
+      font-size: 13px;
+      color: var(--text-muted);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.15s;
+    }
+    .toc-list li a:hover { color: var(--accent); }
+    .toc-list li a::before {
+      content: '→';
+      font-size: 11px;
+      color: var(--text-dim);
+    }
+    .contact-card {
+      background: linear-gradient(135deg, #1a1a10, #111109);
+      border: 1px solid rgba(232,255,71,0.2);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-top: 2rem;
+      text-align: center;
+    }
+    .contact-title {
+      font-family: var(--font-display);
+      font-size: 1.5rem;
+      letter-spacing: 0.04em;
+      color: var(--accent);
+      margin: 0 0 8px;
+    }
+    .contact-body {
+      font-size: 13px;
+      color: var(--text-muted);
+      margin: 0 0 14px;
+      line-height: 1.6;
+    }
+    .contact-email {
+      font-family: var(--font-mono);
+      font-size: 13px;
+      color: var(--accent);
+      text-decoration: none;
+      border: 1px solid rgba(232,255,71,0.3);
+      padding: 8px 18px;
+      border-radius: var(--radius);
+      display: inline-block;
+      transition: background 0.2s;
+    }
+    .contact-email:hover { background: rgba(232,255,71,0.08); }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Legal</span>
+          <span class="article-date">Last updated: May 2026</span>
+        </div>
+        <h1 class="article-title">Privacy Policy</h1>
+        <p class="article-deck">We've written this in plain English because legal boilerplate that nobody reads doesn't actually respect your privacy — it just checks a box. Here's exactly what we collect, why, and what you can do about it.</p>
+      </div>
+
+      <div class="article-body">
+
+        <div class="policy-box accent">
+          <p class="policy-box-title">⚡ The short version</p>
+          <p class="policy-box-body">Gamers Watchlist collects minimal data. <strong>We don't sell your information to anyone.</strong> We use Google Analytics to understand how the site is used (page views, traffic sources — nothing personal). If you subscribe to our newsletter, we store your email address to send the newsletter and nothing else. Affiliate links send basic purchase data to retailers like Amazon when you buy through them — this is how we earn commissions.</p>
+        </div>
+
+        <nav class="toc" aria-label="Page contents">
+          <p class="toc-title">On this page</p>
+          <ul class="toc-list">
+            <li><a href="#who-we-are">Who we are</a></li>
+            <li><a href="#what-we-collect">What data we collect</a></li>
+            <li><a href="#analytics">Google Analytics</a></li>
+            <li><a href="#cookies">Cookies</a></li>
+            <li><a href="#newsletter">Newsletter and email</a></li>
+            <li><a href="#affiliate">Affiliate links and third-party retailers</a></li>
+            <li><a href="#third-parties">Third parties</a></li>
+            <li><a href="#your-rights">Your rights</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <h2 id="who-we-are">Who we are</h2>
+        <p>Gamers Watchlist (gamerswatchlist.com) is a Nintendo Switch review and deals site. It is operated as an independent website. When this policy says "we," "us," or "our," it means Gamers Watchlist and its owner.</p>
+        <p>For privacy questions or requests, contact us at <a href="mailto:hello@gamerswatchlist.com" style="color:var(--accent);">hello@gamerswatchlist.com</a>.</p>
+
+        <h2 id="what-we-collect">What data we collect — and what we don't</h2>
+        <p>We collect the minimum information needed to run the site and send the newsletter. Here's the full picture:</p>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:4px 20px;margin:1.5rem 0;">
+          <div class="data-row">
+            <div class="data-icon">📊</div>
+            <div class="data-body">
+              <p class="data-what">Analytics data (via Google Analytics)</p>
+              <p class="data-why">Page views, general location (country/city level), device type, browser, traffic source, and time on page. This is aggregated and anonymous — we see "500 people visited from the US on mobile" not "John Smith visited from Chicago." Used to understand which content is helpful and how the site is used.</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data-icon">📧</div>
+            <div class="data-body">
+              <p class="data-what">Email address (newsletter subscribers only)</p>
+              <p class="data-why">If you subscribe to the weekly deals newsletter, we store your email address to send you the newsletter. That's the only thing we use it for. We don't send promotional emails from third parties, we don't sell your email, and we don't share it with anyone outside of our email service provider.</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data-icon">✉️</div>
+            <div class="data-body">
+              <p class="data-what">Contact emails</p>
+              <p class="data-why">If you email us at our contact address, we receive and read your message. We don't add contact emails to any list or use them for anything other than responding to your message.</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data-icon">🚫</div>
+            <div class="data-body">
+              <p class="data-what">What we don't collect</p>
+              <p class="data-why">We don't collect your name, physical address, phone number, payment information, or any account information. We don't build user profiles, track you across other websites, or use advertising networks that do so.</p>
+            </div>
+          </div>
+        </div>
+
+        <h2 id="analytics">Google Analytics</h2>
+        <p>Gamers Watchlist uses Google Analytics to understand how the site is used. Google Analytics collects information including which pages you visit, how long you spend on them, what device and browser you're using, and general geographic information (country and city — not your street address).</p>
+        <p>This data is processed by Google and shared with us in aggregated, anonymized form. We use it to understand which articles are most helpful, where our readers come from, and how the site performs — nothing more.</p>
+        <p><strong>IP anonymization is enabled</strong> on our Google Analytics implementation, which means your full IP address is never stored by Google on our behalf.</p>
+        <p>Google's own privacy policy governs how they handle analytics data. You can read it at <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);">policies.google.com/privacy</a>. You can opt out of Google Analytics tracking across all websites using the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener" style="color:var(--accent);">Google Analytics Opt-out Browser Add-on</a>.</p>
+
+        <h2 id="cookies">Cookies</h2>
+        <p>Cookies are small text files stored on your device by websites you visit. Here's what cookies Gamers Watchlist uses:</p>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);padding:4px 20px;margin:1.5rem 0;">
+          <div class="data-row">
+            <div class="data-icon">📊</div>
+            <div class="data-body">
+              <p class="data-what">Google Analytics cookies</p>
+              <p class="data-why">These cookies (typically named _ga, _gid, _gat) help Google Analytics distinguish between unique visitors and track session information. They contain a randomly generated identifier — not your personal information. They expire after 2 years (_ga), 24 hours (_gid), or 1 minute (_gat).</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data-icon">🔗</div>
+            <div class="data-body">
+              <p class="data-what">Affiliate tracking cookies</p>
+              <p class="data-why">When you click an affiliate link to Amazon, Best Buy, or another retailer, that retailer may set a cookie on your device to track that the referral came from this site. This is how affiliate commissions are attributed. These cookies are set by the retailer, not by us, and governed by the retailer's own privacy policy.</p>
+            </div>
+          </div>
+          <div class="data-row">
+            <div class="data-icon">✅</div>
+            <div class="data-body">
+              <p class="data-what">No advertising or tracking cookies from us</p>
+              <p class="data-why">Gamers Watchlist does not use advertising networks, remarketing pixels, or third-party tracking cookies beyond the Google Analytics cookies described above. We don't show ads, so we don't need the tracking infrastructure that comes with advertising.</p>
+            </div>
+          </div>
+        </div>
+
+        <p>You can control cookies through your browser settings. Most browsers allow you to view, block, or delete cookies. Blocking all cookies will affect site functionality across the web — to opt out of Google Analytics specifically without blocking other cookies, use the browser add-on linked in the Analytics section above.</p>
+
+        <h2 id="newsletter">Newsletter and email</h2>
+        <p>If you subscribe to the Gamers Watchlist weekly deals newsletter, here's exactly how we handle your email:</p>
+        <ul>
+          <li><strong>What we store:</strong> Your email address and the date you subscribed.</li>
+          <li><strong>What we send:</strong> One email per week (every Thursday) covering Nintendo Switch deals, eShop sales, and accessory price drops. Occasional additional emails when a significant deal or announcement warrants it — but we aim to keep this rare.</li>
+          <li><strong>Who processes it:</strong> Email delivery is handled by Beehiiv, our email service provider. Your email address is stored on their platform. Beehiiv's privacy policy applies to how they handle the data on their end — you can read it at beehiiv.com.</li>
+          <li><strong>Who we share it with:</strong> Nobody. We do not sell, rent, or share subscriber email addresses with any third party for any purpose.</li>
+          <li><strong>How to unsubscribe:</strong> Every newsletter email contains a one-click unsubscribe link at the bottom. Click it and you're removed immediately. You can also email us at <a href="mailto:hello@gamerswatchlist.com" style="color:var(--accent);">hello@gamerswatchlist.com</a> to request removal.</li>
+        </ul>
+
+        <h2 id="affiliate">Affiliate links and third-party retailers</h2>
+        <p>When you click an affiliate link on this site and visit a retailer like Amazon or Best Buy, you're leaving Gamers Watchlist and entering the retailer's website. At that point, the retailer's own privacy policy governs what data is collected about your visit and any purchase you make.</p>
+        <p>Retailers know that the referral came from Gamers Watchlist (that's how affiliate commissions work), but they don't receive any personal information you haven't directly provided to them. We don't share your name, email, or any other identifying information with affiliate partners.</p>
+        <p>For reference, here are the privacy policies of our primary affiliate partners:</p>
+        <ul>
+          <li><a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=468496" target="_blank" rel="noopener" style="color:var(--accent);">Amazon Privacy Notice →</a></li>
+          <li><a href="https://www.bestbuy.com/site/help-topics/best-buy-privacy-policy/pcmcat204400050062.c" target="_blank" rel="noopener" style="color:var(--accent);">Best Buy Privacy Policy →</a></li>
+        </ul>
+
+        <h2 id="third-parties">Third parties</h2>
+        <p>Beyond what's described above, Gamers Watchlist uses the following third-party services that may process data in the course of delivering the site:</p>
+        <ul>
+          <li><strong>Vercel</strong> — website hosting. Vercel serves the site and may log basic server access information (IP addresses, request paths) for security and performance purposes. See <a href="https://vercel.com/legal/privacy-policy" target="_blank" rel="noopener" style="color:var(--accent);">Vercel's privacy policy →</a></li>
+          <li><strong>Google Fonts</strong> — the fonts used on this site are loaded from Google's servers. Google may collect standard server log information when fonts are loaded. See <a href="https://policies.google.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);">Google's privacy policy →</a></li>
+          <li><strong>Beehiiv</strong> — newsletter delivery (for subscribers only). See <a href="https://www.beehiiv.com/privacy" target="_blank" rel="noopener" style="color:var(--accent);">Beehiiv's privacy policy →</a></li>
+        </ul>
+        <p>We do not use Facebook Pixel, Twitter/X tracking, TikTok pixel, or any other social media tracking technologies on this site.</p>
+
+        <h2 id="your-rights">Your rights</h2>
+        <p>Depending on where you live, you may have certain rights regarding your personal data. We respect these rights regardless of where you're located.</p>
+
+        <div class="rights-grid">
+          <div class="right-card">
+            <span class="right-icon">👁️</span>
+            <p class="right-title">Right to access</p>
+            <p class="right-desc">You can ask us what personal data we hold about you. For most visitors, the answer is: none beyond what Google Analytics collects anonymously.</p>
+          </div>
+          <div class="right-card">
+            <span class="right-icon">🗑️</span>
+            <p class="right-title">Right to deletion</p>
+            <p class="right-desc">You can ask us to delete any personal data we hold. For newsletter subscribers, this means removing your email from our list.</p>
+          </div>
+          <div class="right-card">
+            <span class="right-icon">📤</span>
+            <p class="right-title">Right to portability</p>
+            <p class="right-desc">You can ask for a copy of any personal data we hold about you in a portable format.</p>
+          </div>
+          <div class="right-card">
+            <span class="right-icon">🚫</span>
+            <p class="right-title">Right to opt out</p>
+            <p class="right-desc">You can opt out of analytics tracking using the Google Analytics opt-out add-on, and unsubscribe from the newsletter at any time.</p>
+          </div>
+          <div class="right-card">
+            <span class="right-icon">✏️</span>
+            <p class="right-title">Right to correct</p>
+            <p class="right-desc">If any personal data we hold about you is inaccurate, you can ask us to correct it.</p>
+          </div>
+          <div class="right-card">
+            <span class="right-icon">📋</span>
+            <p class="right-title">Right to complain</p>
+            <p class="right-desc">If you're in the EU or UK, you have the right to lodge a complaint with your local data protection authority if you believe we've handled your data incorrectly.</p>
+          </div>
+        </div>
+
+        <p>To exercise any of these rights, email us at <a href="mailto:hello@gamerswatchlist.com" style="color:var(--accent);">hello@gamerswatchlist.com</a>. We'll respond within 30 days.</p>
+
+        <h2>Children's privacy</h2>
+        <p>Gamers Watchlist is not directed at children under 13. We do not knowingly collect personal information from children under 13. If you believe a child under 13 has provided us with personal information, please contact us and we will delete it promptly.</p>
+
+        <h2>Changes to this policy</h2>
+        <p>If we make material changes to this privacy policy, we'll update the "Last updated" date at the top of this page. For significant changes that affect how we use your data, we'll notify newsletter subscribers by email. Continued use of the site after changes constitutes acceptance of the updated policy.</p>
+        <p>We don't anticipate frequent changes — this site's data practices are simple and we intend to keep them that way.</p>
+
+        <div class="contact-card" id="contact">
+          <p class="contact-title">Privacy questions?</p>
+          <p class="contact-body">If something in this policy is unclear, if you want to exercise your data rights, or if you just want to know more about how we handle your information — reach out. We keep things simple and will give you a straight answer.</p>
+          <a href="mailto:hello@gamerswatchlist.com" class="contact-email">hello@gamerswatchlist.com</a>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
