@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best microSD Cards for Nintendo Switch 2 (2026) — Gamers Watchlist</title>
+  <meta name="description" content="The best microSD cards for Nintendo Switch 2 in 2026 — capacity recommendations, speed specs that actually matter, top picks at every price point, and cards to avoid." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .pick-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+      transition: border-color 0.2s;
+    }
+    .pick-card:hover { border-color: var(--border2); }
+    .pick-card.top { border-color: rgba(232,255,71,0.4); }
+    .pick-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .pick-rank {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--accent);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 36px;
+    }
+    .pick-card:not(.top) .pick-rank { color: var(--text-dim); }
+    .pick-header-body { flex: 1; }
+    .pick-name {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0 0 3px;
+    }
+    .pick-subtitle {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin: 0;
+      font-family: var(--font-mono);
+    }
+    .pick-badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 3px 9px;
+      border-radius: var(--border-radius-md, 6px);
+      font-family: var(--font-mono);
+      letter-spacing: 0.04em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .badge-gold    { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-silver  { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .badge-bronze  { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-budget  { background: rgba(255,165,2,0.12);  color: #ffa502; }
+    .badge-avoid   { background: rgba(255,71,87,0.12);  color: var(--red); }
+    .pick-body { padding: 16px 20px; }
+    .pick-specs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .spec-pill {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: 99px;
+      padding: 3px 10px;
+      color: var(--text-muted);
+    }
+    .pick-why {
+      font-size: 13px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin: 0 0 14px;
+    }
+    .pick-why strong { color: var(--text); }
+    .pick-pros-cons {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+    .pros, .cons {
+      background: var(--dark);
+      border-radius: var(--radius);
+      padding: 10px 12px;
+    }
+    .pros-title {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--green);
+      margin: 0 0 6px;
+    }
+    .cons-title {
+      font-size: 11px;
+      font-family: var(--font-mono);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--red);
+      margin: 0 0 6px;
+    }
+    .pros ul, .cons ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .pros li, .cons li {
+      font-size: 12px;
+      color: var(--text-muted);
+      padding-left: 14px;
+      position: relative;
+      line-height: 1.4;
+    }
+    .pros li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-size: 11px; }
+    .cons li::before { content: '✗'; position: absolute; left: 0; color: var(--red); font-size: 11px; }
+    .pick-cta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      background: var(--dark);
+      border-radius: var(--radius);
+      padding: 10px 14px;
+      text-decoration: none;
+      transition: border-color 0.2s;
+      border: 1px solid var(--border);
+    }
+    .pick-cta:hover { border-color: var(--accent); }
+    .pick-cta-left { flex: 1; }
+    .pick-cta-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 1px; }
+    .pick-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .pick-cta-arrow { font-size: 13px; color: var(--accent); flex-shrink: 0; }
+    .speed-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+      margin: 1.5rem 0;
+    }
+    .speed-table th {
+      padding: 9px 14px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      text-align: left;
+    }
+    .speed-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: middle;
+    }
+    .speed-table tr:last-child td { border-bottom: none; }
+    .speed-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .speed-table td:first-child { font-weight: 500; color: var(--text); }
+    .pass  { color: var(--green); font-weight: 600; }
+    .fail  { color: var(--red); }
+    .avoid-card {
+      background: rgba(255,71,87,0.05);
+      border: 1px solid rgba(255,71,87,0.2);
+      border-radius: var(--radius);
+      padding: 14px 18px;
+      margin-bottom: 10px;
+    }
+    .avoid-name { font-size: 13px; font-weight: 600; color: var(--red); margin: 0 0 4px; }
+    .avoid-reason { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.55; }
+    .capacity-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+      margin: 1.5rem 0;
+    }
+    .cap-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px;
+      text-align: center;
+    }
+    .cap-card.recommended { border-color: rgba(232,255,71,0.35); }
+    .cap-size {
+      font-family: var(--font-display);
+      font-size: 1.8rem;
+      letter-spacing: 0.04em;
+      line-height: 1;
+      margin: 0 0 4px;
+    }
+    .cap-card.recommended .cap-size { color: var(--accent); }
+    .cap-card:not(.recommended) .cap-size { color: var(--text-muted); }
+    .cap-games { font-size: 11px; font-family: var(--font-mono); color: var(--text-dim); margin: 0 0 4px; }
+    .cap-note { font-size: 12px; color: var(--text-muted); line-height: 1.4; margin: 0; }
+    @media (max-width: 560px) {
+      .pick-pros-cons { grid-template-columns: 1fr; }
+      .pick-header { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Accessories</span>
+          <span class="article-date">May 2026 · 9 min read</span>
+        </div>
+        <h1 class="article-title">Best microSD Cards for Nintendo Switch 2 (2026)</h1>
+        <p class="article-deck">Switch 2 games are big — some top 30GB each. The 256GB internal storage fills up fast. Here are the best microSD cards to buy, what specs actually matter, and what to avoid.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Our top picks at a glance</div>
+        <p>
+          <strong>Best overall:</strong> SanDisk Extreme 512GB — fast, reliable, right size for most libraries<br/>
+          <strong>Best value:</strong> Samsung Pro Plus 256GB — best price-per-GB without sacrificing speed<br/>
+          <strong>Best for large libraries:</strong> SanDisk Extreme 1TB — future-proof if you own 30+ games<br/>
+          <strong>Best budget:</strong> Lexar PLAY 256GB — meets Switch 2 speed requirements at the lowest price<br/>
+          <strong>Avoid:</strong> Any unbranded card, anything without U3/V30 rating, anything under 100MB/s read
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>What microSD speed specs actually matter for Switch 2</h2>
+        <p>This is where most buyers go wrong — either overpaying for extreme speeds the Switch 2 can't use, or underpaying for a card too slow to load games properly. Here's what the ratings mean and what the Switch 2 actually requires.</p>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0;">
+          <table class="speed-table">
+            <thead>
+              <tr>
+                <th>Speed Rating</th>
+                <th>What It Means</th>
+                <th>Switch 2 Compatible?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>U1 / Class 10</td>
+                <td>10MB/s minimum write speed</td>
+                <td class="fail">✗ Too slow — avoid</td>
+              </tr>
+              <tr>
+                <td>U3 / V30</td>
+                <td>30MB/s minimum write speed</td>
+                <td class="pass">✓ Minimum required</td>
+              </tr>
+              <tr>
+                <td>A1</td>
+                <td>1500 random read IOPS</td>
+                <td class="pass">✓ Good for Switch 2</td>
+              </tr>
+              <tr>
+                <td>A2</td>
+                <td>4000 random read IOPS</td>
+                <td class="pass">✓ Best for Switch 2</td>
+              </tr>
+              <tr>
+                <td>100MB/s+ read</td>
+                <td>Sequential read speed</td>
+                <td class="pass">✓ Minimum for fast loads</td>
+              </tr>
+              <tr>
+                <td>160–190MB/s read</td>
+                <td>High-end sequential speed</td>
+                <td class="pass">✓ Ideal — noticeably faster loads</td>
+              </tr>
+              <tr>
+                <td>UHS-II</td>
+                <td>312MB/s bus speed</td>
+                <td class="fail">✗ Switch 2 only uses UHS-I — wasted money</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-tip">
+          <strong>💡 The UHS-II trap:</strong> Premium cards rated UHS-II (like some SanDisk Extreme Pro variants) cost significantly more because of their high bus speeds. The Switch 2 only supports UHS-I — it physically cannot use the extra speed. Save your money and buy a UHS-I card with fast read speeds instead.
+        </div>
+
+        <p>The single most important number to look for: <strong>sequential read speed of 100MB/s or higher</strong>, paired with a <strong>U3/V30 write rating</strong> and an <strong>A2 application performance class</strong>. Every card on our list meets or exceeds this baseline.</p>
+
+        <h2>How much storage do you actually need?</h2>
+        <p>Switch 2 has 256GB of internal storage — more than Switch 1's 32GB, but Switch 2 games are also much larger. First-party titles run 10–20GB each. Demanding Switch 2 exclusives can hit 30GB+. Do the math and you'll find 256GB fills up faster than you'd expect.</p>
+
+        <div class="capacity-grid">
+          <div class="cap-card">
+            <p class="cap-size">128GB</p>
+            <p class="cap-games">~6–10 large games</p>
+            <p class="cap-note">Fine if you delete and re-download. Not recommended for most buyers.</p>
+          </div>
+          <div class="cap-card recommended">
+            <p class="cap-size">256GB</p>
+            <p class="cap-games">~12–18 large games</p>
+            <p class="cap-note">Sweet spot for most buyers. Enough for a solid active library.</p>
+          </div>
+          <div class="cap-card recommended">
+            <p class="cap-size">512GB</p>
+            <p class="cap-games">~25–35 large games</p>
+            <p class="cap-note">Best all-around. Combined with internal storage: ~768GB total.</p>
+          </div>
+          <div class="cap-card">
+            <p class="cap-size">1TB</p>
+            <p class="cap-games">~50–70 large games</p>
+            <p class="cap-note">Future-proof. Worth it for large digital libraries or if you never want to manage storage.</p>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <strong>📦 Our recommendation for most buyers: 512GB.</strong> Combined with the Switch 2's 256GB internal storage, you get roughly 768GB total — enough for 40–50 games without ever managing space. The price difference between 256GB and 512GB is usually $15–$25. Worth it.
+        </div>
+
+        <h2>The best microSD cards for Nintendo Switch 2</h2>
+
+        <!-- PICK 1 -->
+        <div class="pick-card top">
+          <div class="pick-header">
+            <div class="pick-rank">1</div>
+            <div class="pick-header-body">
+              <p class="pick-name">SanDisk Extreme microSDXC (512GB)</p>
+              <p class="pick-subtitle">190MB/s read · 130MB/s write · U3, V30, A2</p>
+            </div>
+            <span class="pick-badge badge-gold">Best Overall</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">190MB/s read</span>
+              <span class="spec-pill">130MB/s write</span>
+              <span class="spec-pill">U3 / V30</span>
+              <span class="spec-pill">A2</span>
+              <span class="spec-pill">UHS-I</span>
+              <span class="spec-pill">512GB</span>
+            </div>
+            <p class="pick-why">
+              The SanDisk Extreme is the card most Switch 2 enthusiasts end up on after researching the options — and for good reason. <strong>190MB/s sequential read</strong> is the fastest speed a UHS-I card can deliver, which means the fastest possible game load times. The A2 application class handles the Switch 2's random read demands for open-world games. SanDisk's reliability track record is excellent and the card is backed by a lifetime warranty.
+            </p>
+            <p class="pick-why">
+              At 512GB, you get roughly 768GB of combined storage with the Switch 2's internal drive — enough for 40–50 large titles without ever rotating games. The sweet spot of speed, capacity, and price.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Fastest UHS-I read speed available</li>
+                  <li>A2 rating for best random performance</li>
+                  <li>Lifetime warranty</li>
+                  <li>SanDisk's proven reliability</li>
+                  <li>Runs cool — no throttling</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Pricier than budget options</li>
+                  <li>Speed overkill for casual libraries</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">SanDisk Extreme 512GB</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 2 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">2</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Samsung Pro Plus microSDXC (256GB)</p>
+              <p class="pick-subtitle">180MB/s read · 130MB/s write · U3, V30, A2</p>
+            </div>
+            <span class="pick-badge badge-silver">Best Value</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">180MB/s read</span>
+              <span class="spec-pill">130MB/s write</span>
+              <span class="spec-pill">U3 / V30</span>
+              <span class="spec-pill">A2</span>
+              <span class="spec-pill">UHS-I</span>
+              <span class="spec-pill">256GB</span>
+            </div>
+            <p class="pick-why">
+              Samsung's Pro Plus delivers near-identical performance to the SanDisk Extreme at a lower price per gigabyte in the 256GB tier. <strong>180MB/s read</strong> is barely distinguishable from 190MB/s in real-world load times — we're talking fractions of a second. Samsung's NAND is among the most reliable in the industry and the card is backed by a 10-year limited warranty.
+            </p>
+            <p class="pick-why">
+              The 256GB capacity pairs with the Switch 2's internal storage to give you ~512GB total. Enough for 30–40 games if you keep your most-played titles installed and re-download others when needed.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Excellent price-per-GB</li>
+                  <li>Samsung's top-tier NAND reliability</li>
+                  <li>A2 performance class</li>
+                  <li>10-year warranty</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>256GB fills up with a large library</li>
+                  <li>Marginally slower than SanDisk Extreme</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Samsung Pro Plus 256GB</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 3 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">3</div>
+            <div class="pick-header-body">
+              <p class="pick-name">SanDisk Extreme microSDXC (1TB)</p>
+              <p class="pick-subtitle">190MB/s read · 130MB/s write · U3, V30, A2</p>
+            </div>
+            <span class="pick-badge badge-bronze">Best for Large Libraries</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">190MB/s read</span>
+              <span class="spec-pill">130MB/s write</span>
+              <span class="spec-pill">U3 / V30</span>
+              <span class="spec-pill">A2</span>
+              <span class="spec-pill">UHS-I</span>
+              <span class="spec-pill">1TB</span>
+            </div>
+            <p class="pick-why">
+              If you own 30+ digital games or simply never want to think about storage again, the 1TB SanDisk Extreme is the answer. Combined with the Switch 2's 256GB internal storage, you get <strong>roughly 1.25TB total</strong> — enough for an enormous library without ever rotating titles.
+            </p>
+            <p class="pick-why">
+              The price premium over 512GB has come down significantly as 1TB cards have matured. If the price difference is less than $30, it's almost always worth it for the peace of mind alone.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Never manage storage again</li>
+                  <li>Same speed as 512GB version</li>
+                  <li>Lifetime warranty</li>
+                  <li>Future-proof for 4–5 years</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Higher upfront cost</li>
+                  <li>Overkill for smaller libraries</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">SanDisk Extreme 1TB</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 4 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">4</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Lexar PLAY microSDXC (256GB)</p>
+              <p class="pick-subtitle">100MB/s read · 30MB/s write · U3, V30 · A1</p>
+            </div>
+            <span class="pick-badge badge-budget">Best Budget</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">100MB/s read</span>
+              <span class="spec-pill">30MB/s write</span>
+              <span class="spec-pill">U3 / V30</span>
+              <span class="spec-pill">A1</span>
+              <span class="spec-pill">UHS-I</span>
+              <span class="spec-pill">256GB</span>
+            </div>
+            <p class="pick-why">
+              The Lexar PLAY is designed specifically for gaming storage and hits the minimum speed thresholds the Switch 2 needs at the lowest price of any card on this list. <strong>100MB/s sequential read</strong> meets Switch 2's requirements — load times will be noticeably longer than the top picks, particularly for large open-world games, but for casual libraries and indie-heavy collections the difference is acceptable.
+            </p>
+            <p class="pick-why">
+              The A1 rating (rather than A2) means slower random read performance, and the 100MB/s sequential read is the slowest on this list. For casual games and indie titles this is imperceptible. For large open-world Switch 2 exclusives, load times will be measurably longer than the top picks — roughly 20–40% slower depending on the title. If your library is primarily indie games, visual novels, or older Switch 1 titles, those differences won't bother you. If you play demanding Switch 2 exclusives regularly, spend the extra $15–$20 on the Samsung Pro Plus instead.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Lowest price on the list</li>
+                  <li>Meets Switch 2 speed requirements</li>
+                  <li>Gaming-optimized design</li>
+                  <li>Reputable brand</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>A1 vs A2 — slower random reads</li>
+                  <li>Slower write speed than top picks</li>
+                  <li>Shorter warranty than Samsung/SanDisk</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Lexar PLAY 256GB</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 5 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">5</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Samsung Evo Select microSDXC (512GB)</p>
+              <p class="pick-subtitle">130MB/s read · U3, V30, A2</p>
+            </div>
+            <span class="pick-badge badge-silver">Runner-Up</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">130MB/s read</span>
+              <span class="spec-pill">U3 / V30</span>
+              <span class="spec-pill">A2</span>
+              <span class="spec-pill">UHS-I</span>
+              <span class="spec-pill">512GB</span>
+            </div>
+            <p class="pick-why">
+              Samsung's Evo Select sits between the Pro Plus and the budget Lexar — <strong>130MB/s read with A2 performance</strong> at a price usually $10–$15 below the SanDisk Extreme in the 512GB tier. If the SanDisk is out of stock or significantly more expensive when you're buying, this is the pick. Backed by Samsung's 10-year warranty.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Strong 512GB value option</li>
+                  <li>A2 random performance</li>
+                  <li>Samsung 10-year warranty</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Slightly slower than SanDisk Extreme</li>
+                  <li>Pricing fluctuates — check vs SanDisk</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Samsung Evo Select 512GB</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <h2>Cards to avoid</h2>
+        <p>These categories cause real problems — slow load times, stuttering in open-world games, or outright compatibility issues. Don't buy based on price alone.</p>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Unbranded or no-name cards (Amazon Basics excluded)</p>
+          <p class="avoid-reason">Cards without a recognized brand name — often sold under generic labels with vague specs — frequently misrepresent their speed ratings. A card labeled "100MB/s" may actually perform at 20–40MB/s. Causes long load times, game stutters, and occasional data corruption. Never worth the savings.</p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Any card rated U1 or Class 10 without U3</p>
+          <p class="avoid-reason">U1/Class 10 means 10MB/s minimum write speed — far below what Switch 2 needs for game installations and updates. You'll see painfully slow download speeds and potential corruption during write operations. The U3/V30 rating is the minimum — don't go below it.</p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ SanDisk Ultra (not Extreme)</p>
+          <p class="avoid-reason">The SanDisk Ultra looks similar to the Extreme but is a significantly slower card — 120MB/s read and only U1 rated. It's fine for phones and cameras but falls short of Switch 2's demands for open-world games. Easy to confuse the two — double-check you're buying "Extreme" not "Ultra."</p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ UHS-II cards (overpriced for Switch 2)</p>
+          <p class="avoid-reason">Cards like the SanDisk Extreme Pro UHS-II cost significantly more because they support 312MB/s bus speeds. The Switch 2 only uses UHS-I — it caps at 104MB/s bus speed regardless of the card. You're paying for specs the console can't use. Buy UHS-I and spend the saved money on a game.</p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Counterfeit cards sold by third-party Amazon sellers</p>
+          <p class="avoid-reason">Counterfeit SanDisk and Samsung cards are common on Amazon's marketplace. Always buy from Amazon directly (sold and fulfilled by Amazon) or from the brand's official Amazon store. If the price is suspiciously low for a name-brand card, it's likely fake — counterfeit cards often report false capacity and fail within months.</p>
+        </div>
+
+        <h2>How to install a microSD card in Switch 2</h2>
+        <p>The microSD slot is on the back of the Switch 2, under the kickstand. Press the kickstand open, locate the small slot, and insert the card with the label facing toward you (away from the console). Push until it clicks. The Switch 2 detects it automatically — no formatting required for new cards.</p>
+
+        <p>If prompted to format the card on first insertion, tap <strong>Format</strong>. This prepares the card for Switch 2's file system and takes about 30 seconds. All subsequent game downloads will use the card automatically once formatted.</p>
+
+        <div class="callout callout-info">
+          <strong>📦 Moving from Switch 1's microSD card?</strong> Your Switch 1 microSD card works in Switch 2 without reformatting — all your downloaded games and data carry over. You don't need to buy a new card unless you want more storage. See our <a href="transfer-data-switch-to-switch-2.html" style="color:var(--accent);">full transfer guide →</a>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Do I need a microSD card for Switch 2?</strong><br/>
+        Not immediately — the 256GB internal storage is enough to get started. But with Switch 2 games averaging 15–25GB each, you'll fill the internal storage with 10–15 large games. A microSD card becomes necessary once your library grows.</p>
+
+        <p><strong>Does the microSD card affect game performance?</strong><br/>
+        Load times, yes. In-game performance (frame rates, resolution), no — games load from storage into RAM, so storage speed only affects how fast games load, not how they run once loaded. Faster cards mean faster load screens.</p>
+
+        <p><strong>Can I use my Switch 1 microSD card in Switch 2?</strong><br/>
+        Yes. Switch 2 is fully backward compatible with microSD cards from Switch 1. Your existing card and all its data work immediately — no reformatting needed.</p>
+
+        <p><strong>What's the maximum microSD size Switch 2 supports?</strong><br/>
+        Nintendo hasn't published an official maximum, but the Switch 2 supports the microSDXC standard which theoretically allows up to 2TB. Current 1TB cards work without issues. 2TB cards, when they become available at reasonable prices, will likely work too.</p>
+
+        <p><strong>Does card brand matter?</strong><br/>
+        Yes, meaningfully. SanDisk and Samsung use their own high-quality NAND and back it with long warranties. Lesser brands source NAND from multiple suppliers with inconsistent quality. Stick to SanDisk, Samsung, Lexar, or Kingston for reliability.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">💾 Our picks — quick links</div>
+          <p>All four recommended cards, direct to Amazon:</p>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">SanDisk Extreme 512GB — best overall</p>
+              <p class="pick-cta-note">190MB/s · U3, V30, A2 · lifetime warranty</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Samsung Pro Plus 256GB — best value</p>
+              <p class="pick-cta-note">180MB/s · U3, V30, A2 · 10-year warranty</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">SanDisk Extreme 1TB — best for large libraries</p>
+              <p class="pick-cta-note">190MB/s · U3, V30, A2 · future-proof</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:14px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Lexar PLAY 256GB — best budget</p>
+              <p class="pick-cta-note">100MB/s · U3, V30 · gaming-optimized</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
