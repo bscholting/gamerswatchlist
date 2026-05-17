@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Carrying Cases for Nintendo Switch 2 (2026) — Gamers Watchlist</title>
+  <meta name="description" content="The best Nintendo Switch 2 carrying cases in 2026 — hard shell vs soft, budget vs premium, travel-specific picks, and what fits the larger Switch 2 body." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .pick-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+      transition: border-color 0.2s;
+    }
+    .pick-card.top { border-color: rgba(232,255,71,0.4); }
+    .pick-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 16px 20px;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .pick-rank {
+      font-family: var(--font-display);
+      font-size: 2rem;
+      color: var(--text-dim);
+      letter-spacing: 0.04em;
+      line-height: 1;
+      flex-shrink: 0;
+      width: 36px;
+    }
+    .pick-card.top .pick-rank { color: var(--accent); }
+    .pick-header-body { flex: 1; }
+    .pick-name { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .pick-subtitle { font-size: 12px; color: var(--text-muted); margin: 0; font-family: var(--font-mono); }
+    .pick-badge {
+      display: inline-block; font-size: 10px; padding: 3px 9px;
+      border-radius: 6px; font-family: var(--font-mono);
+      letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0;
+    }
+    .badge-gold    { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-silver  { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .badge-green   { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-orange  { background: rgba(255,165,2,0.12);  color: #ffa502; }
+    .badge-purple  { background: rgba(175,82,222,0.12); color: #af52de; }
+    .badge-red     { background: rgba(255,71,87,0.12);  color: var(--red); }
+    .pick-body { padding: 16px 20px; }
+    .pick-specs {
+      display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px;
+    }
+    .spec-pill {
+      font-size: 11px; font-family: var(--font-mono);
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 99px; padding: 3px 10px; color: var(--text-muted);
+    }
+    .pick-why { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 0 0 12px; }
+    .pick-why strong { color: var(--text); }
+    .pick-pros-cons {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px;
+    }
+    .pros, .cons { background: var(--dark); border-radius: var(--radius); padding: 10px 12px; }
+    .pros-title { font-size: 11px; font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--green); margin: 0 0 6px; }
+    .cons-title { font-size: 11px; font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin: 0 0 6px; }
+    .pros ul, .cons ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+    .pros li, .cons li { font-size: 12px; color: var(--text-muted); padding-left: 14px; position: relative; line-height: 1.4; }
+    .pros li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-size: 11px; }
+    .cons li::before { content: '✗'; position: absolute; left: 0; color: var(--red); font-size: 11px; }
+    .pick-cta {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--dark); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 10px 14px; text-decoration: none; transition: border-color 0.2s;
+    }
+    .pick-cta:hover { border-color: var(--accent); }
+    .pick-cta-left { flex: 1; }
+    .pick-cta-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 1px; }
+    .pick-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .pick-cta-arrow { font-size: 13px; color: var(--accent); flex-shrink: 0; }
+    .type-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 1.5rem 0;
+    }
+    .type-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 18px 20px; }
+    .type-card.recommended { border-color: rgba(232,255,71,0.3); }
+    .type-icon { font-size: 2rem; margin-bottom: 8px; display: block; }
+    .type-title { font-size: 14px; font-weight: 600; color: var(--text); margin: 0 0 6px; }
+    .type-desc { font-size: 12px; color: var(--text-muted); margin: 0 0 10px; line-height: 1.55; }
+    .type-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+    .type-list li { font-size: 12px; color: var(--text-muted); padding-left: 14px; position: relative; line-height: 1.4; }
+    .type-list.good li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-size: 11px; }
+    .type-list.bad  li::before { content: '✗'; position: absolute; left: 0; color: var(--red); font-size: 11px; }
+    .warning-box {
+      background: rgba(255,71,87,0.06); border: 1px solid rgba(255,71,87,0.2);
+      border-radius: var(--radius); padding: 14px 18px; margin: 1.5rem 0;
+    }
+    .warning-title { font-size: 13px; font-weight: 600; color: var(--red); margin: 0 0 5px; }
+    .warning-body { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+    .warning-body strong { color: var(--text); }
+    .section-divider {
+      display: flex; align-items: center; gap: 14px; margin: 2rem 0 1.25rem;
+    }
+    .section-divider-title { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 0.04em; color: var(--text-muted); white-space: nowrap; }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+    @media (max-width: 560px) {
+      .pick-pros-cons { grid-template-columns: 1fr; }
+      .type-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Accessories</span>
+          <span class="article-date">May 2026 · 8 min read</span>
+        </div>
+        <h1 class="article-title">Best Carrying Cases for Nintendo Switch 2 (2026)</h1>
+        <p class="article-deck">Switch 2 is slightly larger than Switch 1 — your old case won't fit. Here are the best new cases at every price point, from sub-$15 budget picks to full travel kits that carry everything.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Top picks at a glance</div>
+        <p>
+          <strong>Best overall:</strong> Tomtoc Slim Case — hard shell protection at a soft case price<br/>
+          <strong>Best budget:</strong> JETech Protective Case — solid hard shell under $15<br/>
+          <strong>Best premium:</strong> Waterfield Designs Switch 2 Case — built like luggage, priced like it<br/>
+          <strong>Best for travel:</strong> HORI Compact Play Stand Case — console + accessories + stand<br/>
+          <strong>Best large kit:</strong> Orzly Carry Case Bundle — everything in one bag
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <div class="warning-box">
+          <p class="warning-title">⚠ Switch 1 cases do not fit Switch 2</p>
+          <p class="warning-body">The Switch 2 is <strong>larger than the original Switch and Switch OLED</strong> — longer, wider, and slightly thicker. Any case designed for Switch 1 or OLED will be too small to fit. Always check that a case explicitly states Switch 2 compatibility before buying.</p>
+        </div>
+
+        <h2>Hard shell vs soft case — which should you buy?</h2>
+        <p>This is the first decision to make. Both have genuine trade-offs and the right answer depends on how you carry your Switch 2.</p>
+
+        <div class="type-grid">
+          <div class="type-card recommended">
+            <span class="type-icon">🛡️</span>
+            <p class="type-title">Hard shell — best for most people</p>
+            <p class="type-desc">A rigid EVA or polycarbonate exterior that protects against drops, compression, and impact. Won't crumple if something heavy lands on top of it in a bag.</p>
+            <ul class="type-list good">
+              <li>Drop and crush protection</li>
+              <li>Rigid structure protects screen</li>
+              <li>Usually water-resistant exterior</li>
+              <li>Holds its shape in a bag</li>
+            </ul>
+            <ul class="type-list bad" style="margin-top:8px;">
+              <li>Bulkier than soft cases</li>
+              <li>Less capacity for accessories</li>
+            </ul>
+          </div>
+          <div class="type-card">
+            <span class="type-icon">👜</span>
+            <p class="type-title">Soft case — best for light carry</p>
+            <p class="type-desc">Fabric or neoprene construction that's lighter and more flexible. Good for protecting against scratches and minor bumps, not drops or compression.</p>
+            <ul class="type-list good">
+              <li>Lighter and slimmer profile</li>
+              <li>More pockets and organization</li>
+              <li>Easier to fit in tight spaces</li>
+              <li>Often cheaper</li>
+            </ul>
+            <ul class="type-list bad" style="margin-top:8px;">
+              <li>No drop protection</li>
+              <li>Can be crushed in a full bag</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="callout callout-tip">
+          <strong>💡 Our recommendation:</strong> Unless you're only ever carrying the Switch 2 on its own from couch to desk, buy a hard shell. The Switch 2's screen is large and valuable — a hard shell that resists compression when your backpack gets stuffed is worth the extra bulk.
+        </div>
+
+        <h2>What to look for in a Switch 2 case</h2>
+        <ul>
+          <li><strong>Switch 2 specific fit</strong> — not labeled for Switch 1, OLED, or "all models." Custom-fit cases protect better and feel less sloppy.</li>
+          <li><strong>Game card storage</strong> — at minimum 8 slots, ideally 12–16 if you buy physical games. Digital-only players can ignore this.</li>
+          <li><strong>Microfiber or soft interior lining</strong> — protects the screen from scratches. Avoid any case with an abrasive interior.</li>
+          <li><strong>Charging cable pass-through or cable pouch</strong> — if you travel, you need somewhere to put the USB-C cable.</li>
+          <li><strong>Space for the dock or Joy-Con grip</strong> — most slim cases don't include this; travel cases and large kits typically do.</li>
+        </ul>
+
+        <div class="section-divider">
+          <span class="section-divider-title">The picks</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- PICK 1 -->
+        <div class="pick-card top">
+          <div class="pick-header">
+            <div class="pick-rank">1</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Tomtoc Slim Case for Nintendo Switch 2</p>
+              <p class="pick-subtitle">Hard shell · 8 game slots · shoulder strap · Switch 2 specific</p>
+            </div>
+            <span class="pick-badge badge-gold">Best Overall</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Hard shell EVA</span>
+              <span class="spec-pill">8 game slots</span>
+              <span class="spec-pill">Microfiber interior</span>
+              <span class="spec-pill">Water-resistant</span>
+              <span class="spec-pill">Switch 2 fit</span>
+            </div>
+            <p class="pick-why">
+              Tomtoc makes some of the best-fitting Nintendo Switch cases on the market and their Switch 2 variant is no exception. The <strong>custom-molded EVA hard shell</strong> fits the Switch 2 snugly with Joy-Cons attached — no rattling, no excess space for the console to shift around. The interior is fully lined with soft microfiber that won't scratch the screen or Joy-Con surfaces even after thousands of openings.
+            </p>
+            <p class="pick-why">
+              Eight game card slots cover most physical library sizes. The exterior water-resistant coating handles rain and spills. At this price it sits in a sweet spot that most buyers land on after researching — hard shell protection without the premium price of boutique cases.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Custom Switch 2 fit — no rattling</li>
+                  <li>Hard shell drop protection</li>
+                  <li>Soft microfiber interior</li>
+                  <li>Water-resistant exterior</li>
+                  <li>Great price-to-quality ratio</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Only 8 game slots</li>
+                  <li>No room for dock or grip</li>
+                  <li>Smaller accessory pocket</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Tomtoc Slim Case for Switch 2</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 2 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">2</div>
+            <div class="pick-header-body">
+              <p class="pick-name">JETech Protective Carrying Case for Switch 2</p>
+              <p class="pick-subtitle">Hard shell · 10 game slots · accessory mesh pocket · under $15</p>
+            </div>
+            <span class="pick-badge badge-orange">Best Budget</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Hard shell EVA</span>
+              <span class="spec-pill">10 game slots</span>
+              <span class="spec-pill">Mesh pocket</span>
+              <span class="spec-pill">Under $15</span>
+              <span class="spec-pill">Switch 2 fit</span>
+            </div>
+            <p class="pick-why">
+              For buyers who want hard shell protection without spending more than necessary, the JETech case is the pick. At under $15 it gets the fundamentals right — <strong>rigid EVA shell, 10 game card slots, and a mesh accessory pocket</strong> for cables and a small power bank. The interior lining is softer than the Tomtoc but still screen-safe.
+            </p>
+            <p class="pick-why">
+              Build quality is noticeably below the Tomtoc at this price — the zipper is thinner, the hinge less smooth. But it provides genuine hard shell protection and fits the Switch 2 correctly. For a first case while you figure out your carrying habits, or a backup for a second bag, it's hard to beat the price.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Lowest price hard shell on the list</li>
+                  <li>10 game card slots</li>
+                  <li>Hard shell drop protection</li>
+                  <li>Correct Switch 2 sizing</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Cheaper zipper and hinge</li>
+                  <li>Thinner padding than premium picks</li>
+                  <li>Interior lining less soft</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">JETech Carrying Case for Switch 2</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 3 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">3</div>
+            <div class="pick-header-body">
+              <p class="pick-name">HORI Compact Play Stand Case for Switch 2</p>
+              <p class="pick-subtitle">Hard shell · built-in stand · 8 game slots · officially licensed</p>
+            </div>
+            <span class="pick-badge badge-silver">Best for Travel</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Hard shell</span>
+              <span class="spec-pill">Built-in kickstand</span>
+              <span class="spec-pill">8 game slots</span>
+              <span class="spec-pill">Nintendo licensed</span>
+              <span class="spec-pill">Accessory pocket</span>
+            </div>
+            <p class="pick-why">
+              HORI is Nintendo's most trusted licensed accessory partner and their Switch 2 case reflects that relationship. The standout feature is the <strong>built-in adjustable kickstand on the case lid</strong> — open the case, prop it up, and you have a stable viewing angle without needing a separate stand. For travel gaming on trains, planes, and hotel desks, this eliminates one accessory entirely.
+            </p>
+            <p class="pick-why">
+              The hard shell body is solid, the Nintendo licensing means a guaranteed correct fit, and the accessory pocket fits a USB-C cable and small charger. The only trade-off versus the Tomtoc is a slightly higher price for the kickstand feature.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Built-in adjustable stand</li>
+                  <li>Officially Nintendo licensed</li>
+                  <li>Guaranteed Switch 2 fit</li>
+                  <li>Solid hard shell build</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Pricier than Tomtoc</li>
+                  <li>Bulkier due to kickstand</li>
+                  <li>Only 8 game slots</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">HORI Compact Play Stand Case</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 4 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">4</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Orzly Carry Case Bundle for Switch 2</p>
+              <p class="pick-subtitle">Large case · 24 game slots · accessories included · full kit</p>
+            </div>
+            <span class="pick-badge badge-green">Best Large Kit</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Large hard shell</span>
+              <span class="spec-pill">24 game slots</span>
+              <span class="spec-pill">Accessories included</span>
+              <span class="spec-pill">Screen protector</span>
+              <span class="spec-pill">Joy-Con grips</span>
+            </div>
+            <p class="pick-why">
+              The Orzly bundle is built for the player who wants everything in one bag. The case itself is larger than the slim picks — it has room for the Switch 2 with Joy-Cons attached, <strong>24 game card slots</strong>, a full-size accessory pocket, and the bundle includes a screen protector, thumb grip caps, and a cleaning cloth in the box.
+            </p>
+            <p class="pick-why">
+              The trade-off is size — this is noticeably bulkier than the Tomtoc or JETech slim cases. It fits in a backpack easily but won't slip into a jacket pocket. For players with large physical libraries or who want one bag that has everything, it's excellent value for the bundle price.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>24 game card slots</li>
+                  <li>Screen protector included</li>
+                  <li>Large accessory storage</li>
+                  <li>Great bundle value</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Larger and bulkier than slim cases</li>
+                  <li>Not pocketable</li>
+                  <li>Included accessories are basic quality</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Orzly Carry Case Bundle for Switch 2</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 5 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">5</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Waterfield Designs Switch 2 Arcade Case</p>
+              <p class="pick-subtitle">Premium leather · ballistic nylon · magnetic closure · handmade in SF</p>
+            </div>
+            <span class="pick-badge badge-purple">Best Premium</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Ballistic nylon + leather</span>
+              <span class="spec-pill">Magnetic closure</span>
+              <span class="spec-pill">8 game slots</span>
+              <span class="spec-pill">Handmade USA</span>
+              <span class="spec-pill">Lifetime warranty</span>
+            </div>
+            <p class="pick-why">
+              Waterfield Designs is a San Francisco company that makes premium bags for tech products and their Switch 2 case is in a different category from everything else on this list. <strong>Ballistic nylon exterior with full-grain leather trim</strong>, magnetic snap closure instead of a zipper, and interior dimensions precisely fitted to the Switch 2. It feels and looks like a high-end piece of luggage.
+            </p>
+            <p class="pick-why">
+              The premium is real — this costs significantly more than the Tomtoc. But it's built to last a decade, comes with a lifetime warranty, and is made in the USA to order. For the player who treats their Switch 2 like the investment it is and wants a case that reflects that, Waterfield is the one.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Premium materials and build</li>
+                  <li>Lifetime warranty</li>
+                  <li>Magnetic closure — no zipper wear</li>
+                  <li>Handmade to order in USA</li>
+                  <li>Will outlast the console</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Significantly more expensive</li>
+                  <li>Ships on order — not instant</li>
+                  <li>Only 8 game slots</li>
+                  <li>Overkill for most buyers</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Waterfield Switch 2 Arcade Case</p>
+                <p class="pick-cta-note">Check price at waterfield.com — not on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View at Waterfield →</span>
+            </a>
+          </div>
+        </div>
+
+        <h2>What about cases that fit the dock?</h2>
+        <p>Most slim carrying cases don't have room for the Switch 2 dock — it's simply too large. If you need a bag that carries the full setup (console, dock, cables, Joy-Con grip, and games), you're looking at a dedicated travel bag rather than a carrying case.</p>
+        <p>The best option for this is a <strong>medium-sized tech organizer bag</strong> like the Tomtoc Tech Organizer Pouch or the Bagsmart Electronic Organizer — neither is Switch 2-specific but both fit the dock, multiple cables, a power bank, and the slim case containing the console. Search "Nintendo Switch 2 travel bag" on Amazon for options that package the whole setup together.</p>
+
+        <h2>Caring for your Switch 2 case</h2>
+        <p>Hard shell EVA cases can be wiped clean with a slightly damp cloth. Don't submerge them — water-resistant means splash-proof, not waterproof. For fabric and neoprene soft cases, spot-clean with mild soap and air dry completely before putting the Switch 2 back in. Never machine wash — it warps the structure.</p>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Will my Switch 1 case fit Switch 2?</strong><br/>
+        No. The Switch 2 is physically larger than the original Switch and Switch OLED. Switch 1 cases are too small — the console either won't fit or will be forced in with pressure on the screen. Buy a Switch 2-specific case.</p>
+
+        <p><strong>Should I keep the Joy-Cons attached when storing in the case?</strong><br/>
+        Yes for most cases — Switch 2 cases are sized for the console with Joy-Cons attached. Removing the Joy-Cons to store separately creates a loose fit and the console can rattle. Cases designed for console-only storage are less common.</p>
+
+        <p><strong>How many game card slots do I need?</strong><br/>
+        8 slots covers most physical libraries comfortably. If you buy a lot of physical games, go for 12–16. Digital-only players can ignore game slots entirely and prioritize accessory pockets for cables and a power bank instead.</p>
+
+        <p><strong>Are officially licensed cases better than third-party?</strong><br/>
+        Not necessarily. HORI is excellent because they have genuine quality standards, but most of the best cases (Tomtoc, Orzly) are third-party. The Nintendo license guarantees a correct fit but doesn't guarantee build quality. Check reviews regardless of licensing.</p>
+
+        <p><strong>Can I fit a screen protector on the Switch 2 and still use a case?</strong><br/>
+        Yes — a screen protector adds less than 0.5mm of thickness and all the cases on this list accommodate it easily. Apply the screen protector first, then test the case fit.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">🎒 Our picks — quick links</div>
+          <p>All five recommended cases, direct to Amazon:</p>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Tomtoc Slim Case — best overall</p>
+              <p class="pick-cta-note">Hard shell · microfiber interior · water-resistant</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">JETech Protective Case — best budget</p>
+              <p class="pick-cta-note">Hard shell · 10 game slots · under $15</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">HORI Compact Play Stand Case — best for travel</p>
+              <p class="pick-cta-note">Hard shell · built-in stand · Nintendo licensed</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:8px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Orzly Carry Case Bundle — best large kit</p>
+              <p class="pick-cta-note">24 game slots · accessories included</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta" style="margin-bottom:14px;">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Waterfield Switch 2 Arcade Case — best premium</p>
+              <p class="pick-cta-note">Ballistic nylon · lifetime warranty · ships from waterfield.com</p>
+            </div>
+            <span class="pick-cta-arrow">Waterfield →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
