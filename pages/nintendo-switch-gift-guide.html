@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Nintendo Switch Gifts 2026 — For Every Type of Player & Budget — Gamers Watchlist</title>
+  <meta name="description" content="Best Nintendo Switch gifts in 2026 — perfect picks for kids, adults, hardcore gamers, and people who have everything. Games, accessories, and hardware at every budget." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .gift-card {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 16px 20px;
+      margin-bottom: 12px;
+      transition: border-color 0.2s;
+    }
+    .gift-card.featured { border-color: rgba(232,255,71,0.4); }
+    .gift-icon { font-size: 2rem; flex-shrink: 0; margin-top: 2px; }
+    .gift-body { flex: 1; }
+    .gift-name { font-size: 14px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .gift-price { font-size: 11px; color: var(--accent); font-family: var(--font-mono); margin: 0 0 5px; }
+    .gift-why { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+    .gift-cta {
+      display: flex; align-items: center; justify-content: space-between;
+      background: var(--dark); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 8px 12px;
+      text-decoration: none; transition: border-color 0.2s; margin-top: 10px;
+    }
+    .gift-cta:hover { border-color: var(--accent); }
+    .gift-cta-name { font-size: 12px; font-weight: 500; color: var(--text); margin: 0; }
+    .gift-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .gift-cta-arrow { font-size: 12px; color: var(--accent); flex-shrink: 0; }
+    .section-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin: 1.5rem 0;
+    }
+    .section-card-header {
+      padding: 16px 20px;
+      background: var(--surface2);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .section-icon { font-size: 1.8rem; flex-shrink: 0; }
+    .section-header-body { flex: 1; }
+    .section-header-title { font-family: var(--font-display); font-size: 1.6rem; letter-spacing: 0.04em; color: var(--text); margin: 0 0 2px; }
+    .section-header-sub { font-size: 12px; color: var(--text-muted); margin: 0; }
+    .section-card-body { padding: 16px 20px; display: flex; flex-direction: column; gap: 12px; }
+    .budget-tag {
+      display: inline-block; font-size: 10px; padding: 2px 8px;
+      border-radius: 4px; font-family: var(--font-mono);
+      letter-spacing: 0.04em; margin-left: 6px; vertical-align: middle;
+    }
+    .budget-xs  { background: rgba(61,220,132,0.12); color: var(--green); }
+    .budget-s   { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .budget-m   { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .budget-l   { background: rgba(255,165,2,0.12); color: #ffa502; }
+    .budget-xl  { background: rgba(175,82,222,0.12); color: #af52de; }
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 8px;
+      margin: 1.5rem 0;
+    }
+    .price-band {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 12px;
+      text-align: center;
+    }
+    .price-band.active { border-color: rgba(232,255,71,0.3); }
+    .price-range { font-family: var(--font-display); font-size: 1.3rem; color: var(--accent); letter-spacing: 0.04em; margin: 0 0 3px; }
+    .price-band:not(.active) .price-range { color: var(--text-muted); }
+    .price-label { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .cheat-row {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 10px 0; border-bottom: 1px solid var(--border); gap: 12px;
+    }
+    .cheat-row:last-child { border-bottom: none; }
+    .cheat-label { font-size: 13px; color: var(--text-muted); flex: 1; }
+    .cheat-label strong { color: var(--text); }
+    .cheat-answer { font-size: 12px; color: var(--accent); text-align: right; flex-shrink: 0; font-weight: 500; }
+    .section-divider {
+      display: flex; align-items: center; gap: 14px; margin: 2.5rem 0 1.25rem;
+    }
+    .section-divider-title {
+      font-family: var(--font-display); font-size: 1.8rem;
+      letter-spacing: 0.04em; color: var(--text); white-space: nowrap;
+    }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+    @media (max-width: 560px) {
+      .gift-card { flex-direction: column; gap: 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Gift Guide</span>
+          <span class="article-date">Updated November 2026 · 10 min read</span>
+        </div>
+        <h1 class="article-title">Best Nintendo Switch Gifts 2026</h1>
+        <p class="article-deck">Nintendo is one of the most-gifted gaming brands every holiday season — and for good reason. Whether you're buying for a kid, a partner, a hardcore gamer, or someone who insists they have everything, there's a perfect pick here at every budget.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Quick picks by recipient</div>
+        <p>
+          <strong>Young kids (3–7):</strong> Kirby and the Forgotten Land, Yoshi's Crafted World<br/>
+          <strong>Older kids (8–12):</strong> Pokémon Scarlet/Violet, Zelda: Echoes of Wisdom<br/>
+          <strong>Adults / casual gamers:</strong> Stardew Valley, Nintendo Switch Sports<br/>
+          <strong>Hardcore gamers:</strong> 8BitDo Ultimate 2 Hall Effect controller, SanDisk 1TB microSD<br/>
+          <strong>Someone who has everything:</strong> Nintendo Switch Online family plan, Waterfield case<br/>
+          <strong>Best hardware gift:</strong> Nintendo Switch 2 (with bundle game included)
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Before you buy — quick cheat sheet</h2>
+        <div class="section-card">
+          <div class="section-card-body" style="padding: 4px 0;">
+            <div class="cheat-row">
+              <span class="cheat-label"><strong>They have a Switch 1 or OLED</strong> — do games still work on Switch 2?</span>
+              <span class="cheat-answer">Yes — all Switch 1 games work on Switch 2</span>
+            </div>
+            <div class="cheat-row" style="padding: 10px 20px;">
+              <span class="cheat-label"><strong>Physical vs digital</strong> — which should I buy as a gift?</span>
+              <span class="cheat-answer">Physical for kids, digital eShop card for adults</span>
+            </div>
+            <div class="cheat-row" style="padding: 10px 20px;">
+              <span class="cheat-label"><strong>Do Switch 1 accessories</strong> work on Switch 2?</span>
+              <span class="cheat-answer">Partly — cases don't fit, controllers work wirelessly</span>
+            </div>
+            <div class="cheat-row" style="padding: 10px 20px;">
+              <span class="cheat-label"><strong>Is Switch 2 worth buying</strong> if they already have Switch OLED?</span>
+              <span class="cheat-answer">Yes if they play docked — see our comparison guide</span>
+            </div>
+            <div class="cheat-row" style="padding: 10px 20px; border: none;">
+              <span class="cheat-label"><strong>Best stocking stuffer</strong> under $15?</span>
+              <span class="cheat-answer">amFilm screen protector 2-pack or JETech case</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>Gifts by price range</h2>
+        <div class="price-grid">
+          <div class="price-band"><p class="price-range">Under $15</p><p class="price-label">Stocking stuffers</p></div>
+          <div class="price-band"><p class="price-range">$15–$30</p><p class="price-label">Small gifts</p></div>
+          <div class="price-band active"><p class="price-range">$30–$60</p><p class="price-label">Sweet spot</p></div>
+          <div class="price-band active"><p class="price-range">$60–$100</p><p class="price-label">Main gift</p></div>
+          <div class="price-band"><p class="price-range">$100+</p><p class="price-label">Big gift</p></div>
+        </div>
+
+        <!-- SECTION: KIDS -->
+        <div class="section-divider">
+          <span class="section-divider-title">🧒 For Kids</span>
+          <div class="section-divider-line"></div>
+        </div>
+        <p>Nintendo's library is purpose-built for younger players — colorful, non-violent, and forgiving. Every pick below is rated E or E10+ and age-appropriate for the listed range.</p>
+
+        <div class="section-card">
+          <div class="section-card-header">
+            <span class="section-icon">🌸</span>
+            <div class="section-header-body">
+              <p class="section-header-title">Ages 3–7</p>
+              <p class="section-header-sub">Forgiving difficulty · no reading required · bright and joyful</p>
+            </div>
+          </div>
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">🌸</div>
+              <div class="gift-body">
+                <p class="gift-name">Kirby and the Forgotten Land <span class="budget-tag budget-m">~$40</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">The single best game for young children on any Nintendo platform. Kirby floats when he falls — no instant death, no frustration. An adult can jump in as a second player at any point. No reading required, immediately joyful. The assist mode means even a 3-year-old can make real progress.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Kirby and the Forgotten Land</p><p class="gift-cta-note">Physical copy · Switch 2 backward compatible</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🦕</div>
+              <div class="gift-body">
+                <p class="gift-name">Yoshi's Crafted World <span class="budget-tag budget-m">~$40</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">A crafted-cardboard adventure that looks like an arts project come to life. Mellow difficulty, gorgeous levels, 2-player co-op. Best for ages 4–7. No reading required, no scary moments.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Yoshi's Crafted World</p><p class="gift-cta-note">Physical copy · Switch 2 backward compatible</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🎾</div>
+              <div class="gift-body">
+                <p class="gift-name">Nintendo Switch Sports <span class="budget-tag budget-m">~$40</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">Motion-controlled bowling, tennis, soccer, and more. No button knowledge required — kids wave the controller and it works. Great for getting kids off the couch. The whole family can compete at bowling.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Nintendo Switch Sports</p><p class="gift-cta-note">Physical copy · leg strap included</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card">
+          <div class="section-card-header">
+            <span class="section-icon">🎮</span>
+            <div class="section-header-body">
+              <p class="section-header-title">Ages 8–12</p>
+              <p class="section-header-sub">Real depth and challenge · reading required · adventure and exploration</p>
+            </div>
+          </div>
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">⚡</div>
+              <div class="gift-body">
+                <p class="gift-name">Pokémon Scarlet or Violet <span class="budget-tag budget-m">~$40–$60</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">The most universally beloved franchise for kids aged 7–12. Scarlet and Violet are the most open Pokémon games yet — explore freely, catch Pokémon, build a team. Holds attention for hundreds of hours. Buy whichever version they don't already own.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Pokémon Scarlet</p><p class="gift-cta-note">Physical copy on Amazon</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🏎️</div>
+              <div class="gift-body">
+                <p class="gift-name">Mario Kart World <span class="budget-tag budget-l">~$60–$70</span></p>
+                <p class="gift-price">Physical on Amazon · Switch 2 exclusive</p>
+                <p class="gift-why">The definitive multiplayer game for this age group. Item system levels the playing field — a kid in last place can still win with a lucky blue shell. Open-world driving between races is a genuine new mode kids love.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Mario Kart World</p><p class="gift-cta-note">Switch 2 exclusive · physical copy</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🎲</div>
+              <div class="gift-body">
+                <p class="gift-name">Super Mario Party Jamboree <span class="budget-tag budget-m">~$50</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">100+ mini-games, multiple boards, and the luck-based format means kids genuinely compete with adults. Best party game in the series' history. Great family gift that everyone plays together.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Super Mario Party Jamboree</p><p class="gift-cta-note">Physical copy · Switch 2 enhanced</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🛡️</div>
+              <div class="gift-body">
+                <p class="gift-name">PDP Faceoff Wired Controller <span class="budget-tag budget-s">~$25</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">Smaller grip for kids' hands, wired so no charging required, headphone jack built in. Nintendo licensed. At this price it's a practical gift that parents appreciate — no batteries, no charging anxiety.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">PDP Faceoff Deluxe+ Wired Controller</p><p class="gift-cta-note">Physical on Amazon · smaller grip</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: ADULTS -->
+        <div class="section-divider">
+          <span class="section-divider-title">🧑 For Adults</span>
+          <div class="section-divider-line"></div>
+        </div>
+        <p>Adult Switch players tend to have different tastes — deeper narratives, more complex mechanics, games they can pick up after the kids are asleep. These picks work for casual adult gamers and as gifts for people who have played games before.</p>
+
+        <div class="section-card">
+          <div class="section-card-header">
+            <span class="section-icon">🌾</span>
+            <div class="section-header-body">
+              <p class="section-header-title">Games for Adults</p>
+              <p class="section-header-sub">Rich experiences · play at your own pace · works for couples too</p>
+            </div>
+          </div>
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">🌾</div>
+              <div class="gift-body">
+                <p class="gift-name">Stardew Valley <span class="budget-tag budget-xs">~$15</span></p>
+                <p class="gift-price">Nintendo eShop / physical on Amazon</p>
+                <p class="gift-why">The most-played game on Switch by a significant margin. Farm, fish, mine, and build a life in a handcrafted world with no pressure and no failure state. 200+ hours of content. Made entirely by one person. The best value game on the platform — gift an eShop card or the physical cartridge.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Stardew Valley</p><p class="gift-cta-note">Physical on Amazon or ~$15 on eShop</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🌿</div>
+              <div class="gift-body">
+                <p class="gift-name">It Takes Two <span class="budget-tag budget-m">~$30–$40</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">Game of the Year winner and the best co-op game ever made. Perfect gift for a couple — buy one copy, the second player uses the free Friend's Pass. 12 hours of constantly inventive co-op gameplay with a story about reconnection. Works for both gaming and non-gaming recipients.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">It Takes Two</p><p class="gift-cta-note">Physical on Amazon · Friend's Pass included</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">⛵</div>
+              <div class="gift-body">
+                <p class="gift-name">Spiritfarer: Farewell Edition <span class="budget-tag budget-s">~$20</span></p>
+                <p class="gift-price">Physical on Amazon / eShop</p>
+                <p class="gift-why">A beautiful, emotional game about helping spirit passengers complete their final wishes. The most artistically meaningful game on Switch 2. Best gifted to adults who appreciate thoughtful narratives. Routinely described as "one of the most meaningful gaming experiences I've had."</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Spiritfarer: Farewell Edition</p><p class="gift-cta-note">Physical on Amazon · also eShop</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🏝️</div>
+              <div class="gift-body">
+                <p class="gift-name">Animal Crossing: New Horizons <span class="budget-tag budget-m">~$40</span></p>
+                <p class="gift-price">Physical on Amazon</p>
+                <p class="gift-why">Best-selling Nintendo game ever. Build and customize an island at whatever pace feels right — nothing is urgent, nothing punishes you. The most popular Switch gift for adult non-gamers who want something calming and creative. Runs beautifully on Switch 2.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Animal Crossing: New Horizons</p><p class="gift-cta-note">Physical on Amazon · Switch 2 compatible</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: HARDCORE GAMERS -->
+        <div class="section-divider">
+          <span class="section-divider-title">🏆 For Hardcore Gamers</span>
+          <div class="section-divider-line"></div>
+        </div>
+        <p>Experienced gamers already own the obvious games. The best gifts for them are either premium accessories that upgrade their existing setup or games that offer real depth and challenge. Ask them what they already own before buying a game — with this audience, duplicates are a real risk.</p>
+
+        <div class="section-card">
+          <div class="section-card-header">
+            <span class="section-icon">⚔️</span>
+            <div class="section-header-body">
+              <p class="section-header-title">Accessories for Serious Players</p>
+              <p class="section-header-sub">Upgrade gifts they'll use every single session</p>
+            </div>
+          </div>
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">🎮</div>
+              <div class="gift-body">
+                <p class="gift-name">8BitDo Ultimate 2 Hall Effect Controller <span class="budget-tag budget-l">~$70</span></p>
+                <p class="gift-price">Amazon or 8bitdo.com</p>
+                <p class="gift-why">Hall effect sticks that never drift — the most meaningful controller upgrade available. Charging dock included. Four remappable back buttons. Full button remapping via app. If they've ever complained about stick drift, this is the gift. The controller serious Switch players want but rarely buy themselves.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">8BitDo Ultimate 2 Hall Effect Controller</p><p class="gift-cta-note">Amazon · or direct from 8bitdo.com</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card featured">
+              <div class="gift-icon">💾</div>
+              <div class="gift-body">
+                <p class="gift-name">SanDisk Extreme 1TB microSD Card <span class="budget-tag budget-l">~$80–$100</span></p>
+                <p class="gift-price">Amazon</p>
+                <p class="gift-why">The gift every serious Switch 2 owner wants and few have bought yet. 1TB means never managing storage again — combined with Switch 2's internal storage, roughly 1.25TB total. 190MB/s read speed for the fastest possible game load times. Lifetime warranty. This is the practical gift that becomes the first thing they talk about.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">SanDisk Extreme 1TB microSDXC</p><p class="gift-cta-note">190MB/s · U3, V30, A2 · lifetime warranty</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">📺</div>
+              <div class="gift-body">
+                <p class="gift-name">JSAUX HB0603 4K Dock with Ethernet <span class="budget-tag budget-l">~$50–$60</span></p>
+                <p class="gift-price">Amazon</p>
+                <p class="gift-why">A second 4K dock with a gigabit Ethernet port the official dock lacks. Serious online players notice the difference between wired and wireless — this eliminates Wi-Fi lag spikes in competitive games. Great gift for someone who plays a lot of Splatoon or Mario Kart online.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">JSAUX HB0603 4K Dock</p><p class="gift-cta-note">4K · Ethernet · 3× USB-A · 65W</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-card" style="margin-top:12px;">
+          <div class="section-card-header">
+            <span class="section-icon">🔥</span>
+            <div class="section-header-body">
+              <p class="section-header-title">Games for Hardcore Players</p>
+              <p class="section-header-sub">Challenge, depth, and replayability &mdash; ask what they already own first</p>
+            </div>
+          </div>
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">🔥</div>
+              <div class="gift-body">
+                <p class="gift-name">Hades II <span class="budget-tag budget-m">~$30</span></p>
+                <p class="gift-price">Nintendo eShop / physical</p>
+                <p class="gift-why">The best action roguelite ever made, with Supergiant's signature writing and voice acting. Hundreds of hours of replayability — each run is different, each unlock meaningful. The game serious Switch players are still talking about in 2026. If they haven't played it, this is the gift.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Hades II</p><p class="gift-cta-note">eShop or physical on Amazon</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">☕</div>
+              <div class="gift-body">
+                <p class="gift-name">Cuphead + The Delicious Last Course <span class="budget-tag budget-m">~$30</span></p>
+                <p class="gift-price">Physical bundle on Amazon</p>
+                <p class="gift-why">The most beautiful difficult game ever made — 1930s cartoon art housing a brutally precise boss-rush platformer. The DLC adds a full second chapter. For players who enjoy challenge and mastery, Cuphead's satisfaction on completion is unmatched. The physical bundle includes both the base game and the DLC.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Cuphead + The Delicious Last Course</p><p class="gift-cta-note">Physical bundle on Amazon</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: PERSON WHO HAS EVERYTHING -->
+        <div class="section-divider">
+          <span class="section-divider-title">💎 For Someone Who Has Everything</span>
+          <div class="section-divider-line"></div>
+        </div>
+        <p>The hardest category. They have the console, the games, the controllers. The best approach: go premium on accessories they'd never buy themselves, or give the gift of more gaming time and content via subscriptions and credits.</p>
+
+        <div class="section-card">
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">👨‍👩‍👧</div>
+              <div class="gift-body">
+                <p class="gift-name">Nintendo Switch Online Family Plan <span class="budget-tag budget-m">~$35/yr</span></p>
+                <p class="gift-price">Nintendo eShop</p>
+                <p class="gift-why">The gift of online multiplayer for the whole household. The Family Plan covers up to 8 Nintendo Accounts — ideal as a family gift. Includes access to the retro game library (NES, SNES, N64, Game Boy, GBA, and Sega Genesis). If they don't already have NSO, this is genuinely useful. If they do, gift the Expansion Pack upgrade instead.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Nintendo Switch Online Family Plan</p><p class="gift-cta-note">Sold as a code on Amazon or direct from Nintendo</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card featured">
+              <div class="gift-icon">👜</div>
+              <div class="gift-body">
+                <p class="gift-name">Waterfield Designs Switch 2 Arcade Case <span class="budget-tag budget-xl">~$100+</span></p>
+                <p class="gift-price">Waterfield.com — not on Amazon</p>
+                <p class="gift-why">The best Switch 2 case ever made — ballistic nylon and full-grain leather, magnetic closure, handmade in San Francisco to order. This is the case for someone who treats their Switch 2 as the investment it is. Premium, distinctive, and something they'd never buy themselves. Order early — it ships on demand and takes 1–2 weeks.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Waterfield Switch 2 Arcade Case</p><p class="gift-cta-note">Order at waterfield.com — 1–2 week lead time</p></div><span class="gift-cta-arrow">Waterfield →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">💳</div>
+              <div class="gift-body">
+                <p class="gift-name">Nintendo eShop Gift Card ($35, $50, $70) <span class="budget-tag budget-m">Various</span></p>
+                <p class="gift-price">Amazon digital delivery / physical cards everywhere</p>
+                <p class="gift-why">The honest answer when you genuinely don't know what they want. An eShop card lets them buy whatever's next on their wishlist — no duplicate gifts, no wrong version. Available in multiple denominations, delivered digitally via email or as a physical card. Never wrong as a gaming gift when you're unsure.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Nintendo eShop Gift Card</p><p class="gift-cta-note">Digital delivery on Amazon · arrives instantly</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">🔋</div>
+              <div class="gift-body">
+                <p class="gift-name">Anker 737 Power Bank (24,000mAh) <span class="budget-tag budget-l">~$80</span></p>
+                <p class="gift-price">Amazon</p>
+                <p class="gift-why">The premium portable battery that keeps Switch 2 running indefinitely — 140W output, nearly two full charges of capacity, charges Switch 2 and a laptop simultaneously. Most Switch 2 owners don't own a power bank good enough for serious travel. This is the one that gets talked about.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Anker 737 Power Bank (24,000mAh)</p><p class="gift-cta-note">140W output · charges Switch 2 and laptop</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- SECTION: HARDWARE -->
+        <div class="section-divider">
+          <span class="section-divider-title">🖥️ Hardware Gifts</span>
+          <div class="section-divider-line"></div>
+        </div>
+        <p>Buying hardware as a gift is the boldest move — and the most appreciated when it lands right. Confirm they don't already own what you're buying, and lean toward bundles that include games for immediate gratification.</p>
+
+        <div class="section-card">
+          <div class="section-card-body">
+            <div class="gift-card featured">
+              <div class="gift-icon">🆕</div>
+              <div class="gift-body">
+                <p class="gift-name">Nintendo Switch 2 + Mario Kart World Bundle <span class="budget-tag budget-xl">~$449.99</span></p>
+                <p class="gift-price">Amazon / Best Buy</p>
+                <p class="gift-why">The definitive 2026 hardware gift. Switch 2 with the best launch title included — one price, zero additional purchases needed to start playing. If they don't own a Switch 2 yet, this is the answer at every age. Check Amazon and Best Buy simultaneously — bundle availability varies by retailer and stock fluctuates around the holidays.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Nintendo Switch 2 + Mario Kart World Bundle</p><p class="gift-cta-note">Check Amazon for availability</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">✨</div>
+              <div class="gift-body">
+                <p class="gift-name">Nintendo Switch OLED Model <span class="budget-tag budget-xl">~$249–$299</span></p>
+                <p class="gift-price">Amazon / Best Buy</p>
+                <p class="gift-why">For someone who wants a Switch but doesn't need Switch 2's full power — the OLED model has a stunning 7-inch OLED display, plays all Switch 1 games, and at a lower price than Switch 2 represents excellent value for casual players and kids. Best paired with a carrying case and a game.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">Nintendo Switch OLED Model</p><p class="gift-cta-note">Check Amazon for current pricing</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- STOCKING STUFFERS -->
+        <div class="section-divider">
+          <span class="section-divider-title">🧦 Stocking Stuffers</span>
+          <div class="section-divider-line"></div>
+        </div>
+        <p>Under $20, practical, and genuinely appreciated by any Switch owner. These are the picks that fill a stocking perfectly and get used immediately.</p>
+
+        <div class="section-card">
+          <div class="section-card-body">
+            <div class="gift-card">
+              <div class="gift-icon">🛡️</div>
+              <div class="gift-body">
+                <p class="gift-name">amFilm Tempered Glass Screen Protector 2-pack <span class="budget-tag budget-xs">~$10</span></p>
+                <p class="gift-why">Every Switch 2 owner needs one. Alignment frame included for easy installation. The most practical small gift for any Switch 2 owner who doesn't already have one — and most don't.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">amFilm Ultimate Tempered Glass 2-pack</p><p class="gift-cta-note">Amazon · Switch 2 specific</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">👜</div>
+              <div class="gift-body">
+                <p class="gift-name">JETech Hard Shell Carrying Case <span class="budget-tag budget-xs">~$12</span></p>
+                <p class="gift-why">Solid hard-shell protection for Switch 2 at the lowest price on our recommended list. 10 game card slots. The right gift for someone who travels with their Switch and doesn't already have a case.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">JETech Carrying Case for Switch 2</p><p class="gift-cta-note">Amazon · hard shell · Switch 2 specific</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+            <div class="gift-card">
+              <div class="gift-icon">💳</div>
+              <div class="gift-body">
+                <p class="gift-name">Nintendo eShop Gift Card ($20) <span class="budget-tag budget-s">~$20</span></p>
+                <p class="gift-why">The universal stocking stuffer for any Switch owner. Stardew Valley costs $15 on the eShop — a $20 card covers it with credit to spare. Never the wrong gift when you're not sure what they already own.</p>
+                <a href="#" class="gift-cta"><div><p class="gift-cta-name">$20 Nintendo eShop Gift Card</p><p class="gift-cta-note">Digital delivery on Amazon · arrives by email</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Can I gift digital games on Nintendo Switch 2?</strong><br/>
+        Not directly — the Nintendo eShop doesn't support gifting specific games to another person's account. The best way to give a digital game is through a Nintendo eShop gift card in the appropriate amount. The recipient redeems it and buys whatever they want, including the game you had in mind.</p>
+
+        <p><strong>What if I don't know whether they have Switch 2 or Switch 1?</strong><br/>
+        Gift a physical game rather than Switch 2-exclusive hardware. Every game on this list marked "Switch 2 backward compatible" works on both consoles. The safest game gifts across both platforms: Stardew Valley, Animal Crossing, Mario Kart 8 Deluxe (not World), Super Mario Bros. Wonder, or an eShop card.</p>
+
+        <p><strong>What's the best gift for someone getting a Switch 2 for the first time?</strong><br/>
+        Buy the Switch 2 + Mario Kart World bundle if budget allows. Then add a screen protector and carrying case as supplementary gifts — every new Switch 2 owner needs both immediately. If buying only accessories to go with hardware someone else is giving: the amFilm screen protector + Tomtoc case + one game they'd enjoy is a perfect supporting gift set.</p>
+
+        <p><strong>Do I need to buy Switch 2 games specifically, or will old Switch games work?</strong><br/>
+        Old Switch games work on Switch 2 — full backward compatibility. You don't need to buy Switch 2-exclusive titles. Games marked "Switch 2 exclusive" (Mario Kart World) require Switch 2 hardware. Everything else works on both consoles.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">🎁 Complete gift list — all picks on Amazon</div>
+          <p>Every recommended gift, organized for quick purchase:</p>
+          <a href="#" class="gift-cta" style="margin-bottom:8px;"><div><p class="gift-cta-name">Switch 2 + Mario Kart World Bundle — best hardware gift</p><p class="gift-cta-note">~$449.99 · Amazon or Best Buy</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <a href="#" class="gift-cta" style="margin-bottom:8px;"><div><p class="gift-cta-name">Kirby and the Forgotten Land — best for young kids</p><p class="gift-cta-note">~$40 · ages 3+ · 2-player co-op</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <a href="#" class="gift-cta" style="margin-bottom:8px;"><div><p class="gift-cta-name">8BitDo Ultimate 2 Hall Effect Controller — best for hardcore gamers</p><p class="gift-cta-note">~$70 · no drift · charging dock</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <a href="#" class="gift-cta" style="margin-bottom:8px;"><div><p class="gift-cta-name">SanDisk Extreme 1TB microSD — best premium accessory gift</p><p class="gift-cta-note">~$80–$100 · 190MB/s · lifetime warranty</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <a href="#" class="gift-cta" style="margin-bottom:8px;"><div><p class="gift-cta-name">It Takes Two — best for couples</p><p class="gift-cta-note">~$30–$40 · Friend's Pass included</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <a href="#" class="gift-cta" style="margin-bottom:8px;"><div><p class="gift-cta-name">Nintendo eShop Gift Card — safest gift when unsure</p><p class="gift-cta-note">$20–$70 · digital delivery · never wrong</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <a href="#" class="gift-cta" style="margin-bottom:14px;"><div><p class="gift-cta-name">amFilm Screen Protector 2-pack — best stocking stuffer</p><p class="gift-cta-note">~$10 · every Switch 2 owner needs one</p></div><span class="gift-cta-arrow">Amazon →</span></a>
+          <p style="font-size:11px;color:var(--text-dim);margin:0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you. Prices reflect estimates at time of writing and may vary.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
