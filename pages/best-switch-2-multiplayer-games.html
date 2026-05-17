@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Multiplayer Nintendo Switch 2 Games (2026) — Gamers Watchlist</title>
+  <meta name="description" content="Best Nintendo Switch 2 multiplayer games in 2026 — local co-op, online play, party games, and hidden gems. Something for every group, every occasion." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .game-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .game-card.top { border-color: rgba(232,255,71,0.4); }
+    .game-header {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .game-emoji { font-size: 2rem; flex-shrink: 0; }
+    .game-header-body { flex: 1; }
+    .game-name { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .game-meta { font-size: 12px; color: var(--text-muted); margin: 0; font-family: var(--font-mono); }
+    .game-badge {
+      display: inline-block; font-size: 10px; padding: 3px 9px;
+      border-radius: 6px; font-family: var(--font-mono);
+      letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0;
+    }
+    .badge-gold   { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-silver { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .badge-green  { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-orange { background: rgba(255,165,2,0.12);  color: #ffa502; }
+    .badge-purple { background: rgba(175,82,222,0.12); color: #af52de; }
+    .badge-red    { background: rgba(255,71,87,0.12);  color: var(--red); }
+    .game-body { padding: 16px 20px; }
+    .game-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .game-tag {
+      font-size: 11px; font-family: var(--font-mono);
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 99px; padding: 3px 10px; color: var(--text-muted);
+    }
+    .game-why { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 0 0 12px; }
+    .game-why strong { color: var(--text); }
+    .gem-note {
+      background: rgba(175,82,222,0.08); border: 1px solid rgba(175,82,222,0.2);
+      border-radius: var(--radius); padding: 10px 14px; margin-bottom: 12px;
+      font-size: 12px; color: #af52de; line-height: 1.6;
+    }
+    .gem-note strong { color: var(--text); }
+    .game-cta {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--dark); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 10px 14px; text-decoration: none; transition: border-color 0.2s;
+      margin-bottom: 8px;
+    }
+    .game-cta:last-child { margin-bottom: 0; }
+    .game-cta:hover { border-color: var(--accent); }
+    .game-cta-left { flex: 1; }
+    .game-cta-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 1px; }
+    .game-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .game-cta-arrow { font-size: 13px; color: var(--accent); flex-shrink: 0; }
+    .section-divider {
+      display: flex; align-items: center; gap: 14px; margin: 2rem 0 1.25rem;
+    }
+    .section-divider-title {
+      font-family: var(--font-display); font-size: 1.5rem;
+      letter-spacing: 0.04em; color: var(--text-muted); white-space: nowrap;
+    }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+    .quick-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 10px; margin: 1.5rem 0;
+    }
+    .quick-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 14px; text-align: center;
+    }
+    .quick-icon { font-size: 1.8rem; margin-bottom: 6px; display: block; }
+    .quick-label { font-size: 11px; font-family: var(--font-mono); color: var(--text-dim); margin: 0 0 4px; letter-spacing: 0.04em; text-transform: uppercase; }
+    .quick-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .quick-desc { font-size: 11px; color: var(--text-muted); margin: 0; line-height: 1.4; }
+    .controllers-note {
+      background: rgba(232,255,71,0.06); border: 1px solid rgba(232,255,71,0.2);
+      border-radius: var(--radius); padding: 14px 18px; margin: 1.5rem 0;
+    }
+    .controllers-title { font-size: 13px; font-weight: 600; color: var(--accent); margin: 0 0 6px; }
+    .controllers-body { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+    .controllers-body strong { color: var(--text); }
+    @media (max-width: 560px) {
+      .game-header { flex-wrap: wrap; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Games</span>
+          <span class="article-date">May 2026 · 9 min read</span>
+        </div>
+        <h1 class="article-title">Best Multiplayer Nintendo Switch 2 Games (2026)</h1>
+        <p class="article-deck">The Switch 2 is the best multiplayer console Nintendo has ever made — local co-op, online play, and party games that work whether you have one TV or four friends in the same room. Here's what's worth playing.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Top picks by occasion</div>
+        <p>
+          <strong>Best local co-op:</strong> Super Mario Bros. Wonder, It Takes Two<br/>
+          <strong>Best competitive local:</strong> Mario Kart World, Super Smash Bros. Ultimate<br/>
+          <strong>Best online:</strong> Splatoon 3, Mario Kart World<br/>
+          <strong>Best party game:</strong> Super Mario Party Jamboree, Jackbox Party Pack<br/>
+          <strong>Best hidden gem:</strong> Overcooked 2, Lovers in a Dangerous Spacetime<br/>
+          <strong>Best for two players:</strong> It Takes Two, Mario + Rabbids Sparks of Hope
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Why Switch 2 is the best console for multiplayer</h2>
+        <p>Every Switch 2 comes with two Joy-Cons that separate into individual controllers — you have a two-player setup the moment you open the box. No buying a second controller before you can play with someone else. No split-screen that feels like a compromise. The Switch 2 is designed from the ground up for shared play, and the library reflects that.</p>
+        <p>The hybrid design also means multiplayer happens naturally: dock it to the TV for a living room session, take it handheld for a long-distance co-op game via online, or tilt the screen on its kickstand and play tabletop-style with a friend on a plane. No other console offers all three without accessories.</p>
+
+        <div class="controllers-note">
+          <p class="controllers-title">🎮 Controller setup for multiplayer</p>
+          <p class="controllers-body">
+            <strong>2 players:</strong> Use the two included Joy-Cons sideways — works immediately, no extra purchases.<br/>
+            <strong>3–4 players:</strong> You'll need additional Joy-Cons or pro controllers. A second Joy-Con set covers 4 players. See our <a href="best-switch-2-controllers.html" style="color:var(--accent);">controller recommendations →</a>
+          </p>
+        </div>
+
+        <h2>At a glance — best game for each situation</h2>
+        <div class="quick-grid">
+          <div class="quick-card">
+            <span class="quick-icon">🛋️</span>
+            <p class="quick-label">Same couch</p>
+            <p class="quick-title">Mario Kart World</p>
+            <p class="quick-desc">4 players, immediate fun, no learning curve</p>
+          </div>
+          <div class="quick-card">
+            <span class="quick-icon">🤝</span>
+            <p class="quick-label">Co-op story</p>
+            <p class="quick-title">It Takes Two</p>
+            <p class="quick-desc">Best co-op game ever made. 2 players only.</p>
+          </div>
+          <div class="quick-card">
+            <span class="quick-icon">🎉</span>
+            <p class="quick-label">Party night</p>
+            <p class="quick-title">Mario Party Jamboree</p>
+            <p class="quick-desc">100+ mini-games, all ages competitive</p>
+          </div>
+          <div class="quick-card">
+            <span class="quick-icon">🌐</span>
+            <p class="quick-label">Online with friends</p>
+            <p class="quick-title">Splatoon 3</p>
+            <p class="quick-desc">Best online shooter on Switch 2</p>
+          </div>
+          <div class="quick-card">
+            <span class="quick-icon">💎</span>
+            <p class="quick-label">Hidden gem</p>
+            <p class="quick-title">Overcooked 2</p>
+            <p class="quick-desc">Chaotic kitchen co-op that tests friendships</p>
+          </div>
+          <div class="quick-card">
+            <span class="quick-icon">🏆</span>
+            <p class="quick-label">Competitive</p>
+            <p class="quick-title">Smash Bros. Ultimate</p>
+            <p class="quick-desc">8 players, 80+ fighters, endless depth</p>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Local co-op</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- IT TAKES TWO -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🌿</div>
+            <div class="game-header-body">
+              <p class="game-name">It Takes Two</p>
+              <p class="game-meta">EA / Hazelight · Rated T · Co-op Adventure · 2 players only · local or online</p>
+            </div>
+            <span class="game-badge badge-gold">Best Co-op Game on Switch 2</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">2 players required</span>
+              <span class="game-tag">Local or online</span>
+              <span class="game-tag">10–12 hours</span>
+              <span class="game-tag">Award-winning</span>
+              <span class="game-tag">Rated T</span>
+            </div>
+            <p class="game-why">
+              It Takes Two won Game of the Year for a reason — it's the most inventively designed co-op game ever made and it only works with two players, which means it demands genuine collaboration in a way most co-op games don't. <strong>Every chapter introduces a completely new gameplay mechanic that both players must master together</strong> — one chapter has one player controlling time while the other controls space; another has one player as a nail and one as a hammer. No two chapters feel alike.
+            </p>
+            <p class="game-why">
+              The Friend's Pass means only one copy is needed — the second player downloads a free trial version and both play together, either on the same couch or online. For couples, siblings, or close friends looking for a shared gaming experience with narrative depth, nothing on the Switch 2 comes close.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">It Takes Two</p>
+                <p class="game-cta-note">Physical copy on Amazon · second player uses free Friend's Pass</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARIO WONDER -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🌺</div>
+            <div class="game-header-body">
+              <p class="game-name">Super Mario Bros. Wonder</p>
+              <p class="game-meta">Nintendo · Rated E · 2D Platformer · 1–4 players local</p>
+            </div>
+            <span class="game-badge badge-silver">Best 4-Player Co-op</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Up to 4 players</span>
+              <span class="game-tag">Local only</span>
+              <span class="game-tag">All skill levels</span>
+              <span class="game-tag">Constantly surprising</span>
+              <span class="game-tag">Rated E</span>
+            </div>
+            <p class="game-why">
+              Four-player simultaneous platforming is notoriously hard to get right — too much chaos makes it unplayable. Wonder solves this beautifully by giving each player enough screen presence and individual agency that <strong>four people can play together without feeling like they're fighting over the same space</strong>. The Wonder Flower sequences that transform each level create shared "did that just happen" moments that four players experience together.
+            </p>
+            <p class="game-why">
+              The ability-assist characters (Nabbit and Yoshi variants) can't take damage, making it accessible for mixed skill groups. One experienced player can carry the level while newer players explore freely. The best local four-player platformer on the platform.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Super Mario Bros. Wonder</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 enhanced</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- OVERCOOKED 2 -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">👨‍🍳</div>
+            <div class="game-header-body">
+              <p class="game-name">Overcooked 2</p>
+              <p class="game-meta">Team17 · Rated E · Co-op Cooking · 1–4 players local or online</p>
+            </div>
+            <span class="game-badge badge-purple">Best Hidden Gem</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">1–4 players</span>
+              <span class="game-tag">Local + online</span>
+              <span class="game-tag">Communication required</span>
+              <span class="game-tag">Chaotic fun</span>
+              <span class="game-tag">Friendship tester</span>
+            </div>
+            <p class="game-why">
+              Overcooked 2 is the best relationship-testing game ever made — in the best possible way. Players work together in increasingly chaotic kitchen environments, chopping ingredients, cooking dishes, and plating orders under time pressure while the kitchen itself changes around them. <strong>The coordination required to succeed is genuinely difficult and the failure to coordinate is genuinely hilarious</strong>.
+            </p>
+            <p class="game-why">
+              It's the game most likely to produce moments that become stories — "remember when we were cooking on two moving ships and you threw the soup at me" is a sentence Overcooked generates regularly. Throw It Too adds food-throwing mechanics that escalate the chaos further. Essential purchase for anyone who plays with roommates, partners, or friends.
+            </p>
+            <div class="gem-note">
+              <strong>💎 Hidden gem pick:</strong> Overcooked 2 is consistently underrated because it sounds simple — it's a cooking game. It's actually one of the most skillfully designed co-op experiences on any platform. Don't skip it based on the premise.
+            </div>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Overcooked 2</p>
+                <p class="game-cta-note">Physical copy on Amazon · Overcooked All You Can Eat includes both games</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- LOVERS -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🚀</div>
+            <div class="game-header-body">
+              <p class="game-name">Lovers in a Dangerous Spacetime</p>
+              <p class="game-meta">Asteroid Base · Rated E10+ · Co-op Shooter · 1–4 players local</p>
+            </div>
+            <span class="game-badge badge-purple">Hidden Gem</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">1–4 players</span>
+              <span class="game-tag">Local only</span>
+              <span class="game-tag">Beautiful art style</span>
+              <span class="game-tag">Space shooter</span>
+              <span class="game-tag">$15 eShop</span>
+            </div>
+            <p class="game-why">
+              One of the most criminally underplayed games on Nintendo's platform. Players crew a spaceship together — <strong>each person operates a different gun, engine, or shield station</strong> while navigating through neon-colored space levels rescuing animals from the Anti-Love forces. The strategy of who covers which station, when to boost, and when to divert power creates natural teamwork moments that feel genuinely earned.
+            </p>
+            <p class="game-why">
+              At $15 on the eShop it's the best value multiplayer game on this list. The art style is gorgeous, the difficulty scales well for 1–4 players, and it has a warmth and originality that bigger-budget games often lack. If you've never heard of it, that's exactly why it's on this list.
+            </p>
+            <div class="gem-note">
+              <strong>💎 Hidden gem pick:</strong> $15 eShop purchase. No physical version. One of the most warmly designed co-op games Nintendo's platform has hosted — passed over by most buyers purely because it has no marketing budget.
+            </div>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Lovers in a Dangerous Spacetime</p>
+                <p class="game-cta-note">Nintendo eShop only · ~$15</p>
+              </div>
+              <span class="game-cta-arrow">eShop →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Competitive local</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- MARIO KART WORLD -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🏎️</div>
+            <div class="game-header-body">
+              <p class="game-name">Mario Kart World</p>
+              <p class="game-meta">Nintendo · Rated E · Racing · 1–4 players local · online · Switch 2 exclusive</p>
+            </div>
+            <span class="game-badge badge-gold">Best Competitive Local</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">4-player local</span>
+              <span class="game-tag">Online multiplayer</span>
+              <span class="game-tag">Switch 2 exclusive</span>
+              <span class="game-tag">Open world between races</span>
+              <span class="game-tag">All skill levels</span>
+            </div>
+            <p class="game-why">
+              The definitive Switch 2 multiplayer experience. Mario Kart World builds on the foundations of MK8 Deluxe — the smoothest, best-balanced kart racer ever made — and adds an open world connecting all the tracks, a massive new roster, and Switch 2-specific features that leverage the new hardware's power. <strong>Four players on one screen with stable 60fps is the standard here</strong>, not a compromise.
+            </p>
+            <p class="game-why">
+              The item system is perfectly tuned for mixed-skill groups: skilled players race faster but items give lower-placed racers a fighting chance. A blue shell at the right moment creates a memory. The skill ceiling is genuinely high for competitive players who want to get fast, while remaining immediately accessible for someone picking up a controller for the first time.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Mario Kart World</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 exclusive</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMASH BROS -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">⚔️</div>
+            <div class="game-header-body">
+              <p class="game-name">Super Smash Bros. Ultimate</p>
+              <p class="game-meta">Nintendo · Rated E10+ · Fighter · 1–8 players local · online</p>
+            </div>
+            <span class="game-badge badge-silver">Best Fighting Game</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Up to 8 players local</span>
+              <span class="game-tag">Online multiplayer</span>
+              <span class="game-tag">80+ fighters</span>
+              <span class="game-tag">Deep competitive scene</span>
+              <span class="game-tag">E10+</span>
+            </div>
+            <p class="game-why">
+              Super Smash Bros. Ultimate is the largest fighting game ever made — <strong>80+ fighters, dozens of stages, and a competitive depth that professional players have spent years mastering</strong>. On Switch 2, it runs with improved performance and faster load times. Eight players can fight simultaneously in a single chaotic free-for-all, which at a party is pure spectacle.
+            </p>
+            <p class="game-why">
+              The gap between casual and competitive Smash is enormous — at the party level it's accessible and immediately fun, but players who want depth will find a lifetime's worth of it in the technical execution and matchup knowledge. Every household with a Switch 2 and more than one person who plays games should own this.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Super Smash Bros. Ultimate</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 backward compatible</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Online multiplayer</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- SPLATOON 3 -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🦑</div>
+            <div class="game-header-body">
+              <p class="game-name">Splatoon 3</p>
+              <p class="game-meta">Nintendo · Rated E10+ · Online Shooter · 1–8 players online · local 2</p>
+            </div>
+            <span class="game-badge badge-gold">Best Online Game</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Online 4v4</span>
+              <span class="game-tag">Local 2-player</span>
+              <span class="game-tag">Competitive ranked</span>
+              <span class="game-tag">Regular updates</span>
+              <span class="game-tag">Switch 2 enhanced</span>
+            </div>
+            <p class="game-why">
+              Splatoon is Nintendo's most original multiplayer franchise — a team-based shooter where the goal is covering the floor in your color ink rather than eliminating opponents. <strong>The mechanic shift from killing to painting makes it accessible to players who find conventional shooters stressful</strong>, while the competitive depth of movement, weapon types, and team composition gives dedicated players a high skill ceiling.
+            </p>
+            <p class="game-why">
+              Splatoon 3 has the largest content base of any game in the series, with regular Splatfest events, a full single-player campaign, and a cooperative Salmon Run mode where up to four players defend against waves of enemies. On Switch 2 it runs noticeably smoother with faster online matchmaking. The active player base remains strong years after launch.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Splatoon 3</p>
+                <p class="game-cta-note">Physical copy on Amazon · Nintendo Switch Online required for online play</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- MARIO STRIKERS -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">⚽</div>
+            <div class="game-header-body">
+              <p class="game-name">Mario Strikers: Battle League</p>
+              <p class="game-meta">Nintendo · Rated E10+ · Sports · 1–8 players local or online</p>
+            </div>
+            <span class="game-badge badge-green">Best Online Sports</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">4v4 online</span>
+              <span class="game-tag">8-player local</span>
+              <span class="game-tag">Fast and chaotic</span>
+              <span class="game-tag">Club mode</span>
+              <span class="game-tag">Switch 2 enhanced</span>
+            </div>
+            <p class="game-why">
+              Mario Strikers is arcade soccer with no rules — items, tackles, and hyper strikes that send opponents flying. The <strong>4v4 online Club mode</strong>, where you form a team with friends and compete against other clubs in weekly seasons, is one of the most compelling online experiences on Nintendo's platform. It rewards regular play and team coordination in ways that random matchmaking doesn't.
+            </p>
+            <p class="game-why">
+              Local eight-player matches — four per team on two Joy-Cons each — create genuine living room tournament energy. The chaotic nature of the game means skill gaps matter less than in traditional sports games, keeping mixed-ability groups competitive.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Mario Strikers: Battle League</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 backward compatible</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">Party games</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- MARIO PARTY -->
+        <div class="game-card top">
+          <div class="game-header">
+            <div class="game-emoji">🎲</div>
+            <div class="game-header-body">
+              <p class="game-name">Super Mario Party Jamboree</p>
+              <p class="game-meta">Nintendo · Rated E · Party · 1–4 players local · online up to 20</p>
+            </div>
+            <span class="game-badge badge-gold">Best Party Game</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">4-player local</span>
+              <span class="game-tag">100+ mini-games</span>
+              <span class="game-tag">Online up to 20</span>
+              <span class="game-tag">All ages fair</span>
+              <span class="game-tag">Board game format</span>
+            </div>
+            <p class="game-why">
+              Mario Party Jamboree has the most content of any Mario Party entry — multiple boards, over 100 mini-games, and online modes supporting up to 20 players in certain formats. The board game structure with item chaos and star-stealing mechanics creates exactly the kind of dramatic reversals that make parties memorable. <strong>The luck component genuinely levels the playing field between a gaming veteran and someone who barely plays</strong> — either can win, and that's the point.
+            </p>
+            <p class="game-why">
+              The Bowser Party mode adds an asymmetric fifth player controlling Bowser against the other four — a great option for someone who wants to participate but isn't confident in traditional mini-game play. Online Jamboree mode connects remote players for long-distance party sessions with family and friends.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Super Mario Party Jamboree</p>
+                <p class="game-cta-note">Physical copy on Amazon · Switch 2 enhanced</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- JACKBOX -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">📱</div>
+            <div class="game-header-body">
+              <p class="game-name">Jackbox Party Pack (series)</p>
+              <p class="game-meta">Jackbox Games · Rated T · Party · 1–10 players via phone</p>
+            </div>
+            <span class="game-badge badge-orange">Best for Adults</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">Players use phones</span>
+              <span class="game-tag">Up to 10 players</span>
+              <span class="game-tag">No controllers needed</span>
+              <span class="game-tag">Drawing + trivia + bluffing</span>
+              <span class="game-tag">Rated T</span>
+            </div>
+            <p class="game-why">
+              Jackbox is the party game that works for people who don't own controllers — <strong>every player uses their smartphone as the input device</strong>, meaning you can run a 10-person party on one Switch 2 with zero extra hardware. Games like Quiplash (fill-in-the-blank comedy), Drawful (telephone drawing), and Trivia Murder Party create genuinely hilarious moments that don't require any gaming ability whatsoever.
+            </p>
+            <p class="game-why">
+              Multiple Jackbox Party Packs are available on the eShop, each containing 5 games. Pack 7 and Pack 9 are the most consistently crowd-pleasing. The Rated T content makes these adult party game territory — not appropriate for younger kids but perfect for game nights, office parties, or any group of adults with phones.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Jackbox Party Pack 9</p>
+                <p class="game-cta-note">Nintendo eShop · also physical on Amazon</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- SWITCH SPORTS -->
+        <div class="game-card">
+          <div class="game-header">
+            <div class="game-emoji">🎾</div>
+            <div class="game-header-body">
+              <p class="game-name">Nintendo Switch Sports</p>
+              <p class="game-meta">Nintendo · Rated E · Sports · 1–4 players local · online</p>
+            </div>
+            <span class="game-badge badge-green">Best Physical Activity</span>
+          </div>
+          <div class="game-body">
+            <div class="game-tags">
+              <span class="game-tag">4-player local</span>
+              <span class="game-tag">Motion controls</span>
+              <span class="game-tag">Gets you moving</span>
+              <span class="game-tag">Zero learning curve</span>
+              <span class="game-tag">Online ranked</span>
+            </div>
+            <p class="game-why">
+              Nintendo Switch Sports is Wii Sports for 2026 — motion-controlled tennis, bowling, badminton, soccer, volleyball, and chambara that anyone can pick up and play within seconds. The <strong>motion controls mean physical ability and gaming skill are barely correlated</strong>: your grandmother can beat you at bowling if she has good wrist action. That leveling quality makes it uniquely suitable for intergenerational groups.
+            </p>
+            <p class="game-why">
+              The Switch 2 Enhanced Edition improves motion tracking sensitivity, making the controls noticeably more responsive than the original Switch version. Online ranked modes for badminton and bowling have surprisingly active communities for players who want a competitive outlet.
+            </p>
+            <div class="game-cta">
+              <div class="game-cta-left">
+                <p class="game-cta-name">Nintendo Switch Sports</p>
+                <p class="game-cta-note">Physical copy on Amazon · leg strap included</p>
+              </div>
+              <span class="game-cta-arrow">View on Amazon →</span>
+            </div>
+          </div>
+        </div>
+
+        <h2>What you need for multiplayer</h2>
+        <ul>
+          <li><strong>2 players local:</strong> The included Joy-Cons used sideways. No extra purchases needed.</li>
+          <li><strong>3–4 players local:</strong> An additional Joy-Con pair ($70–$80) or two pro controllers. One extra Joy-Con set handles four players across most games.</li>
+          <li><strong>Online multiplayer:</strong> Nintendo Switch Online subscription ($20/year individual, $35/year family plan). Required for any online play across all Switch 2 games.</li>
+          <li><strong>Jackbox specifically:</strong> Each player uses their smartphone. One Switch 2 and one TV is all you need for up to 10 players.</li>
+        </ul>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Can you play Switch 2 multiplayer without extra controllers?</strong><br/>
+        Yes — for two players. The included Joy-Cons separate and work as two individual controllers held sideways for local multiplayer in most games. For 3–4 players you'll need additional controllers. For online play, one person uses the full console normally while others connect via their own consoles.</p>
+
+        <p><strong>Which Switch 2 games support couch co-op?</strong><br/>
+        Mario Kart World, Super Mario Bros. Wonder, Super Mario Party Jamboree, Nintendo Switch Sports, Overcooked 2, and Super Smash Bros. Ultimate all support 2–4 player local co-op or competitive play on one console. It Takes Two supports exactly 2 players locally.</p>
+
+        <p><strong>Do you need Nintendo Switch Online for local multiplayer?</strong><br/>
+        No — local multiplayer (same room, same TV) doesn't require Nintendo Switch Online. NSO is only required for online play over the internet. You can play Mario Kart World with four people on one TV without any subscription.</p>
+
+        <p><strong>What's the best multiplayer game for non-gamers?</strong><br/>
+        Nintendo Switch Sports or Jackbox Party Pack. Switch Sports uses motion controls that don't require button knowledge. Jackbox uses phones as controllers, removing the "I don't know how to use a controller" barrier entirely.</p>
+
+        <p><strong>Can you play Switch 2 multiplayer online with Switch 1 players?</strong><br/>
+        For most games, yes — online multiplayer is cross-compatible between Switch 1 and Switch 2 players in the same game. Switch 2 exclusive titles obviously can't be played by Switch 1 owners since those games don't exist on that hardware.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">🎮 Quick links — all picks on Amazon</div>
+          <p>Physical copies for the games with retail releases:</p>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">It Takes Two — best co-op game on Switch 2</p>
+              <p class="game-cta-note">2 players · local or online · Friend's Pass included</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Mario Kart World — best competitive local</p>
+              <p class="game-cta-note">4-player · Switch 2 exclusive · online included</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Super Mario Bros. Wonder — best 4-player co-op</p>
+              <p class="game-cta-note">4 players · all skill levels · E rated</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Splatoon 3 — best online multiplayer</p>
+              <p class="game-cta-note">4v4 online · co-op Salmon Run · Switch 2 enhanced</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Super Mario Party Jamboree — best party game</p>
+              <p class="game-cta-note">100+ mini-games · 4-player · online up to 20</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Super Smash Bros. Ultimate — best fighting game</p>
+              <p class="game-cta-note">8-player local · 80+ fighters · deep competitive scene</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Overcooked 2 — best hidden gem</p>
+              <p class="game-cta-note">1–4 players · chaotic co-op · friendship tester</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="game-cta" style="margin-bottom:14px;">
+            <div class="game-cta-left">
+              <p class="game-cta-name">Jackbox Party Pack 9 — best for adult parties</p>
+              <p class="game-cta-note">Up to 10 players · phone controls · no gaming skill required</p>
+            </div>
+            <span class="game-cta-arrow">Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
