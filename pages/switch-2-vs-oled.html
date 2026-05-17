@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nintendo Switch 2 vs Switch OLED (2026) — Which Should You Buy? — Gamers Watchlist</title>
+  <meta name="description" content="Nintendo Switch 2 vs Switch OLED — a complete comparison of price, display, performance, battery life, and game library. Clear verdict for every type of buyer." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .vs-header {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 16px;
+      align-items: center;
+      margin: 1.5rem 0;
+    }
+    .vs-console {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+      text-align: center;
+    }
+    .vs-console.winner { border-color: rgba(232,255,71,0.4); background: linear-gradient(135deg, #1a1a10, #141408); }
+    .vs-console-emoji { font-size: 2.5rem; display: block; margin-bottom: 8px; }
+    .vs-console-name { font-family: var(--font-display); font-size: 1.4rem; letter-spacing: 0.04em; color: var(--text); display: block; }
+    .vs-console-price { font-size: 13px; color: var(--text-muted); font-family: var(--font-mono); display: block; margin-top: 4px; }
+    .vs-divider { font-family: var(--font-display); font-size: 2rem; color: var(--text-dim); text-align: center; }
+    .compare-table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 13px; }
+    .compare-table th {
+      padding: 10px 16px;
+      background: var(--surface2);
+      color: var(--text-muted);
+      font-family: var(--font-mono);
+      font-size: 10px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 500;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table th:not(:first-child) { text-align: center; }
+    .compare-table td {
+      padding: 11px 16px;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-muted);
+      vertical-align: top;
+      line-height: 1.5;
+    }
+    .compare-table td:first-child {
+      font-weight: 500;
+      color: var(--text);
+      white-space: nowrap;
+    }
+    .compare-table td:not(:first-child) { text-align: center; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .win { color: var(--accent); font-weight: 600; }
+    .lose { color: var(--text-dim); }
+    .tie { color: var(--text-muted); }
+    .winner-badge {
+      display: inline-block;
+      font-size: 10px;
+      padding: 2px 7px;
+      border-radius: 4px;
+      background: rgba(232,255,71,0.12);
+      color: var(--accent);
+      font-family: var(--font-mono);
+      letter-spacing: 0.04em;
+    }
+    .section-intro {
+      background: var(--surface);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 var(--radius) var(--radius) 0;
+      padding: 14px 18px;
+      margin: 1rem 0 1.5rem;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .verdict-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 1.5rem 0;
+    }
+    .verdict-panel {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 20px;
+    }
+    .verdict-panel.switch2 { border-color: rgba(232,255,71,0.3); }
+    .verdict-panel.oled { border-color: rgba(79,163,255,0.3); }
+    .verdict-panel-title {
+      font-family: var(--font-display);
+      font-size: 1.3rem;
+      letter-spacing: 0.04em;
+      margin: 0 0 12px;
+    }
+    .verdict-panel.switch2 .verdict-panel-title { color: var(--accent); }
+    .verdict-panel.oled .verdict-panel-title { color: var(--blue); }
+    .verdict-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 6px; }
+    .verdict-list li { font-size: 12px; color: var(--text-muted); padding-left: 16px; position: relative; line-height: 1.5; }
+    .verdict-list li::before { content: '→'; position: absolute; left: 0; font-size: 11px; }
+    .verdict-panel.switch2 .verdict-list li::before { color: var(--accent); }
+    .verdict-panel.oled .verdict-list li::before { color: var(--blue); }
+    .product-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      background: var(--surface2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 14px 16px;
+      margin-bottom: 10px;
+      text-decoration: none;
+      transition: border-color 0.2s;
+    }
+    .product-row:hover { border-color: var(--accent); }
+    .product-row-info { flex: 1; }
+    .product-row-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 2px; }
+    .product-row-detail { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .product-row-cta { font-size: 12px; color: var(--accent); white-space: nowrap; flex-shrink: 0; }
+    @media (max-width: 600px) {
+      .vs-header { grid-template-columns: 1fr; }
+      .vs-divider { display: none; }
+      .verdict-grid { grid-template-columns: 1fr; }
+      .compare-table { font-size: 12px; }
+      .compare-table td, .compare-table th { padding: 9px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Versus</span>
+          <span class="article-date">May 2026 · 8 min read</span>
+        </div>
+        <h1 class="article-title">Nintendo Switch 2 vs Switch OLED — Which Should You Buy?</h1>
+        <p class="article-deck">The Switch OLED is cheaper and has a better screen in some ways. The Switch 2 is faster, newer, and future-proof. Here's a clear verdict for every type of buyer — no hedging.</p>
+      </div>
+
+      <!-- QUICK VERDICT -->
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Quick Verdict</div>
+        <p><strong>Buy the Switch 2</strong> if you're starting fresh, upgrading from an original Switch, or planning to play docked on a modern TV. The performance gap is significant and the Switch 2 is the future of Nintendo gaming.</p>
+        <p><strong>Buy the Switch OLED</strong> if you're on a tight budget, play exclusively in handheld mode, and your library is mostly indie or casual games where the performance difference doesn't show. You'll save $150 and the OLED screen is genuinely beautiful.</p>
+        <div class="verdict-cta">
+          <a href="#" class="btn-primary" style="font-size:13px;padding:10px 20px;">Buy Switch 2 on Amazon →</a>
+          <a href="#" class="btn-ghost" style="font-size:13px;padding:10px 20px;">Buy Switch OLED on Amazon →</a>
+        </div>
+      </div>
+
+      <div class="article-body">
+
+        <!-- CONSOLE CARDS -->
+        <div class="vs-header">
+          <div class="vs-console winner">
+            <span class="vs-console-emoji">🆕</span>
+            <span class="vs-console-name">Switch 2</span>
+            <span class="vs-console-price">~$449.99</span>
+            <span class="winner-badge" style="margin-top:8px;display:inline-block;">Our pick for most buyers</span>
+          </div>
+          <div class="vs-divider">VS</div>
+          <div class="vs-console">
+            <span class="vs-console-emoji">✨</span>
+            <span class="vs-console-name">Switch OLED</span>
+            <span class="vs-console-price">~$299.99</span>
+          </div>
+        </div>
+
+        <h2>At a glance — full spec comparison</h2>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Spec</th>
+                <th>Switch 2</th>
+                <th>Switch OLED</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Price (MSRP)</td>
+                <td class="lose">~$449.99</td>
+                <td class="win">~$299.99 ✓</td>
+              </tr>
+              <tr>
+                <td>Display type</td>
+                <td class="tie">LCD IPS</td>
+                <td class="win">OLED ✓</td>
+              </tr>
+              <tr>
+                <td>Display size</td>
+                <td class="win">7.9 inch ✓</td>
+                <td class="tie">7.0 inch</td>
+              </tr>
+              <tr>
+                <td>Handheld resolution</td>
+                <td class="win">1080p ✓</td>
+                <td class="tie">720p</td>
+              </tr>
+              <tr>
+                <td>Docked resolution</td>
+                <td class="win">Up to 4K ✓</td>
+                <td class="tie">Up to 1080p</td>
+              </tr>
+              <tr>
+                <td>CPU / GPU</td>
+                <td class="win">Custom Nvidia (new) ✓</td>
+                <td class="tie">Nvidia Tegra X1+</td>
+              </tr>
+              <tr>
+                <td>RAM</td>
+                <td class="win">12GB ✓</td>
+                <td class="tie">4GB</td>
+              </tr>
+              <tr>
+                <td>Internal storage</td>
+                <td class="win">256GB ✓</td>
+                <td class="tie">64GB</td>
+              </tr>
+              <tr>
+                <td>Battery life</td>
+                <td class="tie">2–6.5 hrs</td>
+                <td class="tie">4.5–9 hrs</td>
+              </tr>
+              <tr>
+                <td>Joy-Con connection</td>
+                <td class="win">Magnetic ✓</td>
+                <td class="tie">Slide rail</td>
+              </tr>
+              <tr>
+                <td>Switch 2 game support</td>
+                <td class="win">Full ✓</td>
+                <td class="lose">None</td>
+              </tr>
+              <tr>
+                <td>GameChat / mouse mode</td>
+                <td class="win">Yes ✓</td>
+                <td class="lose">No</td>
+              </tr>
+              <tr>
+                <td>Switch 1 backward compat.</td>
+                <td class="win">Yes ✓</td>
+                <td class="win">Yes ✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Price — OLED wins, but the gap is smaller than it looks</h2>
+        <div class="section-intro">Switch OLED: ~$299.99 · Switch 2: ~$449.99 · Difference: $150</div>
+        <p>The Switch OLED is $150 cheaper at retail. That's real money and the most compelling reason to choose it. But context matters: the Switch 2 includes 256GB of internal storage versus the OLED's 64GB, meaning most Switch 2 buyers won't need a microSD card right away. Factor in a 256GB microSD card for the OLED (~$25–35) and the real price gap narrows to around $115.</p>
+        <p>If budget is the primary concern, the OLED is still the better value. But if you're comparing total cost of ownership over 3–4 years, the Switch 2's included storage, performance headroom, and access to Switch 2 exclusive titles make the premium easier to justify.</p>
+
+        <div class="callout callout-tip">
+          <strong>💡 Watch for bundles.</strong> Nintendo frequently releases Switch 2 bundles with a game included at the same $449.99 price — effectively giving you a $60–$70 game for free. The Mario Kart World bundle is the most common. Check Amazon's current bundle offers before buying standalone.
+        </div>
+
+        <h2>Display — the most nuanced comparison</h2>
+        <div class="section-intro">Switch OLED wins on contrast and black levels. Switch 2 wins on size and resolution. Neither is strictly better.</div>
+        <p>This is where the comparison gets genuinely complicated. The Switch OLED has an OLED panel, which means perfect blacks, infinite contrast ratio, and colors that pop in a way LCD panels simply cannot match. In a dark room playing a moody, atmospheric game, the OLED screen is noticeably more beautiful.</p>
+        <p>The Switch 2 has a larger 7.9-inch LCD IPS panel running at 1080p — up from the OLED's 720p. Text is crisper. Fine details in games are sharper. The larger canvas is more comfortable for long sessions. In bright environments, the LCD is more legible.</p>
+        <p>The honest verdict on display: if you primarily play in a dark room and your library skews atmospheric (RPGs, adventure games, anything with a lot of dark environments), the OLED's display advantage is meaningful. If you play in varied lighting conditions and value sharpness and screen real estate over contrast, the Switch 2 wins.</p>
+
+        <h2>Performance — Switch 2 wins decisively</h2>
+        <div class="section-intro">Switch 2 delivers roughly 10x the GPU performance of the original Switch hardware. The OLED uses the same chip as the original Switch.</div>
+        <p>The Switch OLED is not a performance upgrade over the original Switch. It uses the same Nvidia Tegra X1+ processor, the same 4GB of RAM, and delivers the same gaming performance. The OLED upgrade was entirely about the display and build quality.</p>
+        <p>The Switch 2 is a generational performance leap. Games run at higher frame rates, higher resolutions, with better draw distances, faster load times, and more complex physics and effects. Switch 2 exclusive games are built around this new hardware baseline and will never run on OLED.</p>
+        <p>If you care about playing new Nintendo first-party releases at their best — or playing Switch 2 exclusives at all — the OLED cannot deliver that. This is the Switch 2's strongest argument.</p>
+
+        <h2>Battery life — OLED wins, but it's complicated</h2>
+        <div class="section-intro">Switch OLED: 4.5–9 hours · Switch 2: 2–6.5 hours</div>
+        <p>The Switch 2 has worse battery life than the OLED in most real-world scenarios. More powerful hardware draws more power — that's unavoidable physics. Demanding Switch 2 games drain the battery in 2.5–3 hours. Less intensive games and indie titles run 4–5 hours.</p>
+        <p>The OLED's battery advantage is real but comes with a caveat: it's running less demanding games on less powerful hardware. Running the same game on both consoles, the difference narrows. And the Switch 2's Battery Saver mode recovers significant runtime for games where maximum performance isn't needed.</p>
+        <p>For long-haul travelers or parents handing a console to a kid on a flight, the OLED's battery longevity is genuinely valuable. For everyone else, a portable battery bank (a common Switch accessory) solves the Switch 2's battery limitation for about $30.</p>
+
+        <h2>Game library — Switch 2 wins, increasingly over time</h2>
+        <p>Both consoles play the entire Switch 1 library — full backward compatibility on both. For existing Switch owners, your game collection works on either console without repurchasing anything.</p>
+        <p>The difference: Switch 2 exclusive games will not run on OLED. As Nintendo's first-party release schedule fills in through 2026 and 2027, an increasing number of the most anticipated titles will be Switch 2 only. Buying an OLED today means opting out of that future library.</p>
+        <p>If your Switch gaming is primarily older first-party titles, indie games, and third-party ports — all of which run identically on both consoles — this matters less. If you want to play new Nintendo releases as they come out, the OLED becomes less viable over time.</p>
+
+        <h2>Who should buy the Switch 2</h2>
+        <div class="verdict-grid">
+          <div class="verdict-panel switch2">
+            <p class="verdict-panel-title">Buy Switch 2 if you...</p>
+            <ul class="verdict-list">
+              <li>Are buying a Switch for the first time</li>
+              <li>Own an original Switch (non-OLED)</li>
+              <li>Primarily play docked on a TV</li>
+              <li>Want to play Switch 2 exclusive titles</li>
+              <li>Care about performance in demanding games</li>
+              <li>Want future-proof hardware for 4–5 years</li>
+              <li>Play in varied or bright lighting conditions</li>
+            </ul>
+          </div>
+          <div class="verdict-panel oled">
+            <p class="verdict-panel-title">Buy Switch OLED if you...</p>
+            <ul class="verdict-list">
+              <li>Have a strict budget and $150 matters</li>
+              <li>Play exclusively in handheld mode</li>
+              <li>Primarily play indie or casual games</li>
+              <li>Play in dark rooms where OLED shines</li>
+              <li>Already own an OLED and are satisfied</li>
+              <li>Prioritize battery life above all else</li>
+              <li>Don't care about Switch 2 exclusive releases</li>
+            </ul>
+          </div>
+        </div>
+
+        <h2>The OLED owner question — should you upgrade?</h2>
+        <p>This is the most common question we get, and the honest answer is: it depends on how you play.</p>
+        <p><strong>Upgrade if:</strong> you primarily play docked, you want to play Switch 2 exclusives, or you play graphically demanding first-party titles where the performance improvement is visible. The 4K docked output alone is a compelling reason for TV-first players.</p>
+        <p><strong>Wait if:</strong> you play exclusively handheld, your library is mostly indie games and older first-party titles, and the OLED's screen genuinely brings you joy. The OLED is not a bad console — it's a great one. Upgrading for the sake of upgrading isn't necessary.</p>
+        <p><strong>Sell the OLED first:</strong> If you decide to upgrade, selling your OLED before the Switch 2 has been on the market for years will get you a better price. OLED resale value has stayed strong — factor in $150–$200 trade-in or resale value when calculating the real upgrade cost.</p>
+
+        <div class="callout callout-info">
+          <strong>📦 Selling your OLED?</strong> Current OLED resale prices run $180–$220 in good condition on eBay and Facebook Marketplace. Factor that into your upgrade math — the net cost of switching from OLED to Switch 2 can be as low as $230–$270 after selling.
+        </div>
+
+        <h2>Final verdict</h2>
+        <p>For most people buying a Nintendo console in 2026, the Switch 2 is the right choice. The performance gap is real, the Switch 2 game library will only grow, and the 4K docked output is a meaningful quality-of-life improvement on a modern TV. The $150 price premium is justified by the hardware difference and future-proofing.</p>
+        <p>The Switch OLED remains a legitimately great console for a specific buyer: someone on a budget who plays exclusively in handheld mode, loves the OLED display, and isn't concerned with Switch 2 exclusives. For that person, the OLED is not a compromise — it's the right tool for how they play.</p>
+        <p>Everyone else: buy the Switch 2.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">🛒 Ready to buy?</div>
+          <p>Check current prices on both consoles — Amazon pricing fluctuates and bundles come and go.</p>
+          <a href="#" class="product-row">
+            <div class="product-row-info">
+              <p class="product-row-name">Nintendo Switch 2</p>
+              <p class="product-row-detail">Our recommendation for most buyers · 256GB storage · 4K docked</p>
+            </div>
+            <span class="product-row-cta">View on Amazon →</span>
+          </a>
+          <a href="#" class="product-row">
+            <div class="product-row-info">
+              <p class="product-row-name">Nintendo Switch 2 + Mario Kart World Bundle</p>
+              <p class="product-row-detail">Best value if you don't already own Mario Kart World</p>
+            </div>
+            <span class="product-row-cta">View on Amazon →</span>
+          </a>
+          <a href="#" class="product-row">
+            <div class="product-row-info">
+              <p class="product-row-name">Nintendo Switch OLED</p>
+              <p class="product-row-detail">Best budget option · stunning handheld display · full Switch 1 library</p>
+            </div>
+            <span class="product-row-cta">View on Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:14px 0 0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Can Switch OLED play Switch 2 games?</strong><br/>
+        No. Games built exclusively for Switch 2 will not run on Switch OLED or original Switch hardware. The OLED can play all Switch 1 games, but Switch 2 exclusives are off-limits.</p>
+
+        <p><strong>Is the Switch OLED being discontinued?</strong><br/>
+        Nintendo hasn't announced discontinuation of the OLED, but production will naturally wind down as Switch 2 becomes the primary platform. Stock may become harder to find in 2026–2027.</p>
+
+        <p><strong>Do Switch 1 accessories work on Switch 2?</strong><br/>
+        Partially. Pro Controllers and Joy-Cons work wirelessly. Physical Joy-Con rail attachment changed, so Switch 1 Joy-Cons won't snap onto Switch 2's rails. Docks work at 1080p but not 4K. Cases don't fit — Switch 2 is slightly larger. See our <a href="switch-games-on-switch-2.html" style="color:var(--accent);">full compatibility guide →</a></p>
+
+        <p><strong>Will Nintendo release a Switch 2 OLED?</strong><br/>
+        Nintendo hasn't announced one. Historically, Nintendo releases hardware revisions 2–3 years into a console's lifecycle. A Switch 2 OLED or Pro variant is speculated for 2027–2028 but unconfirmed.</p>
+
+        <p><strong>Is the Switch 2 worth it if I only play handheld?</strong><br/>
+        Yes, still worth it for most handheld players. The larger 1080p display, faster performance, and access to Switch 2 exclusive titles benefit handheld play too. The main sacrifice is battery life — plan for a portable charger if you play long sessions away from power.</p>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
