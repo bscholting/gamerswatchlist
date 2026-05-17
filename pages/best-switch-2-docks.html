@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Docks for Nintendo Switch 2 (2026) — Gamers Watchlist</title>
+  <meta name="description" content="Best Nintendo Switch 2 docks in 2026 — official vs third-party, portable travel docks, 4K output options, and the docks to avoid. Amazon affiliate links." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .pick-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .pick-card.top { border-color: rgba(232,255,71,0.4); }
+    .pick-header {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .pick-rank {
+      font-family: var(--font-display); font-size: 2rem;
+      color: var(--text-dim); letter-spacing: 0.04em;
+      line-height: 1; flex-shrink: 0; width: 36px;
+    }
+    .pick-card.top .pick-rank { color: var(--accent); }
+    .pick-header-body { flex: 1; }
+    .pick-name { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .pick-subtitle { font-size: 12px; color: var(--text-muted); margin: 0; font-family: var(--font-mono); }
+    .pick-badge {
+      display: inline-block; font-size: 10px; padding: 3px 9px;
+      border-radius: 6px; font-family: var(--font-mono);
+      letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0;
+    }
+    .badge-gold   { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-silver { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .badge-green  { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-orange { background: rgba(255,165,2,0.12);  color: #ffa502; }
+    .badge-purple { background: rgba(175,82,222,0.12); color: #af52de; }
+    .badge-red    { background: rgba(255,71,87,0.12);  color: var(--red); }
+    .pick-body { padding: 16px 20px; }
+    .pick-specs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .spec-pill {
+      font-size: 11px; font-family: var(--font-mono);
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 99px; padding: 3px 10px; color: var(--text-muted);
+    }
+    .pick-why { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 0 0 12px; }
+    .pick-why strong { color: var(--text); }
+    .pick-pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+    .pros, .cons { background: var(--dark); border-radius: var(--radius); padding: 10px 12px; }
+    .pros-title { font-size: 11px; font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--green); margin: 0 0 6px; }
+    .cons-title { font-size: 11px; font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin: 0 0 6px; }
+    .pros ul, .cons ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+    .pros li, .cons li { font-size: 12px; color: var(--text-muted); padding-left: 14px; position: relative; line-height: 1.4; }
+    .pros li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-size: 11px; }
+    .cons li::before { content: '✗'; position: absolute; left: 0; color: var(--red); font-size: 11px; }
+    .pick-cta {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--dark); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 10px 14px; text-decoration: none; transition: border-color 0.2s;
+      margin-bottom: 8px;
+    }
+    .pick-cta:last-child { margin-bottom: 0; }
+    .pick-cta:hover { border-color: var(--accent); }
+    .pick-cta-left { flex: 1; }
+    .pick-cta-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 1px; }
+    .pick-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .pick-cta-arrow { font-size: 13px; color: var(--accent); flex-shrink: 0; }
+    .avoid-card {
+      background: rgba(255,71,87,0.05); border: 1px solid rgba(255,71,87,0.2);
+      border-radius: var(--radius); padding: 14px 18px; margin-bottom: 10px;
+    }
+    .avoid-name { font-size: 13px; font-weight: 600; color: var(--red); margin: 0 0 4px; }
+    .avoid-reason { font-size: 13px; color: var(--text-muted); margin: 0; line-height: 1.6; }
+    .avoid-reason strong { color: var(--text); }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 1.5rem 0; }
+    .compare-table th {
+      padding: 9px 14px; background: var(--surface2); border-bottom: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--text-muted); text-align: left;
+    }
+    .compare-table th:not(:first-child) { text-align: center; }
+    .compare-table td {
+      padding: 10px 14px; border-bottom: 1px solid var(--border);
+      color: var(--text-muted); vertical-align: middle;
+    }
+    .compare-table td:first-child { font-weight: 500; color: var(--text); }
+    .compare-table td:not(:first-child) { text-align: center; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .win  { color: var(--accent); font-weight: 600; }
+    .good { color: var(--green); }
+    .mid  { color: var(--text-muted); }
+    .bad  { color: var(--red); }
+    .type-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 12px; margin: 1.5rem 0;
+    }
+    .type-card {
+      background: var(--surface); border: 1px solid var(--border);
+      border-radius: var(--radius-lg); padding: 16px;
+    }
+    .type-card.recommended { border-color: rgba(232,255,71,0.3); }
+    .type-icon { font-size: 1.8rem; margin-bottom: 8px; display: block; }
+    .type-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 5px; }
+    .type-desc { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.55; }
+    .section-divider {
+      display: flex; align-items: center; gap: 14px; margin: 2rem 0 1.25rem;
+    }
+    .section-divider-title {
+      font-family: var(--font-display); font-size: 1.5rem;
+      letter-spacing: 0.04em; color: var(--text-muted); white-space: nowrap;
+    }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+    @media (max-width: 560px) {
+      .pick-pros-cons { grid-template-columns: 1fr; }
+      .compare-table { font-size: 12px; }
+      .compare-table td, .compare-table th { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Accessories</span>
+          <span class="article-date">May 2026 · 8 min read</span>
+        </div>
+        <h1 class="article-title">Best Docks for Nintendo Switch 2 (2026)</h1>
+        <p class="article-deck">The dock that ships with Switch 2 is fine. But it's bulky, expensive to replace, and not portable. Here are the best alternatives — for home, travel, and getting the most out of 4K output.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Top picks at a glance</div>
+        <p>
+          <strong>Best home dock:</strong> Nintendo Switch 2 Dock (official) — no compromises if price isn't a concern<br/>
+          <strong>Best third-party 4K dock:</strong> JSAUX HB0603 — 4K, Ethernet, 3× USB-A, best value for home<br/>
+          <strong>Best portable dock:</strong> Genki Covert Dock Mini — the size of a phone charger, fits in any bag<br/>
+          <strong>Best budget dock:</strong> Hagibis Switch 2 Dock — 4K output under $30<br/>
+          <strong>Best multi-device dock:</strong> Anker 655 USB-C Hub — charges Switch 2 and connects everything else
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Do you even need a second dock?</h2>
+        <p>The Switch 2 ships with an official dock — so the question is whether you need an additional or replacement one. Here are the scenarios where buying another dock makes sense:</p>
+        <ul>
+          <li><strong>You want a dock in a second room</strong> — bedroom and living room both have TVs, and you don't want to unplug and carry the dock between them.</li>
+          <li><strong>You travel frequently</strong> — the official dock is large and heavy. A portable dock that fits in your laptop bag means hotel room gaming without the bulk.</li>
+          <li><strong>You want more USB ports</strong> — the official dock has 2× USB-A and 1× USB-C. Third-party docks often add Ethernet, extra USB-A ports, or USB-C passthrough that the official dock lacks.</li>
+          <li><strong>Your official dock broke or was lost</strong> — buying a third-party replacement is significantly cheaper than purchasing an official Nintendo dock separately.</li>
+          <li><strong>You want 4K but own a Switch 1 dock</strong> — Switch 1 docks cap at 1080p. Upgrading to a Switch 2-compatible dock unlocks 4K output.</li>
+        </ul>
+
+        <h2>What makes a dock Switch 2 compatible?</h2>
+        <p>Not all docks work with Switch 2, and not all that work support 4K. Here's what to look for:</p>
+
+        <div class="type-grid">
+          <div class="type-card recommended">
+            <span class="type-icon">📺</span>
+            <p class="type-title">HDMI 2.0 output</p>
+            <p class="type-desc">Required for 4K@60fps. HDMI 1.4 docks cap at 1080p. Always check the HDMI version spec before buying if 4K matters to you.</p>
+          </div>
+          <div class="type-card recommended">
+            <span class="type-icon">⚡</span>
+            <p class="type-title">USB-C PD at 45W+</p>
+            <p class="type-desc">The dock must supply at least 45W via USB-C to charge the Switch 2 properly during gameplay. Lower wattage charges too slowly or not at all.</p>
+          </div>
+          <div class="type-card">
+            <span class="type-icon">🔌</span>
+            <p class="type-title">USB-A ports</p>
+            <p class="type-desc">For connecting wired controllers, USB drives, or a keyboard. The official dock has 2. Better third-party docks have 3. Not essential but convenient.</p>
+          </div>
+          <div class="type-card">
+            <span class="type-icon">🌐</span>
+            <p class="type-title">Ethernet port</p>
+            <p class="type-desc">Wired internet is faster and more stable than Wi-Fi for online gaming. Some third-party docks include Ethernet; the official Switch 2 dock does not.</p>
+          </div>
+        </div>
+
+        <div class="callout callout-info">
+          <strong>⚠ Switch 1 docks and Switch 2:</strong> Your old Switch 1 dock works with Switch 2 at 1080p. It will not output 4K — the HDMI 1.4 connection inside is a hard limit. If you want 4K, you need a dock with HDMI 2.0.
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">The picks</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- PICK 1 -->
+        <div class="pick-card top">
+          <div class="pick-header">
+            <div class="pick-rank">1</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Nintendo Switch 2 Dock (Official)</p>
+              <p class="pick-subtitle">4K@60fps · HDMI 2.0 · 2× USB-A · 1× USB-C · sold separately</p>
+            </div>
+            <span class="pick-badge badge-gold">Best Home Dock</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">4K@60fps</span>
+              <span class="spec-pill">HDMI 2.0</span>
+              <span class="spec-pill">2× USB-A</span>
+              <span class="spec-pill">1× USB-C</span>
+              <span class="spec-pill">45W charging</span>
+              <span class="spec-pill">Official Nintendo</span>
+            </div>
+            <p class="pick-why">
+              If you need a second home dock and budget isn't a constraint, buy another official one. <strong>Guaranteed compatibility, full 4K@60fps output, and Nintendo's build quality</strong> mean no troubleshooting, no compatibility questions, and no risk of damaging your console. The folding back panel design keeps cables tidy, and the front USB-A port is conveniently placed for charging controllers or connecting peripherals.
+            </p>
+            <p class="pick-why">
+              The downsides are real: it's expensive for what it is, it's large and heavy for a travel dock, and it doesn't include Ethernet. For a permanent second-room setup though, it's the safest choice and the one Nintendo stands behind.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Guaranteed Switch 2 compatibility</li>
+                  <li>Full 4K@60fps output</li>
+                  <li>Nintendo build quality and warranty</li>
+                  <li>Clean cable management design</li>
+                  <li>No compatibility risks</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Most expensive option</li>
+                  <li>No Ethernet port</li>
+                  <li>Only 2× USB-A ports</li>
+                  <li>Bulky for travel</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Nintendo Switch 2 Dock (official)</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 2 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">2</div>
+            <div class="pick-header-body">
+              <p class="pick-name">JSAUX HB0603 Docking Station</p>
+              <p class="pick-subtitle">4K@60fps · HDMI 2.0 · 3× USB-A · Ethernet · USB-C PD · Switch 2 compatible</p>
+            </div>
+            <span class="pick-badge badge-silver">Best Third-Party 4K Dock</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">4K@60fps</span>
+              <span class="spec-pill">HDMI 2.0</span>
+              <span class="spec-pill">3× USB-A</span>
+              <span class="spec-pill">Ethernet port</span>
+              <span class="spec-pill">65W USB-C PD</span>
+              <span class="spec-pill">Switch 2 tested</span>
+            </div>
+            <p class="pick-why">
+              JSAUX has been making reliable Switch docks since Switch 1 and the HB0603 is their best Switch 2-compatible model. It matches the official dock's 4K@60fps output through HDMI 2.0, adds a <strong>gigabit Ethernet port the official dock lacks</strong>, and provides three USB-A ports instead of two — all at a significantly lower price. The 65W USB-C PD output charges the Switch 2 comfortably during even the most demanding gameplay.
+            </p>
+            <p class="pick-why">
+              The Ethernet port alone justifies the switch from the official dock for online players. Wired internet eliminates the lag spikes and packet loss that Wi-Fi introduces in competitive games. If you play Mario Kart World online or any competitive title, Ethernet is worth having.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Full 4K@60fps via HDMI 2.0</li>
+                  <li>Gigabit Ethernet — no Wi-Fi lag</li>
+                  <li>3× USB-A ports</li>
+                  <li>65W USB-C charging</li>
+                  <li>Significantly cheaper than official</li>
+                  <li>Proven Switch 2 compatibility</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Third-party — no Nintendo warranty</li>
+                  <li>Slightly larger than slim alternatives</li>
+                  <li>AC adapter sold separately</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">JSAUX HB0603 Docking Station</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 3 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">3</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Genki Covert Dock Mini (Switch 2 Edition)</p>
+              <p class="pick-subtitle">Portable · 1080p · plug-in design · 30W · no cables needed</p>
+            </div>
+            <span class="pick-badge badge-purple">Best Portable Dock</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">1080p output</span>
+              <span class="spec-pill">30W USB-C PD</span>
+              <span class="spec-pill">Plug-in design</span>
+              <span class="spec-pill">No fan</span>
+              <span class="spec-pill">Hotel TV ready</span>
+              <span class="spec-pill">Pocket-sized</span>
+            </div>
+            <p class="pick-why">
+              The Genki Covert Dock Mini is a category of its own. It's the size of a USB wall charger — <strong>plug it directly into the HDMI port and power outlet of any TV</strong>, connect your Switch 2 via USB-C, and you're in TV mode. No dock to pack, no separate power brick, no HDMI cable to carry. For hotel rooms, Airbnbs, and friends' houses, it's the most elegant travel solution available.
+            </p>
+            <p class="pick-why">
+              The trade-off: it caps at 1080p, not 4K. For travel purposes this is completely acceptable — hotel TVs aren't 4K calibration-grade displays and you won't notice. At home where you want 4K, use the official dock or JSAUX. Pack the Genki for everything else.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Smallest Switch 2 dock available</li>
+                  <li>No separate cables or power brick</li>
+                  <li>Works in any hotel TV worldwide</li>
+                  <li>Silent — fanless design</li>
+                  <li>Charges Switch 2 during play</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>1080p only — no 4K</li>
+                  <li>30W may not charge during demanding games</li>
+                  <li>No USB-A ports</li>
+                  <li>Pricier than its size suggests</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Genki Covert Dock Mini (Switch 2 Edition)</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 4 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">4</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Hagibis Switch 2 TV Dock</p>
+              <p class="pick-subtitle">4K@60fps · HDMI 2.0 · 2× USB-A · 45W · under $30</p>
+            </div>
+            <span class="pick-badge badge-orange">Best Budget</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">4K@60fps</span>
+              <span class="spec-pill">HDMI 2.0</span>
+              <span class="spec-pill">2× USB-A</span>
+              <span class="spec-pill">45W USB-C PD</span>
+              <span class="spec-pill">Under $30</span>
+              <span class="spec-pill">Switch 2 compatible</span>
+            </div>
+            <p class="pick-why">
+              The Hagibis dock proves you don't need to spend much for a solid 4K Switch 2 dock. <strong>Full HDMI 2.0 output at 4K@60fps, 45W USB-C charging, and two USB-A ports</strong> — the core requirements — under $30. Build quality is noticeably below the JSAUX and official dock, but it functions correctly and Switch 2 users have reported solid compatibility without overheating issues.
+            </p>
+            <p class="pick-why">
+              Best use case: second room dock, travel backup, or a dock for someone who just wants TV mode without spending close to the official dock's price. If you want Ethernet or a more robust build, spend more on the JSAUX. If you just want 4K TV output reliably, this gets it done.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Lowest price 4K dock on the list</li>
+                  <li>Full HDMI 2.0 / 4K@60fps</li>
+                  <li>Compact form factor</li>
+                  <li>45W charging — sufficient</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>No Ethernet port</li>
+                  <li>Lighter build quality</li>
+                  <li>Only 2× USB-A</li>
+                  <li>Less proven long-term reliability</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Hagibis Switch 2 TV Dock</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 5 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">5</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Anker 655 USB-C Hub (8-in-1)</p>
+              <p class="pick-subtitle">4K HDMI · 100W USB-C PD · Ethernet · SD card · 3× USB-A · multi-device</p>
+            </div>
+            <span class="pick-badge badge-green">Best Multi-Device</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">4K HDMI</span>
+              <span class="spec-pill">100W USB-C PD</span>
+              <span class="spec-pill">Ethernet</span>
+              <span class="spec-pill">SD card reader</span>
+              <span class="spec-pill">3× USB-A</span>
+              <span class="spec-pill">Works with Switch 2</span>
+            </div>
+            <p class="pick-why">
+              The Anker 655 isn't Switch-specific — it's a universal USB-C hub that happens to work excellently with Switch 2. <strong>8 ports including 4K HDMI, 100W passthrough charging, Ethernet, an SD card reader, and 3× USB-A</strong> make it the most versatile option on this list. If you work from a laptop and want one hub that handles your laptop, Switch 2, external drives, and anything else, this does it all.
+            </p>
+            <p class="pick-why">
+              The 100W USB-C PD means it can charge a MacBook or Windows laptop at full speed — the Switch 2 draws what it needs and the rest goes to the laptop. One hub, one cable, everything connected. If you have a desk setup with multiple devices, this replaces several separate accessories.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Works for Switch 2 and laptops</li>
+                  <li>100W USB-C passthrough</li>
+                  <li>Ethernet + SD card + 3× USB-A</li>
+                  <li>Anker build quality and warranty</li>
+                  <li>Replaces multiple accessories</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Not Switch-specific — no custom fit</li>
+                  <li>Pricier than Switch-only docks</li>
+                  <li>Requires your own power adapter</li>
+                  <li>Overkill if you only need Switch</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Anker 655 USB-C Hub (8-in-1)</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <h2>Full comparison at a glance</h2>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0;overflow-x:auto;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Dock</th>
+                <th>4K output</th>
+                <th>Ethernet</th>
+                <th>USB-A ports</th>
+                <th>Charging</th>
+                <th>Portable?</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nintendo Official</td>
+                <td class="win">Yes ✓</td>
+                <td class="bad">No</td>
+                <td class="mid">2×</td>
+                <td class="win">45W ✓</td>
+                <td class="bad">No</td>
+              </tr>
+              <tr>
+                <td>JSAUX HB0603</td>
+                <td class="win">Yes ✓</td>
+                <td class="win">Yes ✓</td>
+                <td class="win">3×</td>
+                <td class="win">65W ✓</td>
+                <td class="bad">No</td>
+              </tr>
+              <tr>
+                <td>Genki Covert Mini</td>
+                <td class="bad">No (1080p)</td>
+                <td class="bad">No</td>
+                <td class="bad">None</td>
+                <td class="mid">30W</td>
+                <td class="win">Yes ✓</td>
+              </tr>
+              <tr>
+                <td>Hagibis Dock</td>
+                <td class="win">Yes ✓</td>
+                <td class="bad">No</td>
+                <td class="mid">2×</td>
+                <td class="mid">45W</td>
+                <td class="mid">Compact</td>
+              </tr>
+              <tr>
+                <td>Anker 655</td>
+                <td class="win">Yes ✓</td>
+                <td class="win">Yes ✓</td>
+                <td class="win">3×</td>
+                <td class="win">100W ✓</td>
+                <td class="mid">Somewhat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Docks to avoid</h2>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Any dock labeled "Switch compatible" without specifying Switch 2</p>
+          <p class="avoid-reason">Many Switch 1 docks are being sold with vague compatibility claims. <strong>If it doesn't explicitly state Switch 2 compatibility and HDMI 2.0</strong>, assume it's a Switch 1 dock — it'll cap at 1080p and may not charge at the right wattage for Switch 2's power draw during gameplay.</p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Cheap no-name docks under $15</p>
+          <p class="avoid-reason">Sub-$15 USB-C docks claiming Switch 2 and 4K support are almost universally misrepresenting their specs. Real HDMI 2.0 hardware at that price point doesn't exist. These docks often <strong>damage the Switch 2's USB-C port over time</strong> due to incorrect power delivery implementation. The $30 Hagibis is already a budget pick — don't go lower.</p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Switch 1 docks for 4K setups</p>
+          <p class="avoid-reason">Switch 1 docks use HDMI 1.4 which is physically incapable of 4K@60fps. Even if you enable 4K in Switch 2's system settings, it won't output through a Switch 1 dock. You'll get 1080p at best. <strong>For 4K, you need a dock with HDMI 2.0 — period.</strong></p>
+        </div>
+
+        <div class="avoid-card">
+          <p class="avoid-name">✗ Docks with USB-C power delivery under 45W</p>
+          <p class="avoid-reason">The Switch 2 draws more power than Switch 1 during docked gameplay. A dock supplying less than 45W via USB-C will either charge slowly while gaming (losing ground on battery) or not charge at all. Some low-wattage docks also cause the Switch 2 to throttle performance to manage heat and power. <strong>45W is the minimum — 60W+ is better.</strong></p>
+        </div>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Does the Switch 2 dock from Nintendo work with Switch 1?</strong><br/>
+        Yes — the Switch 2 dock is backward compatible and works with Switch 1 and Switch OLED at their native resolutions. If you're upgrading to Switch 2, your old games will dock and play normally through the new dock.</p>
+
+        <p><strong>Can I use a USB-C to HDMI adapter instead of a dock?</strong><br/>
+        Sometimes — USB-C to HDMI adapters can output video from Switch 2 but compatibility is inconsistent and most don't support 4K. They also don't charge the Switch 2 simultaneously unless they're a passthrough model. A proper dock is more reliable and charges while you play.</p>
+
+        <p><strong>Why does my Switch 2 get hot in the dock?</strong><br/>
+        Normal. Docked mode runs the Switch 2's GPU at full power for high-resolution output, which generates more heat than handheld mode. As long as the dock has ventilation and isn't in an enclosed cabinet, this is expected behavior. If the console shuts down from overheating, check that vents aren't blocked.</p>
+
+        <p><strong>Do third-party docks void the Nintendo warranty?</strong><br/>
+        Using a third-party dock doesn't void Nintendo's warranty on its own. However, damage caused by a third-party accessory — such as a dock that delivers incorrect voltage — may not be covered. Stick to reputable brands like JSAUX, Genki, and Anker to minimize this risk.</p>
+
+        <p><strong>Can I connect Switch 2 to a projector through a dock?</strong><br/>
+        Yes — any dock with HDMI output works with projectors that have HDMI input. For projectors with only VGA or DisplayPort, you'll need an HDMI adapter on the projector side. The Switch 2 doesn't care what's on the other end of the HDMI cable.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">📺 Our picks — quick links</div>
+          <p>All five recommended docks, direct to Amazon:</p>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Nintendo Switch 2 Dock (official) — best home dock</p>
+              <p class="pick-cta-note">4K · guaranteed compatibility · Nintendo warranty</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">JSAUX HB0603 — best third-party 4K dock</p>
+              <p class="pick-cta-note">4K · Ethernet · 3× USB-A · 65W · cheaper than official</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Genki Covert Dock Mini — best portable dock</p>
+              <p class="pick-cta-note">Pocket-sized · plug into any TV · no cables needed</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Hagibis Switch 2 Dock — best budget</p>
+              <p class="pick-cta-note">4K@60fps · 2× USB-A · 45W · under $30</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Anker 655 USB-C Hub — best multi-device</p>
+              <p class="pick-cta-note">4K · 100W · Ethernet · SD reader · works with laptop too</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:14px 0 0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
