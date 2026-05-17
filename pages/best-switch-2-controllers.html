@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Best Pro Controllers for Nintendo Switch 2 (2026) — Gamers Watchlist</title>
+  <meta name="description" content="The best Nintendo Switch 2 pro controllers in 2026 — official Nintendo Pro Controller, 8BitDo alternatives, budget picks, and the best options for kids." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .pick-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      margin-bottom: 16px;
+    }
+    .pick-card.top { border-color: rgba(232,255,71,0.4); }
+    .pick-header {
+      display: flex; align-items: center; gap: 14px;
+      padding: 16px 20px; border-bottom: 1px solid var(--border);
+      background: var(--surface2);
+    }
+    .pick-rank {
+      font-family: var(--font-display); font-size: 2rem;
+      color: var(--text-dim); letter-spacing: 0.04em;
+      line-height: 1; flex-shrink: 0; width: 36px;
+    }
+    .pick-card.top .pick-rank { color: var(--accent); }
+    .pick-header-body { flex: 1; }
+    .pick-name { font-size: 15px; font-weight: 600; color: var(--text); margin: 0 0 3px; }
+    .pick-subtitle { font-size: 12px; color: var(--text-muted); margin: 0; font-family: var(--font-mono); }
+    .pick-badge {
+      display: inline-block; font-size: 10px; padding: 3px 9px;
+      border-radius: 6px; font-family: var(--font-mono);
+      letter-spacing: 0.04em; white-space: nowrap; flex-shrink: 0;
+    }
+    .badge-gold   { background: rgba(232,255,71,0.12); color: var(--accent); }
+    .badge-silver { background: rgba(79,163,255,0.12); color: var(--blue); }
+    .badge-green  { background: rgba(61,220,132,0.12); color: var(--green); }
+    .badge-orange { background: rgba(255,165,2,0.12);  color: #ffa502; }
+    .badge-purple { background: rgba(175,82,222,0.12); color: #af52de; }
+    .badge-red    { background: rgba(255,71,87,0.12);  color: var(--red); }
+    .pick-body { padding: 16px 20px; }
+    .pick-specs { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+    .spec-pill {
+      font-size: 11px; font-family: var(--font-mono);
+      background: var(--surface2); border: 1px solid var(--border);
+      border-radius: 99px; padding: 3px 10px; color: var(--text-muted);
+    }
+    .pick-why { font-size: 13px; color: var(--text-muted); line-height: 1.65; margin: 0 0 12px; }
+    .pick-why strong { color: var(--text); }
+    .pick-pros-cons { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+    .pros, .cons { background: var(--dark); border-radius: var(--radius); padding: 10px 12px; }
+    .pros-title { font-size: 11px; font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--green); margin: 0 0 6px; }
+    .cons-title { font-size: 11px; font-family: var(--font-mono); letter-spacing: 0.06em; text-transform: uppercase; color: var(--red); margin: 0 0 6px; }
+    .pros ul, .cons ul { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 4px; }
+    .pros li, .cons li { font-size: 12px; color: var(--text-muted); padding-left: 14px; position: relative; line-height: 1.4; }
+    .pros li::before { content: '✓'; position: absolute; left: 0; color: var(--green); font-size: 11px; }
+    .cons li::before { content: '✗'; position: absolute; left: 0; color: var(--red); font-size: 11px; }
+    .pick-cta {
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      background: var(--dark); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 10px 14px; text-decoration: none; transition: border-color 0.2s;
+      margin-bottom: 8px;
+    }
+    .pick-cta:last-child { margin-bottom: 0; }
+    .pick-cta:hover { border-color: var(--accent); }
+    .pick-cta-left { flex: 1; }
+    .pick-cta-name { font-size: 13px; font-weight: 500; color: var(--text); margin: 0 0 1px; }
+    .pick-cta-note { font-size: 11px; color: var(--text-dim); font-family: var(--font-mono); margin: 0; }
+    .pick-cta-arrow { font-size: 13px; color: var(--accent); flex-shrink: 0; }
+    .compare-table { width: 100%; border-collapse: collapse; font-size: 13px; margin: 1.5rem 0; }
+    .compare-table th {
+      padding: 9px 14px; background: var(--surface2); border-bottom: 1px solid var(--border);
+      font-family: var(--font-mono); font-size: 10px; letter-spacing: 0.06em;
+      text-transform: uppercase; color: var(--text-muted); text-align: left;
+    }
+    .compare-table th:not(:first-child) { text-align: center; }
+    .compare-table td { padding: 10px 14px; border-bottom: 1px solid var(--border); color: var(--text-muted); vertical-align: middle; }
+    .compare-table td:first-child { font-weight: 500; color: var(--text); }
+    .compare-table td:not(:first-child) { text-align: center; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table tr:hover td { background: rgba(255,255,255,0.02); }
+    .win  { color: var(--accent); font-weight: 600; }
+    .good { color: var(--green); }
+    .mid  { color: var(--text-muted); }
+    .bad  { color: var(--red); }
+    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; margin: 1.5rem 0; }
+    .feature-card { background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 14px; }
+    .feature-icon { font-size: 1.5rem; margin-bottom: 6px; display: block; }
+    .feature-title { font-size: 13px; font-weight: 600; color: var(--text); margin: 0 0 4px; }
+    .feature-desc { font-size: 12px; color: var(--text-muted); margin: 0; line-height: 1.5; }
+    .section-divider { display: flex; align-items: center; gap: 14px; margin: 2rem 0 1.25rem; }
+    .section-divider-title { font-family: var(--font-display); font-size: 1.5rem; letter-spacing: 0.04em; color: var(--text-muted); white-space: nowrap; }
+    .section-divider-line { flex: 1; height: 1px; background: var(--border); }
+    @media (max-width: 560px) {
+      .pick-pros-cons { grid-template-columns: 1fr; }
+      .compare-table { font-size: 12px; }
+      .compare-table td, .compare-table th { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo">
+        <span class="logo-icon">◈</span>
+        <span class="logo-text">Gamers<em>Watchlist</em></span>
+      </a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">🔥 Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Accessories</span>
+          <span class="article-date">May 2026 · 9 min read</span>
+        </div>
+        <h1 class="article-title">Best Pro Controllers for Nintendo Switch 2 (2026)</h1>
+        <p class="article-deck">The Joy-Cons are fine. A pro controller is better. Here are the best options for every type of player — competitive gamers, casual players, families, and kids — with honest trade-offs for each.</p>
+      </div>
+
+      <div class="verdict-box">
+        <div class="verdict-label">⚡ Top picks at a glance</div>
+        <p>
+          <strong>Best overall:</strong> Nintendo Switch 2 Pro Controller — the definitive option if budget isn't a concern<br/>
+          <strong>Best alternative:</strong> 8BitDo Ultimate 2C — matches the Pro Controller for less money<br/>
+          <strong>Best budget:</strong> PowerA Enhanced Wireless — solid wireless controller under $35<br/>
+          <strong>Best for competitive:</strong> 8BitDo Ultimate 2 Hall Effect — no stick drift, ever<br/>
+          <strong>Best for kids:</strong> PDP Faceoff Deluxe+ — wired, durable, easy to hold
+        </p>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Do you actually need a pro controller?</h2>
+        <p>The Joy-Cons that come with Switch 2 are capable controllers — genuinely better than they were on Switch 1 with the magnetic attachment and improved analog sticks. For casual gaming, party games, and handheld play, they're perfectly fine.</p>
+        <p>A pro controller becomes worthwhile when:</p>
+        <ul>
+          <li><strong>You play docked for extended sessions</strong> — holding Joy-Cons individually or in a grip for 2+ hours causes hand fatigue for most adults. A full-size controller eliminates this.</li>
+          <li><strong>You play competitive games</strong> — fighting games, shooters, and sports titles benefit from the ergonomics and button layout of a traditional controller.</li>
+          <li><strong>You play with others</strong> — having a second full controller means a second player gets a proper gaming experience instead of a single detached Joy-Con.</li>
+          <li><strong>You're experiencing Joy-Con drift</strong> — if your sticks are registering phantom inputs, a pro controller bypasses the problem entirely.</li>
+        </ul>
+
+        <h2>What to look for in a Switch 2 pro controller</h2>
+
+        <div class="feature-grid">
+          <div class="feature-card">
+            <span class="feature-icon">🎯</span>
+            <p class="feature-title">Hall effect sticks</p>
+            <p class="feature-desc">Magnetic sensors instead of mechanical potentiometers — immune to drift. Worth paying more for if you've ever dealt with stick drift.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🔋</span>
+            <p class="feature-title">Battery life</p>
+            <p class="feature-desc">Look for 20+ hours per charge. The official Pro Controller leads at ~40 hours. Anything under 15 hours becomes inconvenient fast.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">📶</span>
+            <p class="feature-title">Wireless vs wired</p>
+            <p class="feature-desc">Wireless is more convenient. Wired has zero input lag — matters for competitive fighting games. Most players will never notice wired vs wireless latency.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">🎮</span>
+            <p class="feature-title">Rumble & gyro</p>
+            <p class="feature-desc">Nintendo games use HD Rumble and gyroscope aiming extensively. Third-party controllers vary — check each one's rumble and gyro support before buying.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">⚙️</span>
+            <p class="feature-title">Remappable buttons</p>
+            <p class="feature-desc">Back paddles and remappable buttons help in competitive games. Premium feature — not essential for casual play but genuinely useful for dedicated gamers.</p>
+          </div>
+          <div class="feature-card">
+            <span class="feature-icon">✋</span>
+            <p class="feature-title">Ergonomics</p>
+            <p class="feature-desc">Switch 2 Pro Controller shape is comfortable for large and medium hands. 8BitDo skews slightly smaller. Kids controllers need a smaller grip.</p>
+          </div>
+        </div>
+
+        <div class="section-divider">
+          <span class="section-divider-title">The picks</span>
+          <div class="section-divider-line"></div>
+        </div>
+
+        <!-- PICK 1 -->
+        <div class="pick-card top">
+          <div class="pick-header">
+            <div class="pick-rank">1</div>
+            <div class="pick-header-body">
+              <p class="pick-name">Nintendo Switch 2 Pro Controller</p>
+              <p class="pick-subtitle">Official · wireless · ~40hr battery · HD Rumble · gyroscope · USB-C</p>
+            </div>
+            <span class="pick-badge badge-gold">Best Overall</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Official Nintendo</span>
+              <span class="spec-pill">~40hr battery</span>
+              <span class="spec-pill">HD Rumble</span>
+              <span class="spec-pill">Gyroscope</span>
+              <span class="spec-pill">Amiibo NFC</span>
+              <span class="spec-pill">USB-C charging</span>
+            </div>
+            <p class="pick-why">
+              If there's one controller recommendation that's always right, it's this one. The Switch 2 Pro Controller is <strong>the best wireless controller Nintendo has ever made</strong> — improved analog sticks over its predecessor, around 40 hours of battery life per charge, full HD Rumble, gyroscope for motion aiming, and Amiibo NFC built in. It pairs instantly with the Switch 2 and every feature works exactly as Nintendo intended because Nintendo made it.
+            </p>
+            <p class="pick-why">
+              The price is high — it's the most expensive option on this list by a significant margin. If that's within budget, it's the easy answer. If you're looking to save $20–$30, the 8BitDo Ultimate 2C below comes genuinely close in most categories.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Best-in-class battery life (~40hrs)</li>
+                  <li>Full HD Rumble support</li>
+                  <li>Gyroscope for motion aiming</li>
+                  <li>Amiibo NFC reader built in</li>
+                  <li>Perfect ergonomics for adult hands</li>
+                  <li>Instant pairing with Switch 2</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Most expensive option</li>
+                  <li>No remappable back buttons</li>
+                  <li>Potentiometer sticks — drift risk over time</li>
+                  <li>No hall effect sticks</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">Nintendo Switch 2 Pro Controller</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 2 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">2</div>
+            <div class="pick-header-body">
+              <p class="pick-name">8BitDo Ultimate 2C Wireless Controller</p>
+              <p class="pick-subtitle">Wireless · ~22hr battery · rumble · gyro · back buttons · USB-C</p>
+            </div>
+            <span class="pick-badge badge-silver">Best Alternative</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">~22hr battery</span>
+              <span class="spec-pill">Dual rumble</span>
+              <span class="spec-pill">Gyroscope</span>
+              <span class="spec-pill">2 back buttons</span>
+              <span class="spec-pill">8BitDo Ultimate Software</span>
+              <span class="spec-pill">USB-C charging</span>
+            </div>
+            <p class="pick-why">
+              8BitDo has earned a reputation as the best third-party controller maker for Nintendo hardware and the Ultimate 2C is their best Switch-compatible option. At a noticeably lower price than the official Pro Controller, it delivers <strong>dual rumble motors, a gyroscope for motion controls, two remappable back buttons, and 22 hours of battery life</strong>. The 8BitDo Ultimate Software app lets you remap every button, adjust stick sensitivity curves, and create multiple profiles.
+            </p>
+            <p class="pick-why">
+              What it doesn't have: Amiibo NFC and Nintendo's specific HD Rumble implementation. The rumble feels slightly different from Nintendo's — functional and satisfying, but discernibly not the same. For most games this doesn't matter. For Amiibo collectors, it's a deal-breaker.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Significantly cheaper than official</li>
+                  <li>2 remappable back buttons</li>
+                  <li>Full button remapping via app</li>
+                  <li>Gyroscope for motion controls</li>
+                  <li>Excellent build quality</li>
+                  <li>22hr battery life</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>No Amiibo NFC</li>
+                  <li>Rumble different from HD Rumble</li>
+                  <li>Shorter battery than official</li>
+                  <li>No hall effect sticks on this model</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">8BitDo Ultimate 2C on Amazon</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">Amazon →</span>
+            </a>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">8BitDo Ultimate 2C on 8BitDo.com</p>
+                <p class="pick-cta-note">Buy direct — sometimes cheaper, always in stock</p>
+              </div>
+              <span class="pick-cta-arrow">8BitDo.com →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 3 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">3</div>
+            <div class="pick-header-body">
+              <p class="pick-name">8BitDo Ultimate 2 Hall Effect Edition</p>
+              <p class="pick-subtitle">Wireless · hall effect sticks · no drift · charging dock · ~22hr battery</p>
+            </div>
+            <span class="pick-badge badge-purple">Best for Competitive</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Hall effect sticks</span>
+              <span class="spec-pill">Zero drift</span>
+              <span class="spec-pill">~22hr battery</span>
+              <span class="spec-pill">Charging dock included</span>
+              <span class="spec-pill">4 back buttons</span>
+              <span class="spec-pill">Gyroscope</span>
+            </div>
+            <p class="pick-why">
+              The defining feature here is the <strong>hall effect analog sticks</strong> — magnetic sensors that never drift because they have no mechanical contact to wear out. If you've ever had a controller slowly develop phantom inputs over 12–18 months of use, hall effect sticks solve that problem permanently. This is the controller for competitive players and anyone who's been burned by stick drift before.
+            </p>
+            <p class="pick-why">
+              It also comes with a charging dock — drop it in when done, no fumbling for a USB-C cable. Four remappable back buttons is the most of any controller on this list, useful for competitive fighting games and shooters where keeping thumbs on sticks matters. Priced between the Ultimate 2C and the official Pro Controller.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Hall effect sticks — no drift ever</li>
+                  <li>4 remappable back buttons</li>
+                  <li>Charging dock included</li>
+                  <li>Gyroscope support</li>
+                  <li>8BitDo app customization</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Higher price than Ultimate 2C</li>
+                  <li>No Amiibo NFC</li>
+                  <li>Larger and heavier than 2C</li>
+                  <li>Overkill for casual players</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">8BitDo Ultimate 2 Hall Effect on Amazon</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">Amazon →</span>
+            </a>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">8BitDo Ultimate 2 Hall Effect on 8BitDo.com</p>
+                <p class="pick-cta-note">Buy direct from 8BitDo</p>
+              </div>
+              <span class="pick-cta-arrow">8BitDo.com →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 4 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">4</div>
+            <div class="pick-header-body">
+              <p class="pick-name">PowerA Enhanced Wireless Controller for Switch</p>
+              <p class="pick-subtitle">Wireless · ~30hr battery · 2 mappable buttons · AA batteries · under $35</p>
+            </div>
+            <span class="pick-badge badge-orange">Best Budget</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Wireless</span>
+              <span class="spec-pill">~30hr battery</span>
+              <span class="spec-pill">2 mappable buttons</span>
+              <span class="spec-pill">AA batteries</span>
+              <span class="spec-pill">Motion controls</span>
+              <span class="spec-pill">Under $35</span>
+            </div>
+            <p class="pick-why">
+              PowerA's Enhanced Wireless is the go-to budget recommendation for a reason — it reliably undercuts the competition while getting the fundamentals right. <strong>Wireless connectivity, motion controls, two mappable buttons on the back, and around 30 hours of battery life</strong> from two AA batteries. The AA battery design is a trade-off: no USB-C charging means buying batteries, but it also means no waiting for a charge mid-session.
+            </p>
+            <p class="pick-why">
+              Build quality is noticeably below the 8BitDo and official options — the plastic feels cheaper and the buttons have a slightly mushier feel. It also lacks rumble entirely, which is a meaningful omission for games that use HD Rumble expressively. For a second controller, a kids' spare, or someone who wants wireless without spending Pro Controller money, it fills the gap well.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Lowest price wireless option</li>
+                  <li>~30hr battery on AA batteries</li>
+                  <li>2 mappable back buttons</li>
+                  <li>Motion controls included</li>
+                  <li>Wide color/design selection</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>No rumble — significant omission</li>
+                  <li>AA batteries — ongoing cost</li>
+                  <li>Cheaper plastic feel</li>
+                  <li>No Amiibo NFC</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">PowerA Enhanced Wireless Controller</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- PICK 5 -->
+        <div class="pick-card">
+          <div class="pick-header">
+            <div class="pick-rank">5</div>
+            <div class="pick-header-body">
+              <p class="pick-name">PDP Faceoff Deluxe+ Audio Wired Controller</p>
+              <p class="pick-subtitle">Wired · headphone jack · remappable · small grip · officially licensed</p>
+            </div>
+            <span class="pick-badge badge-green">Best for Kids</span>
+          </div>
+          <div class="pick-body">
+            <div class="pick-specs">
+              <span class="spec-pill">Wired USB-C</span>
+              <span class="spec-pill">Headphone jack</span>
+              <span class="spec-pill">Remappable buttons</span>
+              <span class="spec-pill">Smaller grip</span>
+              <span class="spec-pill">Nintendo licensed</span>
+              <span class="spec-pill">No battery needed</span>
+            </div>
+            <p class="pick-why">
+              For younger players, the PDP Faceoff solves most of the problems that make standard controllers frustrating for kids. The <strong>grip is smaller and lighter</strong> than adult controllers, making it physically comfortable for smaller hands. It's wired — no charging required, no batteries to replace, and no "controller is dead mid-game" moments. The built-in headphone jack lets kids plug in headphones without needing a USB adapter.
+            </p>
+            <p class="pick-why">
+              Being wired also means zero latency and no wireless interference, which matters less for kids but is a nice bonus. The officially licensed status guarantees it works correctly with Switch 2. At well under $30, it's also the least expensive controller on this list — sensible for something that may get dropped, sat on, or generally treated as a toy.
+            </p>
+            <div class="pick-pros-cons">
+              <div class="pros">
+                <p class="pros-title">Pros</p>
+                <ul>
+                  <li>Smaller grip for kids' hands</li>
+                  <li>Wired — no charging or batteries</li>
+                  <li>Built-in headphone jack</li>
+                  <li>Lowest price on the list</li>
+                  <li>Nintendo officially licensed</li>
+                </ul>
+              </div>
+              <div class="cons">
+                <p class="cons-title">Cons</p>
+                <ul>
+                  <li>Wired — cable can be limiting</li>
+                  <li>No wireless freedom</li>
+                  <li>Rumble weaker than premium options</li>
+                  <li>Not ideal for adult hands</li>
+                </ul>
+              </div>
+            </div>
+            <a href="#" class="pick-cta">
+              <div class="pick-cta-left">
+                <p class="pick-cta-name">PDP Faceoff Deluxe+ Wired Controller</p>
+                <p class="pick-cta-note">Check current price on Amazon</p>
+              </div>
+              <span class="pick-cta-arrow">View on Amazon →</span>
+            </a>
+          </div>
+        </div>
+
+        <h2>Side-by-side comparison</h2>
+
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0;overflow-x:auto;">
+          <table class="compare-table">
+            <thead>
+              <tr>
+                <th>Controller</th>
+                <th>Price tier</th>
+                <th>Battery</th>
+                <th>Rumble</th>
+                <th>Gyro</th>
+                <th>Hall effect</th>
+                <th>Amiibo</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Nintendo Pro Controller</td>
+                <td class="bad">$$$</td>
+                <td class="win">~40hr ✓</td>
+                <td class="win">HD Rumble ✓</td>
+                <td class="win">Yes ✓</td>
+                <td class="bad">No</td>
+                <td class="win">Yes ✓</td>
+              </tr>
+              <tr>
+                <td>8BitDo Ultimate 2C</td>
+                <td class="good">$$</td>
+                <td class="mid">~22hr</td>
+                <td class="good">Dual motor ✓</td>
+                <td class="win">Yes ✓</td>
+                <td class="bad">No</td>
+                <td class="bad">No</td>
+              </tr>
+              <tr>
+                <td>8BitDo Ultimate 2 HE</td>
+                <td class="mid">$$–$$$</td>
+                <td class="mid">~22hr</td>
+                <td class="good">Dual motor ✓</td>
+                <td class="win">Yes ✓</td>
+                <td class="win">Yes ✓</td>
+                <td class="bad">No</td>
+              </tr>
+              <tr>
+                <td>PowerA Enhanced</td>
+                <td class="win">$</td>
+                <td class="good">~30hr ✓</td>
+                <td class="bad">None ✗</td>
+                <td class="good">Yes ✓</td>
+                <td class="bad">No</td>
+                <td class="bad">No</td>
+              </tr>
+              <tr>
+                <td>PDP Faceoff Deluxe+</td>
+                <td class="win">$</td>
+                <td class="win">Wired ∞</td>
+                <td class="mid">Basic</td>
+                <td class="bad">No</td>
+                <td class="bad">No</td>
+                <td class="bad">No</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>Which controller is right for you?</h2>
+        <ul>
+          <li><strong>Best experience, budget not a concern:</strong> Nintendo Switch 2 Pro Controller. No trade-offs, full Nintendo feature support, 40-hour battery.</li>
+          <li><strong>Best value, don't need Amiibo:</strong> 8BitDo Ultimate 2C. Saves real money without meaningfully compromising the experience.</li>
+          <li><strong>Stick drift is your enemy:</strong> 8BitDo Ultimate 2 Hall Effect. Worth the premium if you've had drift problems before.</li>
+          <li><strong>Second controller for a guest or casual player:</strong> PowerA Enhanced Wireless. Wireless without Pro Controller pricing.</li>
+          <li><strong>Buying for a child:</strong> PDP Faceoff Deluxe+. Wired, smaller grip, no charging anxiety, low price if it gets damaged.</li>
+        </ul>
+
+        <div class="callout callout-tip">
+          <strong>💡 Buying multiple controllers?</strong> One Pro Controller or 8BitDo for the primary player, one PowerA or PDP Faceoff for the second player is the value-maximizing combination. You get the best experience for the main player without paying Pro Controller prices for an occasional-use second controller.
+        </div>
+
+        <h2>A note on Joy-Con drift and hall effect sticks</h2>
+        <p>Joy-Con drift — where the analog sticks register movement without being touched — has been Nintendo's most persistent hardware criticism for years. The Switch 2 Joy-Cons use revised analog sticks that Nintendo claims are more drift-resistant, but they still use the same basic potentiometer mechanism that caused drift in Switch 1.</p>
+        <p>Hall effect sticks, used in the 8BitDo Ultimate 2 Hall Effect Edition, use magnets instead of physical contact — they literally cannot drift because there's nothing to wear out. If drift has caused you problems before, the hall effect controller is worth the price premium as a long-term investment.</p>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Do Switch 1 Pro Controllers work on Switch 2?</strong><br/>
+        Yes — the Switch 1 Pro Controller pairs wirelessly with Switch 2 and works for most games. It won't support Switch 2-specific features like the new GameChat button, but for standard gameplay it functions normally. If you already own one, no need to replace it unless you want the Switch 2-specific version.</p>
+
+        <p><strong>Can I use an Xbox or PlayStation controller on Switch 2?</strong><br/>
+        Not natively — they don't pair wirelessly with Switch 2 out of the box. Third-party adapters like the Mayflash Magic-NS allow Xbox and PS controllers to connect, but with limitations. 8BitDo also makes adapters for this purpose. Not a clean solution — easier to buy a Switch-native controller.</p>
+
+        <p><strong>Does the Pro Controller charge while the Switch 2 is in sleep mode?</strong><br/>
+        Yes. Connect the Pro Controller to the Switch 2 dock via USB-C and it charges whether the console is on, sleeping, or off (as long as the dock is powered).</p>
+
+        <p><strong>Is the 8BitDo controller officially supported by Nintendo?</strong><br/>
+        8BitDo is not officially licensed by Nintendo, but their controllers are designed to be compatible and work reliably. The main features that require Nintendo licensing — Amiibo NFC — are absent from 8BitDo controllers. Everything else works.</p>
+
+        <p><strong>How do I connect a pro controller to Switch 2?</strong><br/>
+        For wireless: HOME → Controllers → Change Grip/Order → press the sync button on the controller (small button near the top). For wired: plug a USB-C cable from the controller into the dock or directly into the Switch 2. The console detects it automatically.</p>
+
+        <!-- FINAL CTA -->
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">🎮 Our picks — quick links</div>
+          <p>All five recommended controllers:</p>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">Nintendo Switch 2 Pro Controller — best overall</p>
+              <p class="pick-cta-note">~40hr battery · HD Rumble · Amiibo NFC</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">8BitDo Ultimate 2C — best alternative</p>
+              <p class="pick-cta-note">~22hr · back buttons · gyro · cheaper than official</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">8BitDo Ultimate 2 Hall Effect — best for competitive</p>
+              <p class="pick-cta-note">Hall effect sticks · no drift · charging dock</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">PowerA Enhanced Wireless — best budget</p>
+              <p class="pick-cta-note">Under $35 · ~30hr · wireless · motion controls</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <a href="#" class="pick-cta">
+            <div class="pick-cta-left">
+              <p class="pick-cta-name">PDP Faceoff Deluxe+ — best for kids</p>
+              <p class="pick-cta-note">Wired · smaller grip · headphone jack · low price</p>
+            </div>
+            <span class="pick-cta-arrow">Amazon →</span>
+          </a>
+          <p style="font-size:11px;color:var(--text-dim);margin:14px 0 0;font-family:var(--font-mono);">We may earn a commission from affiliate links — at no extra cost to you.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>© 2026 Gamers Watchlist · <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> · <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
