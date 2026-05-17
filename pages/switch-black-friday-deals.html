@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nintendo Switch Black Friday Deals 2026 — What to Expect &amp; When to Buy — Gamers Watchlist</title>
+  <meta name="description" content="Nintendo Switch Black Friday deals 2026 — expected discounts on Switch 2 hardware, games, and accessories, historical pricing patterns, and exactly when to buy." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet" href="../css/article.css" />
+  <style>
+    .deal-section { background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0; }
+    .deal-section-header { padding:14px 20px;background:var(--surface2);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;gap:12px; }
+    .deal-section-title { font-family:var(--font-display);font-size:1.3rem;letter-spacing:0.04em;color:var(--text);margin:0; }
+    .deal-section-sub { font-size:11px;color:var(--text-muted);font-family:var(--font-mono);margin:4px 0 0; }
+    .deal-row { display:flex;align-items:flex-start;justify-content:space-between;padding:12px 20px;border-bottom:1px solid var(--border);gap:16px; }
+    .deal-row:last-child { border-bottom:none; }
+    .deal-item { flex:1; }
+    .deal-name { font-size:13px;font-weight:500;color:var(--text);margin:0 0 3px; }
+    .deal-detail { font-size:12px;color:var(--text-muted);margin:0;line-height:1.5; }
+    .deal-prices { text-align:right;flex-shrink:0; }
+    .deal-retail { font-size:11px;color:var(--text-dim);text-decoration:line-through;font-family:var(--font-mono);display:block; }
+    .deal-expected { font-size:15px;font-weight:600;color:var(--green);font-family:var(--font-display);letter-spacing:0.04em;display:block;line-height:1; }
+    .deal-save { font-size:10px;color:var(--green);font-family:var(--font-mono);display:block;margin-top:2px; }
+    .badge { display:inline-block;font-size:10px;padding:2px 8px;border-radius:4px;font-family:var(--font-mono);letter-spacing:0.04em; }
+    .badge-hot    { background:rgba(255,71,87,0.15);color:var(--red); }
+    .badge-likely { background:rgba(232,255,71,0.12);color:var(--accent); }
+    .badge-maybe  { background:rgba(255,165,2,0.12);color:#ffa502; }
+    .badge-rare   { background:rgba(79,163,255,0.12);color:var(--blue); }
+    .timeline { position:relative;padding-left:28px;margin:1.5rem 0; }
+    .timeline::before { content:'';position:absolute;left:8px;top:0;bottom:0;width:2px;background:var(--border); }
+    .timeline-item { position:relative;padding:0 0 20px 16px; }
+    .timeline-item:last-child { padding-bottom:0; }
+    .timeline-item::before { content:'';position:absolute;left:-24px;top:5px;width:10px;height:10px;border-radius:50%;background:var(--border2);border:2px solid var(--surface); }
+    .timeline-item.active::before { background:var(--accent); }
+    .timeline-item.hot::before { background:var(--red); }
+    .timeline-date { font-family:var(--font-mono);font-size:11px;color:var(--text-dim);letter-spacing:0.06em;text-transform:uppercase;margin:0 0 3px; }
+    .timeline-title { font-size:14px;font-weight:600;color:var(--text);margin:0 0 4px; }
+    .timeline-desc { font-size:13px;color:var(--text-muted);margin:0;line-height:1.6; }
+    .history-table { width:100%;border-collapse:collapse;font-size:13px;margin:1.5rem 0; }
+    .history-table th { padding:9px 14px;background:var(--surface2);border-bottom:1px solid var(--border);font-family:var(--font-mono);font-size:10px;letter-spacing:0.06em;text-transform:uppercase;color:var(--text-muted);text-align:left; }
+    .history-table td { padding:10px 14px;border-bottom:1px solid var(--border);color:var(--text-muted); }
+    .history-table td:first-child { font-weight:500;color:var(--text); }
+    .history-table tr:last-child td { border-bottom:none; }
+    .history-table tr:hover td { background:rgba(255,255,255,0.02); }
+    .retailer-card { display:flex;align-items:flex-start;gap:14px;background:var(--surface2);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px;margin-bottom:10px;text-decoration:none;transition:border-color 0.2s; }
+    .retailer-card:hover { border-color:var(--accent); }
+    .retailer-icon { font-size:1.6rem;flex-shrink:0;margin-top:2px; }
+    .retailer-body { flex:1; }
+    .retailer-name { font-size:13px;font-weight:600;color:var(--text);margin:0 0 3px; }
+    .retailer-detail { font-size:12px;color:var(--text-muted);margin:0;line-height:1.55; }
+    .retailer-cta { font-size:12px;color:var(--accent);flex-shrink:0;white-space:nowrap; }
+    .alert-box { background:linear-gradient(135deg,#1a1a10,#111109);border:1px solid rgba(232,255,71,0.3);border-radius:var(--radius-lg);padding:20px 24px;margin:1.5rem 0; }
+    .alert-title { font-family:var(--font-display);font-size:1.4rem;letter-spacing:0.04em;color:var(--accent);margin:0 0 8px; }
+    .alert-body { font-size:13px;color:var(--text-muted);margin:0 0 14px;line-height:1.6; }
+    .newsletter-row { display:flex;gap:8px;flex-wrap:wrap; }
+    .newsletter-input { flex:1;min-width:180px;background:var(--surface);border:1px solid var(--border2);border-radius:6px;padding:9px 12px;font-size:13px;color:var(--text);font-family:var(--font-body);outline:none; }
+    .newsletter-input:focus { border-color:var(--accent); }
+    .newsletter-input::placeholder { color:var(--text-dim); }
+    .newsletter-btn { background:var(--accent);color:var(--black);font-weight:600;font-size:13px;padding:9px 18px;border:none;border-radius:6px;cursor:pointer;font-family:var(--font-body);white-space:nowrap; }
+    .newsletter-btn:hover { opacity:0.9; }
+    @media(max-width:560px) { .deal-row { flex-direction:column;gap:8px; } .deal-prices { text-align:left; } }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="logo"><span class="logo-icon">&#9672;</span><span class="logo-text">Gamers<em>Watchlist</em></span></a>
+      <nav class="nav-links">
+        <a href="switch2-review.html">Switch 2 Review</a>
+        <a href="#">Accessories</a>
+        <a href="#">Games</a>
+        <a href="../index.html#deals" class="nav-deals">&#128293; Deals</a>
+      </nav>
+      <button class="nav-menu" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <main class="article-main">
+    <div class="article-container">
+
+      <div class="article-header">
+        <div class="article-meta">
+          <span class="article-tag">Deals</span>
+          <span class="article-date">Updated October 2026 &middot; 8 min read</span>
+        </div>
+        <h1 class="article-title">Nintendo Switch Black Friday Deals 2026</h1>
+        <p class="article-deck">Black Friday is the best time of year to buy Nintendo hardware, games, and accessories &mdash; if you know what to expect, when to buy, and where to look. Here&rsquo;s everything, based on historical patterns and 2026 retailer signals.</p>
+      </div>
+
+      <div class="alert-box">
+        <p class="alert-title">&#128276; Get deal alerts the moment they go live</p>
+        <p class="alert-body">Black Friday Nintendo deals sell out fast &mdash; especially bundles and first-party games. Subscribe and we&rsquo;ll email you the moment verified deals go live, before they sell out.</p>
+        <form class="newsletter-row" onsubmit="return false">
+          <input type="email" placeholder="your@email.com" class="newsletter-input" />
+          <button type="submit" class="newsletter-btn">Notify Me &rarr;</button>
+        </form>
+      </div>
+
+      <div class="article-body">
+
+        <h2>Will there be Nintendo Switch 2 deals on Black Friday 2026?</h2>
+        <p>Yes &mdash; with caveats. The Switch 2 launched in 2025, making Black Friday 2026 its first full holiday season as a maturing platform. Based on Nintendo&rsquo;s historical pricing behavior and current retailer signals, here&rsquo;s what to realistically expect.</p>
+        <p><strong>The Switch 2 console itself is unlikely to be discounted.</strong> Nintendo rarely discounts current-generation hardware during its first two holiday seasons. Expect the $449.99 retail price to hold on standalone hardware.</p>
+        <p><strong>Bundles are where the value appears.</strong> Nintendo and major retailers will almost certainly offer Switch 2 bundles &mdash; console plus one or two games at the standard hardware price. Getting $60&ndash;$120 in games &ldquo;free&rdquo; with the hardware is Nintendo&rsquo;s preferred Black Friday format. These bundles sell out quickly.</p>
+        <p><strong>Games and accessories are where real discounts happen.</strong> First-party Nintendo games, third-party Switch 2 titles, controllers, cases, microSD cards, and docks all see meaningful Black Friday price cuts every year without exception.</p>
+
+        <h2>Expected deals &mdash; hardware</h2>
+        <div class="deal-section">
+          <div class="deal-section-header">
+            <div>
+              <p class="deal-section-title">Switch 2 Hardware Deals</p>
+              <p class="deal-section-sub">Based on historical Nintendo Black Friday patterns</p>
+            </div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item">
+              <p class="deal-name">Nintendo Switch 2 + Mario Kart World Bundle</p>
+              <p class="deal-detail">Console + Switch 2 exclusive launch title. Nintendo&rsquo;s preferred bundle format &mdash; expect this at Amazon, Best Buy, and Target simultaneously. <span class="badge badge-hot">Highest demand</span></p>
+            </div>
+            <div class="deal-prices"><span class="deal-retail">$509.98 separate</span><span class="deal-expected">$449.99</span><span class="deal-save">Save ~$60</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item">
+              <p class="deal-name">Nintendo Switch 2 + 2-Game Bundle</p>
+              <p class="deal-detail">Console bundled with two games &mdash; often includes a Nintendo-published title plus a major third-party game. Best Buy tends to offer these. <span class="badge badge-likely">Likely</span></p>
+            </div>
+            <div class="deal-prices"><span class="deal-retail">$569.97 separate</span><span class="deal-expected">$449.99</span><span class="deal-save">Save ~$120</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item">
+              <p class="deal-name">Nintendo Switch OLED standalone</p>
+              <p class="deal-detail">With Switch 2 in the market, OLED stock is clearing. First meaningful hardware discount possible. <span class="badge badge-likely">Likely discount</span></p>
+            </div>
+            <div class="deal-prices"><span class="deal-retail">$299.99</span><span class="deal-expected">$249.99</span><span class="deal-save">Save ~$50</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item">
+              <p class="deal-name">Nintendo Switch 2 standalone console</p>
+              <p class="deal-detail">Direct hardware discount unlikely. Nintendo almost never discounts current-gen hardware in Year 2. <span class="badge badge-rare">Unlikely</span></p>
+            </div>
+            <div class="deal-prices"><span class="deal-retail">$449.99</span><span class="deal-expected">$449.99</span><span class="deal-save">No discount expected</span></div>
+          </div>
+        </div>
+
+        <h2>Expected deals &mdash; first-party games</h2>
+        <div class="deal-section">
+          <div class="deal-section-header">
+            <div>
+              <p class="deal-section-title">Nintendo First-Party Game Deals</p>
+              <p class="deal-section-sub">Nintendo first-party games rarely drop below $40 &mdash; Black Friday is one of the few exceptions</p>
+            </div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Mario Kart World</p><p class="deal-detail">Switch 2 exclusive launch title. Black Friday is typically the first meaningful discount. <span class="badge badge-hot">Best seller</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$69.99</span><span class="deal-expected">$49.99</span><span class="deal-save">Save ~$20</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Super Mario Bros. Wonder</p><p class="deal-detail">Year-old title by Black Friday 2026. Nintendo discounts first-party titles ~$10&ndash;$20 after 12&ndash;18 months. <span class="badge badge-likely">Likely</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$59.99</span><span class="deal-expected">$39.99</span><span class="deal-save">Save ~$20</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Zelda: Echoes of Wisdom</p><p class="deal-detail">Strong seller from 2025. Expect a modest discount &mdash; Nintendo holds Zelda prices longer than other titles. <span class="badge badge-maybe">Possible</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$59.99</span><span class="deal-expected">$44.99</span><span class="deal-save">Save ~$15</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Super Mario Party Jamboree</p><p class="deal-detail">Party games are perennial gift picks. Nintendo typically discounts these early to drive holiday gift sales. <span class="badge badge-likely">Likely</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$59.99</span><span class="deal-expected">$39.99</span><span class="deal-save">Save ~$20</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Pok&eacute;mon Scarlet / Violet</p><p class="deal-detail">Older title &mdash; one of the deepest discounts. A reliable Black Friday pick every year since launch. <span class="badge badge-hot">Deep discount</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$59.99</span><span class="deal-expected">$34.99</span><span class="deal-save">Save ~$25</span></div>
+          </div>
+        </div>
+
+        <h2>Expected deals &mdash; accessories</h2>
+        <div class="deal-section">
+          <div class="deal-section-header">
+            <div>
+              <p class="deal-section-title">Accessory Deals</p>
+              <p class="deal-section-sub">Accessories see the deepest percentage discounts every year without exception</p>
+            </div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Nintendo Switch 2 Pro Controller (official)</p><p class="deal-detail">Official rarely drops much, but 8BitDo and PowerA controllers see 20&ndash;30% off. <span class="badge badge-likely">Third-party especially</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$79.99</span><span class="deal-expected">$59.99</span><span class="deal-save">Save ~$20</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">SanDisk 512GB microSD card</p><p class="deal-detail">Storage is one of the best Black Friday categories. Amazon runs major microSD deals annually &mdash; stock up now. <span class="badge badge-hot">Best accessory deal</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$54.99</span><span class="deal-expected">$29.99</span><span class="deal-save">Save ~$25</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Carrying cases (Tomtoc, JSAUX, Orzly)</p><p class="deal-detail">Third-party cases see consistent 30&ndash;40% discounts. Perfect stocking stuffer price point. <span class="badge badge-hot">Reliable discount</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$25&ndash;$35</span><span class="deal-expected">$14.99&ndash;$19.99</span><span class="deal-save">Save 30&ndash;40%</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Nintendo Switch Sports + accessory bundle</p><p class="deal-detail">Nintendo frequently bundles Switch Sports with Joy-Con straps or cases at Black Friday. <span class="badge badge-likely">Bundle deal likely</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$49.99</span><span class="deal-expected">$34.99</span><span class="deal-save">Save ~$15</span></div>
+          </div>
+          <div class="deal-row">
+            <div class="deal-item"><p class="deal-name">Screen protectors (amFilm, Spigen)</p><p class="deal-detail">Already inexpensive &mdash; Black Friday drops prices further. If you haven&rsquo;t bought one yet, this is the time. <span class="badge badge-likely">Low priority</span></p></div>
+            <div class="deal-prices"><span class="deal-retail">$12&ndash;$18</span><span class="deal-expected">$7.99&ndash;$11.99</span><span class="deal-save">Save 30&ndash;40%</span></div>
+          </div>
+        </div>
+
+        <h2>Historical Nintendo Black Friday pricing patterns</h2>
+        <p>Nintendo is famously conservative with discounts compared to Sony and Microsoft. Understanding their historical patterns sets accurate expectations.</p>
+        <div style="background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;margin:1.5rem 0;overflow-x:auto;">
+          <table class="history-table">
+            <thead>
+              <tr><th>Year</th><th>Hardware deal</th><th>Best game deal</th><th>Best accessory deal</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>2025 (Switch 2 launch year)</td><td>Bundle only &mdash; no price cut</td><td>Switch 1 games $25&ndash;$35</td><td>microSD 50% off at Amazon</td></tr>
+              <tr><td>2024</td><td>Switch OLED $249 (was $299)</td><td>Zelda: TotK $39.99 (was $69.99)</td><td>Pro Controller $49.99 (was $69.99)</td></tr>
+              <tr><td>2023</td><td>Switch OLED bundle $299 + game</td><td>Mario Kart 8 Deluxe $39.99</td><td>Joy-Con pair $49.99 (was $79.99)</td></tr>
+              <tr><td>2022</td><td>Switch Lite $159 (was $199)</td><td>Animal Crossing $39.99</td><td>512GB microSD $39.99</td></tr>
+              <tr><td>2021</td><td>Switch bundle + $35 eShop credit</td><td>Multiple titles $34.99</td><td>Cases 40% off across retailers</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="callout callout-tip">
+          <strong>&#128161; The pattern:</strong> Hardware discounts happen when a product is at least 2 years old or being replaced. Games see their first meaningful discounts 12&ndash;18 months after launch. Accessories and storage are discounted every year without exception &mdash; these are the most reliable Black Friday Nintendo purchases.
+        </div>
+
+        <h2>When exactly to buy &mdash; the Black Friday timeline</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <p class="timeline-date">Early October</p>
+            <p class="timeline-title">Research phase &mdash; start watching prices now</p>
+            <p class="timeline-desc">Check current prices on CamelCamelCamel.com for items on your list. Set price alerts. Understand what &ldquo;normal&rdquo; price looks like before retailers start the pre-Black Friday hype cycle.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">Late October</p>
+            <p class="timeline-title">Subscribe to deal alerts &mdash; including ours</p>
+            <p class="timeline-desc">Sign up for our newsletter above and follow r/GameDeals on Reddit. Early Black Friday previews from Amazon, Best Buy, and Walmart typically leak 2&ndash;3 weeks before the official sale date.</p>
+          </div>
+          <div class="timeline-item active">
+            <p class="timeline-date">Early November</p>
+            <p class="timeline-title">Pre-Black Friday deals begin &mdash; some are legitimate</p>
+            <p class="timeline-desc">Amazon and Best Buy start rolling &ldquo;Early Black Friday&rdquo; deals. Some are genuine &mdash; particularly on accessories and older game titles. Buy these confidently. The marquee hardware bundles hold until the official date.</p>
+          </div>
+          <div class="timeline-item hot">
+            <p class="timeline-date">Week of Black Friday (Nov 28, 2026)</p>
+            <p class="timeline-title">Best time to buy hardware bundles and game multi-packs</p>
+            <p class="timeline-desc">Nintendo hardware bundles and the best game deals go live. Buy immediately when you see the deal you want &mdash; bundles historically sell out within hours. If you see the bundle you want at 6am, don&rsquo;t wait until evening to decide.</p>
+          </div>
+          <div class="timeline-item hot">
+            <p class="timeline-date">Cyber Monday (Nov 30, 2026)</p>
+            <p class="timeline-title">Last chance for digital game deals and accessories</p>
+            <p class="timeline-desc">The Nintendo eShop typically runs a Cyber Monday sale with 20&ndash;30% off a rotating selection of digital games. Best Buy and Amazon continue accessory deals. If you missed a physical game deal on Black Friday, the eShop sale is your second chance.</p>
+          </div>
+          <div class="timeline-item">
+            <p class="timeline-date">December 1&ndash;15</p>
+            <p class="timeline-title">Last deals before Christmas shipping deadlines</p>
+            <p class="timeline-desc">Scattered deals continue but the best bundles are gone. Good for physical accessories that ship quickly. For digital gifts &mdash; eShop credit, Nintendo Switch Online cards &mdash; no shipping pressure.</p>
+          </div>
+        </div>
+
+        <h2>Where to find the best Nintendo Black Friday deals</h2>
+
+        <a href="#" class="retailer-card">
+          <span class="retailer-icon">&#128230;</span>
+          <div class="retailer-body"><p class="retailer-name">Amazon</p><p class="retailer-detail">Best for: microSD cards, accessories, and game bundles. Amazon&rsquo;s Black Friday deals on storage are consistently the best of any retailer. Deals go live at midnight &mdash; set alarms for bundles.</p></div>
+          <span class="retailer-cta">Shop Nintendo at Amazon &rarr;</span>
+        </a>
+        <a href="#" class="retailer-card">
+          <span class="retailer-icon">&#127978;</span>
+          <div class="retailer-body"><p class="retailer-name">Best Buy</p><p class="retailer-detail">Best for: hardware bundles, game multi-packs, and My Best Buy member early access. Typically offers exclusive Nintendo bundles not available elsewhere. My Best Buy members get 24-hour early access &mdash; free to join.</p></div>
+          <span class="retailer-cta">Shop Nintendo at Best Buy &rarr;</span>
+        </a>
+        <a href="#" class="retailer-card">
+          <span class="retailer-icon">&#127919;</span>
+          <div class="retailer-body"><p class="retailer-name">Target</p><p class="retailer-detail">Best for: physical game deals and the Target Circle 15% off gaming offer that runs annually. Target Circle members get an extra 15% off one gaming item &mdash; stacking this with a sale price produces the best deal Target offers.</p></div>
+          <span class="retailer-cta">Shop Nintendo at Target &rarr;</span>
+        </a>
+        <a href="#" class="retailer-card">
+          <span class="retailer-icon">&#127918;</span>
+          <div class="retailer-body"><p class="retailer-name">Nintendo eShop</p><p class="retailer-detail">Best for: digital game deals on Cyber Monday specifically. The eShop doesn&rsquo;t typically participate in Black Friday but runs its own Cyber Monday sale with meaningful discounts on digital titles.</p></div>
+          <span class="retailer-cta">Nintendo eShop &rarr;</span>
+        </a>
+
+        <h2>How to avoid fake Black Friday deals</h2>
+        <ul>
+          <li><strong>Check CamelCamelCamel.com before buying anything on Amazon.</strong> This free tool shows the complete price history of any Amazon product. If something is &ldquo;40% off&rdquo; but has been that low multiple times before, it&rsquo;s not a deal.</li>
+          <li><strong>Ignore percentage-off claims without knowing the real retail price.</strong> Focus on absolute dollar savings rather than percentages.</li>
+          <li><strong>Nintendo first-party game prices are publicly known.</strong> Any deal claiming $25 off a game that normally sells for $59.99 at major retailers is likely real. Any claiming $50 off the same game is misrepresenting the original price.</li>
+          <li><strong>Be skeptical of marketplace sellers on Amazon.</strong> &ldquo;Fulfilled by Amazon&rdquo; is fine. Third-party marketplace sellers offering Nintendo hardware at suspiciously low prices should be avoided.</li>
+        </ul>
+
+        <h2>Should you buy Switch 2 at Black Friday or wait?</h2>
+        <p>If you&rsquo;re buying Switch 2 hardware: <strong>don&rsquo;t wait for a hardware price cut that probably won&rsquo;t come.</strong> Nintendo&rsquo;s track record shows the hardware price holds for 2+ years. The bundle deal is the best you&rsquo;ll realistically get. If there&rsquo;s a bundle with games you want, that&rsquo;s the moment to buy.</p>
+        <p>If you&rsquo;re buying games and accessories, Black Friday genuinely is the right time. First-party game deals that normally require waiting a year for an eShop sale happen reliably at Black Friday across physical retailers. MicroSD cards in particular see their lowest prices of the year in the Black Friday/Cyber Monday window.</p>
+
+        <h2>Frequently asked questions</h2>
+
+        <p><strong>Will the Switch 2 be on sale at Black Friday 2026?</strong><br/>The standalone console is unlikely to be discounted. Bundles combining the console with games at the $449.99 hardware price are the expected format. The effective saving is the value of the included games.</p>
+
+        <p><strong>Which retailer has the best Nintendo Black Friday deals?</strong><br/>Amazon typically leads on accessories and storage. Best Buy typically leads on hardware bundles with My Best Buy early access. Target leads on physical game deals when the Circle 15% off gaming coupon is active. Check all three before committing.</p>
+
+        <p><strong>Do Nintendo Black Friday deals happen in-store or online?</strong><br/>Both &mdash; but online is faster and more reliable for hardware bundles. Physical store inventory is limited and lines form early. Online deals go live from midnight and have wider stock, though they still sell out.</p>
+
+        <p><strong>What Nintendo accessories should I buy at Black Friday?</strong><br/>MicroSD cards are the single best Black Friday accessory purchase &mdash; prices drop significantly and the savings are meaningful. Controllers, carrying cases, and screen protectors all see reliable 20&ndash;40% discounts. See our roundups: <a href="best-microsd-switch-2.html" style="color:var(--accent);">microSD cards &rarr;</a> &middot; <a href="best-switch-2-cases.html" style="color:var(--accent);">carrying cases &rarr;</a> &middot; <a href="best-switch-2-controllers.html" style="color:var(--accent);">controllers &rarr;</a></p>
+
+        <div class="verdict-box" style="margin-top:2rem;">
+          <div class="verdict-label">&#128722; Ready to shop &mdash; bookmark these links</div>
+          <p>The retailers where Nintendo Black Friday deals go live first:</p>
+          <a href="#" class="retailer-card" style="margin-bottom:8px;">
+            <span class="retailer-icon">&#128230;</span>
+            <div class="retailer-body"><p class="retailer-name">Amazon Nintendo Switch deals</p><p class="retailer-detail">Best microSD prices &middot; hardware bundles &middot; accessories</p></div>
+            <span class="retailer-cta">Amazon &rarr;</span>
+          </a>
+          <a href="#" class="retailer-card" style="margin-bottom:16px;">
+            <span class="retailer-icon">&#127978;</span>
+            <div class="retailer-body"><p class="retailer-name">Best Buy Nintendo Switch deals</p><p class="retailer-detail">Exclusive bundles &middot; My Best Buy early access &middot; game multi-packs</p></div>
+            <span class="retailer-cta">Best Buy &rarr;</span>
+          </a>
+          <div class="alert-box" style="margin:0;">
+            <p class="alert-title" style="font-size:1.1rem;">&#128276; Don&rsquo;t miss the deals when they drop</p>
+            <p class="alert-body" style="margin-bottom:12px;">We email verified Nintendo deals the moment they go live, before stock runs out.</p>
+            <form class="newsletter-row" onsubmit="return false">
+              <input type="email" placeholder="your@email.com" class="newsletter-input" />
+              <button type="submit" class="newsletter-btn">Notify Me &rarr;</button>
+            </form>
+          </div>
+          <p style="font-size:11px;color:var(--text-dim);margin:14px 0 0;font-family:var(--font-mono);">We may earn a commission from affiliate links &mdash; at no extra cost to you. Deal prices are estimates based on historical patterns and will be updated with confirmed deals when retailers announce.</p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 Gamers Watchlist &middot; <a href="affiliate-disclosure.html" style="color:var(--text-muted)">Affiliate Disclosure</a> &middot; <a href="privacy-policy.html" style="color:var(--text-muted)">Privacy Policy</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
